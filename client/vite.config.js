@@ -16,7 +16,14 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: path.resolve(__dirname, "../dist"),
-    emptyOutDir: true,
+    outDir: "dist",
+    chunkSizeWarningLimit: 2000,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ["react", "react-dom", "react-router-dom", "react-helmet-async"],
+        },
+      },
+    },
   },
 });
