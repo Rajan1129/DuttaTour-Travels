@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "dutta-tour-travel",
   "version": "1.0.0",
   "private": true,
@@ -11,6 +11,7 @@
     "dev:server": "npm run dev --workspace=server",
     "dev:client": "npm run dev --workspace=client",
     "build": "npm run build --workspace=client",
+    "postinstall": "npm run build --workspace=client",
     "start": "npm run start --workspace=server",
     "seed": "npm run seed --workspace=server",
     "install:all": "npm install"

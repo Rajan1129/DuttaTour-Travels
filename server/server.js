@@ -2,6 +2,7 @@ import "dotenv/config";
 import express from "express";
 import cors from "cors";
 import path from "path";
+import fs from "fs";
 import { fileURLToPath } from "url";
 import { connectDB } from "./config/db.js";
 import articlesRouter from "./routes/articles.js";
@@ -37,7 +38,11 @@ app.all("/api/*", (req, res) => {
 // Router (and the noindex 404 page) can take over client-side.
 app.get("*", (req, res, next) => {
   if (req.path.startsWith("/api")) return next();
-  res.sendFile(path.join(clientDist, "index.html"));
+  const indexPath = path.join(clientDist, "index.html");
+  if (fs.existsSync(indexPath)) {
+    return res.sendFile(indexPath);
+  }
+  return res.status(503).send("Client build not found. Please ensure 'npm run build' has completed.");
 });
 
 app.listen(PORT, () => {
