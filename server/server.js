@@ -26,7 +26,9 @@ app.use("/api/articles", articlesRouter);
 app.use("/api/admin/articles", adminArticlesRouter);
 
 // Serve the built React app in production (npm run build in /client first)
-const clientDist = path.join(__dirname, "../client/dist");
+const clientDist = fs.existsSync(path.join(__dirname, "../dist"))
+  ? path.join(__dirname, "../dist")
+  : path.join(__dirname, "../client/dist");
 app.use(express.static(clientDist));
 
 // API 404 handler for unmatched /api routes
