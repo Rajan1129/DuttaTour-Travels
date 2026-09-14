@@ -1,12 +1,14 @@
 // Intelligent Knowledge Base & Semantic Matcher for Dutta Tour & Travel AI Assistant
 // Owner: Lav Dutta | HQ: Prem Nagar, Una, Himachal Pradesh
 
+import { business } from "./business";
+
 export const BOT_AVATAR = "/logo.png";
 export const BOT_NAME = "Dutta Chauffeur Desk AI";
 export const OWNER_NAME = "Lav Dutta";
-export const PRIMARY_PHONE = "094180 04510";
-export const SECONDARY_PHONE = "082194 77943";
-export const WHATSAPP_NUMBER = "918894021277";
+export const PRIMARY_PHONE = business?.phones?.[0] || "+91 8894021277";
+export const SECONDARY_PHONE = business?.phones?.[1] || "+91 6230433588";
+export const WHATSAPP_NUMBER = business?.whatsappNumber || "918894021277";
 
 export const QUICK_SUGGESTIONS = [
   { id: "6-devi", label: "🕉️ 6 Devi Darshan", query: "Tell me about the 6 Devi Darshan Yatra package and temples" },
