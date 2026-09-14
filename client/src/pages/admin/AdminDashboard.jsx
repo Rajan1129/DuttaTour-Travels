@@ -393,33 +393,24 @@ export default function AdminDashboard() {
   const [isEditingArticle, setIsEditingArticle] = useState(false);
   const [previewMode, setPreviewMode] = useState(false);
 
-  // 8. Inquiries / Dispatch Desk
+  // 8. Inquiries / Dispatch Desk (Real bookings only - zero fake mock entries)
   const [inquiries, setInquiries] = useState(() => {
-    const saved = localStorage.getItem("dutta_admin_inquiries");
-    return saved
-      ? JSON.parse(saved)
-      : [
-          {
-            id: "inq-101",
-            date: "Today, 10:15 AM",
-            name: "Rajesh Kumar",
-            phone: "+91 98160-XXXXX",
-            pickup: "Amb Andaura Vande Bharat Platform",
-            drop: "Chintpurni Devi Shrine",
-            car: "Toyota Innova Crysta",
-            status: "Confirmed",
-          },
-          {
-            id: "inq-102",
-            date: "Yesterday",
-            name: "Sunil Sharma",
-            phone: "+91 94180-XXXXX",
-            pickup: "Prem Nagar, Una",
-            drop: "Chandigarh Airport (IXC)",
-            car: "Maruti Ertiga",
-            status: "Completed",
-          },
-        ];
+    try {
+      const saved = localStorage.getItem("dutta_admin_inquiries");
+      if (!saved) return [];
+      const parsed = JSON.parse(saved);
+      return Array.isArray(parsed)
+        ? parsed.filter(
+            (inq) =>
+              inq.id !== "inq-101" &&
+              inq.id !== "inq-102" &&
+              inq.name !== "Rajesh Kumar" &&
+              inq.name !== "Sunil Sharma"
+          )
+        : [];
+    } catch {
+      return [];
+    }
   });
   const [newInqName, setNewInqName] = useState("");
   const [newInqPhone, setNewInqPhone] = useState("");
@@ -439,12 +430,52 @@ export default function AdminDashboard() {
     localStorage.setItem("dutta_admin_inquiries", JSON.stringify(inquiries));
   }, [inquiries]);
 
+  // Purge any legacy fake mock entries from localStorage on mount
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem("dutta_admin_inquiries");
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed)) {
+          const cleaned = parsed.filter(
+            (inq) =>
+              inq.id !== "inq-101" &&
+              inq.id !== "inq-102" &&
+              inq.name !== "Rajesh Kumar" &&
+              inq.name !== "Sunil Sharma"
+          );
+          if (cleaned.length !== parsed.length) {
+            localStorage.setItem("dutta_admin_inquiries", JSON.stringify(cleaned));
+            setInquiries(cleaned);
+          }
+        }
+      }
+    } catch (e) {
+      console.error(e);
+    }
+  }, []);
+
   // Listen for customer bookings submitted from anywhere on the live website
   useEffect(() => {
     const handleInqUpdate = () => {
-      const saved = localStorage.getItem("dutta_admin_inquiries");
-      if (saved) {
-        setInquiries(JSON.parse(saved));
+      try {
+        const saved = localStorage.getItem("dutta_admin_inquiries");
+        if (saved) {
+          const parsed = JSON.parse(saved);
+          if (Array.isArray(parsed)) {
+            setInquiries(
+              parsed.filter(
+                (inq) =>
+                  inq.id !== "inq-101" &&
+                  inq.id !== "inq-102" &&
+                  inq.name !== "Rajesh Kumar" &&
+                  inq.name !== "Sunil Sharma"
+              )
+            );
+          }
+        }
+      } catch (err) {
+        console.error("Error syncing inquiries", err);
       }
     };
     window.addEventListener("dutta_inquiries_updated", handleInqUpdate);
@@ -2212,79 +2243,91 @@ export default function AdminDashboard() {
               </h3>
 
               <div className="flex flex-col gap-3">
-                {inquiries.map((inq) => (
-                  <div
-                    key={inq.id}
-                    className={`p-4 rounded-2xl ${c.innerBg} flex flex-col sm:flex-row sm:items-center justify-between gap-3`}
-                  >
-                    <div>
-                      <div className="flex items-center gap-2 mb-1 flex-wrap">
-                        <strong className={`text-sm ${c.textPrimary}`}>{inq.name}</strong>
-                        {inq.date && (
-                          <span className={`text-[10px] px-2 py-0.5 rounded-md font-semibold ${isDark ? "bg-white/10 text-gray-300" : "bg-gray-100 text-gray-600"}`}>
-                            📅 {inq.date}
-                          </span>
-                        )}
-                        <select
-                          value={inq.status}
-                          onChange={(e) => handleUpdateInqStatus(inq.id, e.target.value)}
-                          className={`text-[10px] px-2 py-0.5 rounded-full font-bold border cursor-pointer ${
-                            inq.status === "Confirmed"
-                              ? "bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 border-emerald-500/30"
-                              : inq.status === "Completed"
-                              ? "bg-blue-500/20 text-blue-600 dark:text-blue-400 border-blue-500/30"
-                              : "bg-amber-500/20 text-amber-600 dark:text-amber-400 border-amber-500/30"
-                          } focus:outline-none ${isDark ? "bg-[#141b2d]" : "bg-white"}`}
-                        >
-                          <option value="New" className={isDark ? "bg-[#141b2d] text-white" : "bg-white text-gray-900"}>New</option>
-                          <option value="Confirmed" className={isDark ? "bg-[#141b2d] text-white" : "bg-white text-gray-900"}>Confirmed</option>
-                          <option value="Dispatched" className={isDark ? "bg-[#141b2d] text-white" : "bg-white text-gray-900"}>Dispatched</option>
-                          <option value="Completed" className={isDark ? "bg-[#141b2d] text-white" : "bg-white text-gray-900"}>Completed</option>
-                        </select>
-                      </div>
-                      <p className={`text-xs ${c.textSecondary} font-medium`}>
-                        <span className="text-emerald-500 font-bold">From:</span> {inq.pickup} &rarr; <span className="text-orange-500 font-bold">To:</span> {inq.drop}
-                      </p>
-                      <div className="flex items-center gap-3 text-[11px] mt-1 flex-wrap">
-                        <span className="text-[#f57c00] font-bold">
-                          🚗 {inq.car}
-                        </span>
-                        <a href={`tel:${inq.phone}`} className="text-blue-500 hover:underline font-semibold">
-                          📞 {inq.phone}
-                        </a>
-                      </div>
-                      {inq.notes && (
-                        <div className={`mt-1.5 p-2 rounded-lg text-[11px] font-medium leading-relaxed border ${
-                          isDark ? "bg-white/5 border-white/10 text-gray-300" : "bg-gray-50 border-gray-200 text-gray-700"
-                        }`}>
-                          <span className="font-bold text-[#f57c00]">Trip Details: </span>{inq.notes}
-                        </div>
-                      )}
-                    </div>
-
-                    <div className="flex items-center gap-2 self-start sm:self-auto shrink-0">
-                      <a
-                        href={whatsappLink(`Hello ${inq.name}, regarding your trip from ${inq.pickup} to ${inq.drop} with Dutta Travels:`)}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="px-3 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs inline-flex items-center gap-1.5 shadow-sm"
-                      >
-                        <span className="material-symbols-outlined text-[15px]">chat</span>
-                        <span>WhatsApp</span>
-                      </a>
-
-                      <button
-                        onClick={() => handleDeleteInquiry(inq.id)}
-                        className={`px-2.5 py-1.5 rounded-xl text-xs transition-colors cursor-pointer ${
-                          isDark ? "bg-white/5 hover:bg-rose-900/40 text-gray-400 hover:text-rose-300" : "bg-gray-200 hover:bg-rose-100 text-gray-600 hover:text-rose-700"
-                        }`}
-                        title="Remove entry"
-                      >
-                        <span className="material-symbols-outlined text-[16px]">delete</span>
-                      </button>
-                    </div>
+                {inquiries.length === 0 ? (
+                  <div className={`text-center py-12 px-4 rounded-2xl ${c.innerBg} border border-dashed ${isDark ? "border-white/10" : "border-gray-200"}`}>
+                    <span className="material-symbols-outlined text-[40px] text-gray-400 mb-2 block">
+                      inbox
+                    </span>
+                    <h4 className={`text-sm font-bold ${c.textPrimary}`}>No Active Dispatches</h4>
+                    <p className={`text-xs ${c.textSecondary} mt-1 max-w-sm mx-auto`}>
+                      Bookings and inquiries submitted by real customers via website forms, call requests, and the 24/7 AI chatbot will appear here in real-time.
+                    </p>
                   </div>
-                ))}
+                ) : (
+                  inquiries.map((inq) => (
+                    <div
+                      key={inq.id}
+                      className={`p-4 rounded-2xl ${c.innerBg} flex flex-col sm:flex-row sm:items-center justify-between gap-3`}
+                    >
+                      <div>
+                        <div className="flex items-center gap-2 mb-1 flex-wrap">
+                          <strong className={`text-sm ${c.textPrimary}`}>{inq.name}</strong>
+                          {inq.date && (
+                            <span className={`text-[10px] px-2 py-0.5 rounded-md font-semibold ${isDark ? "bg-white/10 text-gray-300" : "bg-gray-100 text-gray-600"}`}>
+                              📅 {inq.date}
+                            </span>
+                          )}
+                          <select
+                            value={inq.status}
+                            onChange={(e) => handleUpdateInqStatus(inq.id, e.target.value)}
+                            className={`text-[10px] px-2 py-0.5 rounded-full font-bold border cursor-pointer ${
+                              inq.status === "Confirmed"
+                                ? "bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 border-emerald-500/30"
+                                : inq.status === "Completed"
+                                ? "bg-blue-500/20 text-blue-600 dark:text-blue-400 border-blue-500/30"
+                                : "bg-amber-500/20 text-amber-600 dark:text-amber-400 border-amber-500/30"
+                            } focus:outline-none ${isDark ? "bg-[#141b2d]" : "bg-white"}`}
+                          >
+                            <option value="New" className={isDark ? "bg-[#141b2d] text-white" : "bg-white text-gray-900"}>New</option>
+                            <option value="Confirmed" className={isDark ? "bg-[#141b2d] text-white" : "bg-white text-gray-900"}>Confirmed</option>
+                            <option value="Dispatched" className={isDark ? "bg-[#141b2d] text-white" : "bg-white text-gray-900"}>Dispatched</option>
+                            <option value="Completed" className={isDark ? "bg-[#141b2d] text-white" : "bg-white text-gray-900"}>Completed</option>
+                          </select>
+                        </div>
+                        <p className={`text-xs ${c.textSecondary} font-medium`}>
+                          <span className="text-emerald-500 font-bold">From:</span> {inq.pickup} &rarr; <span className="text-orange-500 font-bold">To:</span> {inq.drop}
+                        </p>
+                        <div className="flex items-center gap-3 text-[11px] mt-1 flex-wrap">
+                          <span className="text-[#f57c00] font-bold">
+                            🚗 {inq.car}
+                          </span>
+                          <a href={`tel:${inq.phone}`} className="text-blue-500 hover:underline font-semibold">
+                            📞 {inq.phone}
+                          </a>
+                        </div>
+                        {inq.notes && (
+                          <div className={`mt-1.5 p-2 rounded-lg text-[11px] font-medium leading-relaxed border ${
+                            isDark ? "bg-white/5 border-white/10 text-gray-300" : "bg-gray-50 border-gray-200 text-gray-700"
+                          }`}>
+                            <span className="font-bold text-[#f57c00]">Trip Details: </span>{inq.notes}
+                          </div>
+                        )}
+                      </div>
+
+                      <div className="flex items-center gap-2 self-start sm:self-auto shrink-0">
+                        <a
+                          href={whatsappLink(`Hello ${inq.name}, regarding your trip from ${inq.pickup} to ${inq.drop} with Dutta Travels:`)}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="px-3 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs inline-flex items-center gap-1.5 shadow-sm"
+                        >
+                          <span className="material-symbols-outlined text-[15px]">chat</span>
+                          <span>WhatsApp</span>
+                        </a>
+
+                        <button
+                          onClick={() => handleDeleteInquiry(inq.id)}
+                          className={`px-2.5 py-1.5 rounded-xl text-xs transition-colors cursor-pointer ${
+                            isDark ? "bg-white/5 hover:bg-rose-900/40 text-gray-400 hover:text-rose-300" : "bg-gray-200 hover:bg-rose-100 text-gray-600 hover:text-rose-700"
+                          }`}
+                          title="Remove entry"
+                        >
+                          <span className="material-symbols-outlined text-[16px]">delete</span>
+                        </button>
+                      </div>
+                    </div>
+                  ))
+                )}
               </div>
             </div>
           </div>

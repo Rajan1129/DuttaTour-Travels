@@ -574,7 +574,16 @@ export function recordBookingInquiry({ name, phone, pickup, drop, car, date, not
   if (typeof window === "undefined") return;
   try {
     const raw = localStorage.getItem("dutta_admin_inquiries");
-    const list = raw ? JSON.parse(raw) : [];
+    const parsed = raw ? JSON.parse(raw) : [];
+    const list = Array.isArray(parsed)
+      ? parsed.filter(
+          (inq) =>
+            inq.id !== "inq-101" &&
+            inq.id !== "inq-102" &&
+            inq.name !== "Rajesh Kumar" &&
+            inq.name !== "Sunil Sharma"
+        )
+      : [];
     const newEntry = {
       id: "inq-" + Date.now(),
       date: date || new Date().toLocaleDateString("en-IN", { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" }),
@@ -602,6 +611,7 @@ export function resetAllData() {
     localStorage.removeItem("dutta_admin_tours");
     localStorage.removeItem("dutta_admin_stats");
     localStorage.removeItem("dutta_admin_testimonials");
+    localStorage.removeItem("dutta_admin_inquiries");
   }
   Object.keys(business).forEach((k) => delete business[k]);
   Object.assign(business, JSON.parse(JSON.stringify(defaultBusiness)));
