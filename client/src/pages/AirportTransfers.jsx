@@ -687,7 +687,7 @@ export default function AirportTransfers() {
                   HAVE AN UPCOMING FLIGHT?
                 </span>
                 <h3 className="text-xl sm:text-2xl font-black text-white">
-                  Reserve Your Airport Cab with Lavkush Dutta
+                  Reserve Your Airport Cab with Lav Dutta
                 </h3>
                 <p className="text-xs text-gray-300">
                   Direct dispatch from Prem Nagar, Una HQ. 24/7 midnight pickups, sanitized AC cabs, and guaranteed punctuality.
@@ -704,7 +704,7 @@ export default function AirportTransfers() {
                 <span>{business.phones[0]}</span>
               </a>
               <a
-                href={whatsappLink("Hello Lavkush Dutta, I need to book an airport taxi.")}
+                href={whatsappLink("Hello Lav Dutta, I need to book an airport taxi.")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 md:flex-none inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#00c853] hover:bg-[#00b047] text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-[0.98] whitespace-nowrap"

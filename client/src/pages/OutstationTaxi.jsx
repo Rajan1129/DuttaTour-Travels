@@ -62,7 +62,7 @@ export default function OutstationTaxi() {
     } else if (type === "round-trip") {
       setDestination("Manali & Atal Tunnel (Himachal)");
     } else if (type === "pilgrimage") {
-      setDestination("4 Devi Darshan (Chintpurni, Jawala Ji, Kangra, Chamunda)");
+      setDestination("6 Devi Darshan (Chintpurni, Jwala Ji, Baglamukhi, Kangra, Chamunda, Naina Devi)");
     }
   };
 
@@ -679,7 +679,7 @@ export default function OutstationTaxi() {
                   READY FOR YOUR HIMALAYAN ROAD TRIP?
                 </span>
                 <h3 className="text-xl sm:text-2xl font-black text-white">
-                  Get a Custom Outstation Quote with Lavkush Dutta
+                  Get a Custom Outstation Quote with Lav Dutta
                 </h3>
                 <p className="text-xs text-gray-300">
                   Direct dispatch from Prem Nagar, Una HQ. Competitive tariffs, sanitized cabs, and trusted pahadi drivers.
@@ -696,7 +696,7 @@ export default function OutstationTaxi() {
                 <span>{business.phones[0]}</span>
               </a>
               <a
-                href={whatsappLink("Hello Lavkush Dutta, I need an outstation taxi quote.")}
+                href={whatsappLink("Hello Lav Dutta, I need an outstation taxi quote.")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 md:flex-none inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#00c853] hover:bg-[#00b047] text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-[0.98] whitespace-nowrap"

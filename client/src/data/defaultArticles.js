@@ -4,22 +4,22 @@
 export const defaultArticles = [
   {
     id: "art-1",
-    title: "Complete Guide to 4 Devi Darshan Yatra from Una & Amb",
-    slug: "4-devi-darshan-yatra-guide",
+    title: "Complete Guide to 6 Devi Darshan Yatra from Una & Amb",
+    slug: "6-devi-darshan-yatra-guide",
     category: "Pilgrimage & Temples",
-    h1: "Una to 4 Devi Darshan: Chintpurni, Jwala Ji, Kangra & Chamunda Yatra Guide",
+    h1: "Una to 6 Devi Darshan: Chintpurni, Jwala Ji, Baglamukhi, Kangra, Chamunda & Naina Devi Yatra Guide",
     description:
-      "A complete guide for devotees planning the sacred 4 Devi Darshan pilgrimage starting from Una and Amb Andaura. Temple timings, routes, VIP slips, and cab booking tips.",
-    seoTitle: "4 Devi Darshan Yatra Guide from Una | Chintpurni, Jwala Ji Cab | Dutta Travels",
+      "A complete guide for devotees planning the sacred 6 Devi Darshan pilgrimage starting from Una and Amb Andaura. Temple timings, routes, Baglamukhi hawan, VIP slips, and cab booking tips.",
+    seoTitle: "6 Devi Darshan Yatra Guide from Una | Chintpurni, Baglamukhi, Naina Devi Cab | Dutta Travels",
     seoDescription:
-      "Complete pilgrimage guide for 4 Devi Darshan from Una & Amb Andaura. Covering Maa Chintpurni, Jwala Ji, Brajeshwari Kangra, and Chamunda Devi with verified hill cabs.",
-    featuredImage: "/images/tours/4-char-devi-darshan.jpg",
-    featuredImageAlt: "4 Devi Darshan Pilgrimage Circuit Himachal",
+      "Complete pilgrimage guide for 6 Devi Darshan from Una & Amb Andaura. Covering Maa Chintpurni, Jwala Ji, Baglamukhi, Brajeshwari Kangra, Chamunda Devi, and Naina Devi with verified hill cabs.",
+    featuredImage: "/images/tours/6-devi-darshan.jpg",
+    featuredImageAlt: "6 Devi Darshan Pilgrimage Circuit Himachal",
     published: true,
     createdAt: "2026-03-10",
     contentHtml: `
-      <h2>The Sacred Devi Circuit of Himachal Pradesh</h2>
-      <p>Every year, lakhs of devotees travel to Una and Amb to embark on the sacred 4 Devi Darshan yatra. Situated in the serene Shivalik and Dhauladhar foothills, these ancient Shaktipeeths are revered for granting peace, health, and prosperity.</p>
+      <h2>The Sacred 6 Devi Circuit of Himachal Pradesh</h2>
+      <p>Every year, lakhs of devotees travel to Una and Amb to embark on the sacred 6 Devi Darshan yatra. Situated in the serene Shivalik and Dhauladhar foothills, these ancient Shaktipeeths and Siddhapeeths are revered for granting divine protection, health, and prosperity.</p>
       
       <h3>1. Maa Chintpurni Devi (Una District)</h3>
       <p>Located roughly 52 km from Una and only 26 km from Amb Andaura Railway Station, Maa Chintpurni (Chhinnamastika Dham) fulfills the deepest wishes of devotees. The shrine features special queue management and battery cart transit for elderly pilgrims.</p>
@@ -27,14 +27,20 @@ export const defaultArticles = [
       <h3>2. Maa Jwala Ji (Kangra District)</h3>
       <p>Around 35 km ahead of Chintpurni, Jwala Ji is world-renowned for the eternal nine sacred natural flames that burn without any fuel. The flames symbolize the tongue of Goddess Sati. The holy complex is easily accessible with convenient cab parking nearby.</p>
       
-      <h3>3. Maa Brajeshwari Devi (Kangra Town)</h3>
+      <h3>3. Maa Baglamukhi Temple (Bankhandi)</h3>
+      <p>Situated in Bankhandi near Ranital on the Jwala Ji - Kangra highway, the sacred Maa Baglamukhi Siddhapeeth is famous for resolving life obstacles, victory in endeavors, and protective hawan rituals performed by Vedic priests.</p>
+      
+      <h3>4. Maa Brajeshwari Devi (Kangra Town)</h3>
       <p>Located in ancient Nagarkot near Kangra Fort, this sacred Shaktipeeth represents the breast of Goddess Sati. The temple town has bustling bazaar corridors and spiritual aartis held at dawn and dusk.</p>
       
-      <h3>4. Maa Chamunda Devi (Dharamshala Road)</h3>
-      <p>Situated on the banks of the Baner river overlooking the snow-crowned Dhauladhar mountains, Chamunda Devi is the fierce protector deity. The peaceful atmosphere makes it the ideal conclusion to the 4 Devi Darshan circuit.</p>
+      <h3>5. Maa Chamunda Devi (Dharamshala Road)</h3>
+      <p>Situated on the banks of the Baner river overlooking the snow-crowned Dhauladhar mountains, Chamunda Devi is the fierce protector deity. The peaceful atmosphere makes it a serene highlight of the sacred circuit.</p>
+      
+      <h3>6. Maa Naina Devi Temple (Bilaspur / Anandpur Border)</h3>
+      <p>Perched high on a triangular hilltop with scenic ropeway cable car access overlooking Gobind Sagar Lake, Maa Naina Devi marks where the eyes (nayan) of Goddess Sati fell. Easily accessible on the circuit return route towards Anandpur Sahib and Una.</p>
       
       <h3>Recommended Cab Booking & Itinerary Tips</h3>
-      <p>Dutta Tour & Travel operates specialized same-day return and 2-day relaxed Devi Darshan circuits with certified local mountain chauffeurs. Book your Innova Crysta or Ertiga directly from Prem Nagar Una or Amb Andaura station.</p>
+      <p>Dutta Tour & Travel operates specialized 2-day and 3-day relaxed 6 Devi Darshan circuits with certified local mountain chauffeurs. Book your Innova Crysta or Ertiga directly from Prem Nagar Una or Amb Andaura station.</p>
     `,
   },
   {

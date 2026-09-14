@@ -24,9 +24,9 @@ const unaFaqs = [
       "Fares depend on your chosen vehicle, route distance, and trip duration. We provide transparent, competitive pricing with zero hidden charges. Contact us via WhatsApp or call our chauffeur desk for an instant, customized quote.",
   },
   {
-    question: "Can we hire a taxi for 4 Devi Darshan pilgrimage from Una?",
+    question: "Can we hire a taxi for 6 Devi Darshan pilgrimage from Una?",
     answer:
-      "Yes, our specialized Devi Darshan circuit covers Maa Chintpurni Devi, Maa Jwala Ji, Maa Kangra Brajeshwari Devi, and Maa Chamunda Devi with experienced pilgrim chauffeurs who guide you on temple timings and VIP gates.",
+      "Yes, our specialized 6 Devi Darshan circuit covers Maa Chintpurni Devi, Maa Jwala Ji, Maa Baglamukhi (Bankhandi), Maa Kangra Brajeshwari, Maa Chamunda Devi, and Maa Naina Devi with experienced pilgrim chauffeurs who guide you on temple timings and VIP gates.",
   },
   {
     question: "Are your cabs commercially licensed with yellow plates?",
@@ -61,7 +61,7 @@ export default function TaxiServiceUna() {
     } else if (tab === "local") {
       setDestinationCircuit("Una Local Sightseeing & City (8 Hrs / 80 KM)");
     } else if (tab === "devi-darshan") {
-      setDestinationCircuit("4 Devi Darshan (Chintpurni, Jwala Ji, Kangra, Chamunda)");
+      setDestinationCircuit("6 Devi Darshan (Chintpurni, Jwala Ji, Baglamukhi, Kangra, Chamunda, Naina Devi)");
     }
   };
 
@@ -144,7 +144,7 @@ export default function TaxiServiceUna() {
               <p className="text-sm sm:text-base text-gray-200 leading-relaxed font-normal">
                 Looking for a dependable, clean, and punctual cab in Una? Dutta Tour &amp; Travels
                 provides 24/7 taxi booking for local city travel, Una Railway Station (UHL), Amb
-                Andaura Vande Bharat platform transfers, 4 Devi Darshan yatra, and outstation hill
+                Andaura Vande Bharat platform transfers, 6 Devi Darshan yatra, and outstation hill
                 journeys across Himachal Pradesh and North India.
               </p>
 
@@ -438,15 +438,15 @@ export default function TaxiServiceUna() {
                   <span className="material-symbols-outlined text-[26px]">temple_hindu</span>
                 </div>
                 <h3 className="font-extrabold text-base text-[#1e2638]">
-                  Devi Darshan Pilgrimage
+                  6 Devi Darshan Pilgrimage
                 </h3>
                 <p className="text-xs text-gray-600 leading-relaxed">
                   Dedicated sacred yatra circuits covering Maa Chintpurni Devi, Maa Jwala Ji, Maa
-                  Kangra Brajeshwari Devi, and Maa Chamunda Devi with elder-friendly care.
+                  Baglamukhi, Maa Kangra Brajeshwari, Maa Chamunda Devi, and Maa Naina Devi with elder-friendly care.
                 </p>
               </div>
               <a
-                href={whatsappLink("Hello Dutta Travels, I want to book 4 Devi Darshan yatra from Una")}
+                href={whatsappLink("Hello Dutta Travels, I want to book 6 Devi Darshan yatra from Una")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xs font-bold text-[#f57c00] hover:underline flex items-center gap-1 self-start"
@@ -687,7 +687,7 @@ export default function TaxiServiceUna() {
                   NEED A CAB IN UNA RIGHT NOW?
                 </span>
                 <h3 className="text-xl sm:text-2xl font-black text-white">
-                  Speak Directly with Lavkush Dutta
+                  Speak Directly with Lav Dutta
                 </h3>
                 <p className="text-xs text-gray-300">
                   Instant cab dispatch from Prem Nagar HQ. Fair rates, clean cars, and courteous drivers.
@@ -704,7 +704,7 @@ export default function TaxiServiceUna() {
                 <span>{business.phones[0]}</span>
               </a>
               <a
-                href={whatsappLink("Hello Lavkush Dutta, I need a taxi in Una.")}
+                href={whatsappLink("Hello Lav Dutta, I need a taxi in Una.")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 md:flex-none inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#00c853] hover:bg-[#00b047] text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-[0.98] whitespace-nowrap"

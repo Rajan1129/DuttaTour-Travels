@@ -11,7 +11,7 @@ const aboutFaqs = [
   {
     question: "Who owns and manages Dutta Tour & Travel?",
     answer:
-      "Dutta Tour & Travel (also operating as Dutta Travels and Dutta Motors) is founded and actively managed by Mr. Lavkush Dutta. Based at Prem Nagar on the Una-Amb Road, the business personally oversees every booking, vehicle maintenance, and driver dispatch.",
+      "Dutta Tour & Travel (also operating as Dutta Travels and Dutta Motors) is founded and actively managed by Mr. Lav Dutta. Based at Prem Nagar on the Una-Amb Road, the business personally oversees every booking, vehicle maintenance, and driver dispatch.",
   },
   {
     question: "Are all vehicles registered with commercial yellow plates and tourist permits?",
@@ -31,7 +31,7 @@ const aboutFaqs = [
   {
     question: "Do you specialize in Devi Darshan and pilgrimage yatras?",
     answer:
-      "Yes. A cornerstone of Dutta Travels is pilgrimage hospitality. We operate dedicated 4 Devi Darshan, 5 Devi Darshan, and 9 Devi Darshan circuits covering Chintpurni, Jwala Ji, Kangra Brajeshwari, Chamunda Devi, Naina Devi, and Baglamukhi, as well as Katra Vaishno Devi and Uttarakhand Char Dham.",
+      "Yes. A cornerstone of Dutta Travels is pilgrimage hospitality. We operate dedicated 6 Devi Darshan circuits covering Chintpurni, Jwala Ji, Baglamukhi, Kangra Brajeshwari, Chamunda Devi, and Naina Devi, as well as the 12 Jyotirlinga Mahayatra, Spiti Valley expeditions, Katra Vaishno Devi, and Uttarakhand Char Dham.",
   },
   {
     question: "How are trip quotes calculated without hidden charges?",
@@ -69,7 +69,7 @@ const coreValues = [
   {
     icon: "support_agent",
     title: "Direct Owner Oversight 24/7",
-    desc: "When you book with Dutta Travels, you have direct phone and WhatsApp access to founder Lavkush Dutta. No robotic call centres or unhelpful automated bots.",
+    desc: "When you book with Dutta Travels, you have direct phone and WhatsApp access to founder Lav Dutta. No robotic call centres or unhelpful automated bots.",
   },
 ];
 
@@ -136,7 +136,7 @@ export default function About() {
             </h1>
 
             <p className="text-base sm:text-lg text-gray-300 leading-relaxed mb-8">
-              Founded and operated by <strong className="text-white font-semibold">Lavkush Dutta</strong>,{" "}
+              Founded and operated by <strong className="text-white font-semibold">Lav Dutta</strong>,{" "}
               <span className="text-[#f57c00] font-semibold">Dutta Tour &amp; Travel (Dutta Motors)</span> has grown
               from a local Una taxi service into Himachal&apos;s most reliable transport partner for pilgrims,
               holidaying families, and daily outstation commuters.
@@ -148,11 +148,11 @@ export default function About() {
                 className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-[#f57c00] hover:bg-[#e65100] text-white font-bold text-sm shadow-lg hover:shadow-xl transition-all"
               >
                 <span className="material-symbols-outlined text-[20px]">call</span>
-                <span>Speak with Lavkush Dutta</span>
+                <span>Speak with Lav Dutta</span>
               </a>
 
               <a
-                href={whatsappLink("Hello Lavkush Ji, I would like to know more about Dutta Tour & Travel services and book a cab.")}
+                href={whatsappLink("Hello Lav Ji, I would like to know more about Dutta Tour & Travel services and book a cab.")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-lg hover:shadow-xl transition-all"
@@ -217,7 +217,7 @@ export default function About() {
               </p>
 
               <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                Over a decade ago, <strong>Lavkush Dutta</strong> recognized a significant gap in the region: plain taxi
+                Over a decade ago, <strong>Lav Dutta</strong> recognized a significant gap in the region: plain taxi
                 aggregators and inexperienced casual drivers frequently struggled with steep mountain inclines, unexpected
                 weather shifts, and long hairpin ghats. Senior pilgrims and families traveling with infants often found
                 themselves rushed or dealing with surprise hidden charges midway through their journey.
@@ -230,7 +230,7 @@ export default function About() {
                   hospitality that makes you feel like you are traveling with your own family.&rdquo;
                 </p>
                 <span className="block mt-3 text-xs font-bold text-gray-600 uppercase tracking-wider">
-                  — Lavkush Dutta, Founder &amp; Managing Director
+                  — Lav Dutta, Founder &amp; Managing Director
                 </span>
               </div>
 
@@ -274,7 +274,7 @@ export default function About() {
                     </span>
                     <div>
                       <strong className="text-gray-900 block">Founder &amp; Owner</strong>
-                      <span>Mr. Lavkush Dutta</span>
+                      <span>Mr. Lav Dutta</span>
                     </div>
                   </div>
 
@@ -467,7 +467,7 @@ export default function About() {
               Verified Pilgrim &amp; Tourist Reviews
             </span>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1e2638] leading-tight">
-              Real Experiences with Lavkush Dutta &amp; Team
+              Real Experiences with Lav Dutta &amp; Team
             </h2>
             <p className="text-sm sm:text-base text-gray-600 mt-3">
               Read how travelers and families describe our chauffeurs, vehicle condition, and personal warmth.
@@ -573,7 +573,7 @@ export default function About() {
           </h2>
 
           <p className="text-gray-300 text-sm sm:text-base max-w-xl mx-auto mb-8 leading-relaxed">
-            Call founder Lavkush Dutta directly or message us on WhatsApp for guaranteed on-time pickups, certified hill
+            Call founder Lav Dutta directly or message us on WhatsApp for guaranteed on-time pickups, certified hill
             chauffeurs, and honest upfront quotes with zero surprises.
           </p>
 
@@ -587,7 +587,7 @@ export default function About() {
             </a>
 
             <a
-              href={whatsappLink("Hello Lavkush Ji, I am on the About Us page and would like to book a cab.")}
+              href={whatsappLink("Hello Lav Ji, I am on the About Us page and would like to book a cab.")}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-lg hover:shadow-xl transition-all"

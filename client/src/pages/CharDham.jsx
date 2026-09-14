@@ -97,14 +97,24 @@ const sacredDhamShrines = [
     badge: "Yoga & Meditation",
   },
   {
-    name: "Himachal 4 Devi Darshan",
-    deity: "Chintpurni, Jwala Ji, Kangra, Chamunda",
-    altitude: "Himachal Shaktipeeths",
+    name: "Himachal & Punjab 6 Devi Darshan",
+    deity: "Chintpurni, Jwala Ji, Baglamukhi, Kangra, Chamunda, Naina Devi",
+    altitude: "6 Sacred Shaktipeeths",
     significance:
-      "Revered Shaktipeeth circuit in Himachal Pradesh: Maa Chintpurni (wish-fulfiller), Maa Jwala Ji (eternal flame), Kangra Brajeshwari, and Chamunda Nandikeshwar.",
-    highlight: "Footstep &amp; Flame Shaktipeeths",
+      "Revered Shaktipeeth circuit in Himachal and Shivalik foothills: Maa Chintpurni (wish-fulfiller), Maa Jwala Ji (eternal flame), Maa Baglamukhi (Bankhandi Pitambara Siddhapeeth), Kangra Brajeshwari Devi, Chamunda Nandikeshwar, and Maa Naina Devi (Bilaspur overlooking Gobind Sagar Lake).",
+    highlight: "Chintpurni &bull; Jwala Ji &bull; Baglamukhi &bull; Kangra &bull; Chamunda &bull; Naina Devi",
     timing: "04:00 AM - 10:00 PM",
-    badge: "Himachal Shaktipeeths",
+    badge: "6 Sacred Shaktipeeths",
+  },
+  {
+    name: "12 Sacred Jyotirlinga Yatra",
+    deity: "Lord Shiva - 12 Holy Jyotirlingas of Bharat",
+    altitude: "Pan-India Shiva Mahatirth",
+    significance:
+      "The divine 12 Jyotirlingas of Lord Shiva: Somnath, Mallikarjuna, Mahakaleshwar, Omkareshwar, Kedarnath, Bhimashankar, Kashi Vishwanath, Trimbakeshwar, Baidyanath, Nageshwar, Rameshwaram, and Grishneshwar with senior-friendly logistics.",
+    highlight: "Kedarnath &bull; Kashi &bull; Mahakal &bull; Somnath &bull; All 12 Shrines",
+    timing: "Open Year-Round (Kedarnath May-Oct)",
+    badge: "12 Jyotirlinga Mahayatra",
   },
 ];
 
@@ -139,6 +149,34 @@ const yatraItineraries = [
     recommendedVehicle: "Innova Crysta or Maruti Ertiga",
   },
   {
+    title: "12 Jyotirlinga Sacred Shiva Darshan Yatra",
+    duration: "Customized Pan-India Circuits",
+    badge: "12 Jyotirlinga Mahayatra",
+    route: "Customized North / West / Central / South India Shiva Circuits &bull; Kedarnath, Kashi Vishwanath, Mahakaleshwar &amp; Beyond",
+    dayWise: [
+      "Circuit 1 (Himalayan & North): Kedarnath Jyotirlinga (Uttarakhand) &amp; Kashi Vishwanath (Varanasi).",
+      "Circuit 2 (Central India): Mahakaleshwar (Ujjain Bhasma Aarti) &amp; Omkareshwar (Narmada river).",
+      "Circuit 3 (Western India): Somnath &amp; Nageshwar (Gujarat) &bull; Trimbakeshwar, Bhimashankar &amp; Grishneshwar (Maharashtra).",
+      "Circuit 4 (East & South): Baidyanath (Deoghar), Mallikarjuna (Srisailam) &amp; Rameshwaram (Tamil Nadu).",
+      "Dedicated commercial AC cabs, senior-citizen assistance, comfortable halts, and VIP temple darshan coordination throughout.",
+    ],
+    recommendedVehicle: "Innova Crysta, Fortuner 4x4 or Luxury Force Urbania",
+  },
+  {
+    title: "Himachal & Punjab 6 Sacred Devi Darshan Yatra",
+    duration: "5 Days / 4 Nights",
+    badge: "6 Holy Shaktipeeth Circuit",
+    route: "Una/Amb &rarr; Chintpurni &rarr; Jwala Ji &rarr; Baglamukhi &rarr; Kangra &rarr; Chamunda &rarr; Naina Devi &rarr; Drop",
+    dayWise: [
+      "Day 1: Platform pickup at Una / Amb Andaura Vande Bharat &bull; Darshan at Maa Chintpurni Dham (Chhinnamastika) &bull; Evening Aarti &bull; Night stay at Jwala Ji.",
+      "Day 2: Morning Shayan Aarti at Maa Jwala Ji (Eternal Flame) &bull; Scenic drive to Maa Baglamukhi Temple Bankhandi (Pitambara Siddhapeeth) &bull; Afternoon darshan at Maa Kangra Brajeshwari Devi &bull; Night stay Kangra / Dharamshala.",
+      "Day 3: Holy darshan at Maa Chamunda Nandikeshwar Dham on the banks of Baner river &bull; Kangra Valley tea gardens &bull; McLeodganj Dalai Lama Temple &bull; Night stay.",
+      "Day 4: Scenic morning drive to Maa Naina Devi Temple (Bilaspur) with ropeway ride and Gobind Sagar lake views &bull; Darshan of sacred eyes Shaktipeeth &bull; Evening visit to historic Anandpur Sahib Gurudwara &bull; Night stay.",
+      "Day 5: Morning peaceful prayer session &bull; Relaxed return transfer to Una / Amb Andaura / Chandigarh with sweet yatra memories.",
+    ],
+    recommendedVehicle: "Toyota Innova Crysta or Maruti Ertiga",
+  },
+  {
     title: "Haridwar & Rishikesh Spiritual Tour",
     duration: "3 Days / 2 Nights",
     badge: "Holy Ganga Experience",
@@ -149,19 +187,6 @@ const yatraItineraries = [
       "Day 3: Morning peaceful meditation session by Ganga &bull; Neer Gaddu waterfall excursion &bull; Smooth return drive to Una / Chandigarh.",
     ],
     recommendedVehicle: "Swift Dzire, Ertiga or Innova",
-  },
-  {
-    title: "Himachal 4 Char Devi Darshan Yatra",
-    duration: "4 Days / 3 Nights",
-    badge: "Himachal Shaktipeeth Circuit",
-    route: "Una/Amb &rarr; Chintpurni &rarr; Jwala Ji &rarr; Kangra &rarr; Chamunda &rarr; Drop",
-    dayWise: [
-      "Day 1: Platform pickup at Una / Amb Andaura Vande Bharat &bull; Maa Chintpurni Dham darshan &bull; Night stay at Jwala Ji.",
-      "Day 2: Attend morning Shayan Aarti at Maa Jwala Ji &bull; Maa Baglamukhi temple &bull; Maa Kangra Brajeshwari Devi &bull; Night stay.",
-      "Day 3: Maa Chamunda Nandikeshwar Dham &bull; Tea Gardens &bull; McLeodganj Dalai Lama Temple &bull; Night stay.",
-      "Day 4: Anandpur Sahib Gurdwara visit &bull; Drop at Una / Amb / Chandigarh Railway Station.",
-    ],
-    recommendedVehicle: "Toyota Innova Crysta or Maruti Ertiga",
   },
 ];
 
@@ -191,9 +216,11 @@ export default function CharDham() {
         ? "Uttarakhand Complete Char Dham (Yamunotri, Gangotri, Kedarnath, Badrinath)"
         : circuitType === "do-dham"
         ? "Do Dham Yatra (Kedarnath & Badrinath via Rishikesh)"
+        : circuitType === "12-jyotirlinga"
+        ? "12 Jyotirlinga Sacred Shiva Darshan Yatra"
         : circuitType === "haridwar-rishikesh"
         ? "Haridwar & Rishikesh Spiritual Tour"
-        : "Himachal 4 Devi Darshan Yatra";
+        : "6 Sacred Devi Darshan Yatra (Chintpurni, Jwala Ji, Baglamukhi, Kangra, Chamunda, Naina Devi)";
 
     const msg =
       `*NEW CHAR DHAM & PILGRIMAGE INQUIRY*\n\n` +
@@ -230,8 +257,8 @@ export default function CharDham() {
       <section className="relative w-full bg-[#182030] text-white py-12 sm:py-16 overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20">
           <img
-            src="/images/tours/4-char-devi-darshan.jpg"
-            alt="Char Dham Yatra Kedarnath Badrinath Haridwar Rishikesh"
+            src="/images/tours/12-jyotirlinga.jpg"
+            alt="Char Dham Yatra & 12 Jyotirlinga Kedarnath Badrinath Haridwar Rishikesh"
             className="w-full h-full object-cover object-center"
           />
         </div>
@@ -246,14 +273,15 @@ export default function CharDham() {
               </div>
 
               <h1 className="text-3xl sm:text-5xl font-black tracking-tight leading-tight">
-                Char Dham Yatra &amp; Devi Darshan Packages
+                Char Dham, 12 Jyotirlinga &amp; 6 Devi Darshan Packages
               </h1>
 
               <p className="text-sm sm:text-base text-gray-200 leading-relaxed font-normal">
                 Embark on a sacred journey to <strong>Kedarnath</strong>, <strong>Badrinath</strong>,{" "}
-                <strong>Gangotri</strong>, <strong>Yamunotri</strong>, and the holy gates of{" "}
-                <strong>Haridwar</strong> &amp; <strong>Rishikesh</strong>, or Himachal&apos;s revered 4 Devi Shaktipeeths.
-                Private commercial cabs, seasoned mountain chauffeurs, helipad transfer coordination, and 100% elder-friendly service.
+                <strong>Gangotri</strong>, <strong>Yamunotri</strong>, the <strong>12 Sacred Jyotirlingas</strong>,
+                and Himachal&apos;s revered <strong>6 Sacred Devi Shaktipeeths</strong> (Chintpurni, Jwala Ji,
+                Baglamukhi, Kangra, Chamunda, and Naina Devi). Private commercial cabs, seasoned mountain chauffeurs,
+                helipad transfer coordination, and 100% elder-friendly service.
               </p>
 
               {/* 4 Feature Badges */}
@@ -290,7 +318,7 @@ export default function CharDham() {
                   <span>Instant Call: {business.phones[0]}</span>
                 </a>
                 <a
-                  href={whatsappLink("Hello Dutta Travels, I want to book Char Dham Yatra (Kedarnath, Badrinath, Haridwar).")}
+                  href={whatsappLink("Hello Dutta Travels, I want to book Char Dham / Jyotirlinga / Devi Darshan Yatra.")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#00c853] hover:bg-[#00b047] text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-[0.98]"
@@ -308,7 +336,7 @@ export default function CharDham() {
                     temple_hindu
                   </span>
                   <h3 className="text-lg font-black text-[#1e2638]">
-                    Inquire Char Dham Yatra
+                    Inquire Sacred Yatra
                   </h3>
                 </div>
                 <span className="bg-[#e7f9f0] text-[#1b804e] text-[10px] font-extrabold px-2.5 py-1 rounded-md">
@@ -317,18 +345,19 @@ export default function CharDham() {
               </div>
 
               {/* Tabs */}
-              <div className="grid grid-cols-2 gap-1 bg-[#edf2fe] p-1 rounded-xl text-center">
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-1 bg-[#edf2fe] p-1 rounded-xl text-center">
                 {[
-                  { id: "uttarakhand-char-dham", label: "4 Dham (Kedarnath/Badri)" },
-                  { id: "do-dham", label: "Do Dham (Kedarnath/Badri)" },
+                  { id: "uttarakhand-char-dham", label: "4 Dham (UK)" },
+                  { id: "do-dham", label: "Do Dham" },
+                  { id: "12-jyotirlinga", label: "12 Jyotirlinga" },
+                  { id: "himachal-devi", label: "6 Devi Darshan" },
                   { id: "haridwar-rishikesh", label: "Haridwar & Rishikesh" },
-                  { id: "himachal-devi", label: "Himachal 4 Devi" },
                 ].map((t) => (
                   <button
                     key={t.id}
                     type="button"
                     onClick={() => setCircuitType(t.id)}
-                    className={`py-1.5 px-2 text-[11px] font-bold rounded-lg transition-all ${
+                    className={`py-1.5 px-1.5 text-[11px] font-bold rounded-lg transition-all ${
                       circuitType === t.id
                         ? "bg-[#f57c00] text-white shadow-sm"
                         : "text-gray-600 hover:text-gray-900"
@@ -772,7 +801,7 @@ export default function CharDham() {
                   PLANNING KEDARNATH, BADRINATH OR HARIDWAR?
                 </span>
                 <h3 className="text-xl sm:text-2xl font-black text-white">
-                  Speak Directly with Lavkush Dutta
+                  Speak Directly with Lav Dutta
                 </h3>
                 <p className="text-xs text-gray-300">
                   Direct dispatch from Prem Nagar, Una HQ. Trusted mountain drivers, clean AC vehicles, and honest pricing.
@@ -789,7 +818,7 @@ export default function CharDham() {
                 <span>{business.phones[0]}</span>
               </a>
               <a
-                href={whatsappLink("Hello Lavkush Dutta, I want to book Char Dham Yatra (Kedarnath, Badrinath, Haridwar).")}
+                href={whatsappLink("Hello Lav Dutta, I want to book Char Dham Yatra (Kedarnath, Badrinath, Haridwar).")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 md:flex-none inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#00c853] hover:bg-[#00b047] text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-[0.98] whitespace-nowrap"

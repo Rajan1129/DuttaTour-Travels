@@ -118,7 +118,7 @@ export default function TaxiServiceAmb() {
       setDestinationCircuit("Maa Chintpurni Devi Ji Dham");
     } else if (tab === "chintpurni") {
       setPickupLocation("Amb Town / Station / Hotel");
-      setDestinationCircuit("4 Devi Darshan (Chintpurni, Jawala Ji, Kangra, Chamunda)");
+      setDestinationCircuit("6 Devi Darshan (Chintpurni, Jwala Ji, Baglamukhi, Kangra, Chamunda, Naina Devi)");
     } else if (tab === "outstation") {
       setPickupLocation("Amb (Main Chowk / Station / Mubarikpur)");
       setDestinationCircuit("Dharamshala / McLeodganj (Kangra Valley)");
@@ -767,7 +767,7 @@ export default function TaxiServiceAmb() {
                   ARRIVING AT AMB ANDAURA STATION?
                 </span>
                 <h3 className="text-xl sm:text-2xl font-black text-white">
-                  Book Your Amb Taxi with Lavkush Dutta
+                  Book Your Amb Taxi with Lav Dutta
                 </h3>
                 <p className="text-xs text-gray-300">
                   Instant cab dispatch at Amb Andaura (AADR) platform. Honest pricing, clean cabs, and verified pahadi drivers.
@@ -784,7 +784,7 @@ export default function TaxiServiceAmb() {
                 <span>{business.phones[0]}</span>
               </a>
               <a
-                href={whatsappLink("Hello Lavkush Dutta, I need a taxi in Amb / Amb Andaura.")}
+                href={whatsappLink("Hello Lav Dutta, I need a taxi in Amb / Amb Andaura.")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 md:flex-none inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#00c853] hover:bg-[#00b047] text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-[0.98] whitespace-nowrap"

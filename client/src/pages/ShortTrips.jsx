@@ -68,7 +68,7 @@ const shortTripPackages = [
     duration: "Half Day (4 - 5 Hours)",
     distance: "26 KM from Amb / 52 KM from Una",
     category: "temple",
-    image: "/images/tours/4-char-devi-darshan.jpg",
+    image: "/images/tours/6-devi-darshan.jpg",
     badge: "Wish-Fulfilling Shaktipeeth",
     idealFor: "Devotees & Senior Citizens",
     highlights: "Chhinnamastika Dham &bull; VIP Gate Parking &bull; Parikrama &bull; Bharwain Ridge",
@@ -705,7 +705,7 @@ export default function ShortTrips() {
                   PLANNING A DAY OUTING?
                 </span>
                 <h3 className="text-xl sm:text-2xl font-black text-white">
-                  Book Your Short Trip with Lavkush Dutta
+                  Book Your Short Trip with Lav Dutta
                 </h3>
                 <p className="text-xs text-gray-300">
                   Direct dispatch from Prem Nagar, Una HQ. Clean AC vehicles, courteous drivers, and flexible sightseeing stops.
@@ -722,7 +722,7 @@ export default function ShortTrips() {
                 <span>{business.phones[0]}</span>
               </a>
               <a
-                href={whatsappLink("Hello Lavkush Dutta, I want to book a same-day short trip from Una.")}
+                href={whatsappLink("Hello Lav Dutta, I want to book a same-day short trip from Una.")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 md:flex-none inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#00c853] hover:bg-[#00b047] text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-[0.98] whitespace-nowrap"

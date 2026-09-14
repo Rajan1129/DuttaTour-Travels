@@ -5,7 +5,27 @@ const loadStorage = (key, defaultVal) => {
   if (typeof window === "undefined") return JSON.parse(JSON.stringify(defaultVal));
   try {
     const saved = localStorage.getItem(key);
-    return saved ? JSON.parse(saved) : JSON.parse(JSON.stringify(defaultVal));
+    if (!saved) return JSON.parse(JSON.stringify(defaultVal));
+    const parsed = JSON.parse(saved);
+    if (key === "dutta_admin_tours" && Array.isArray(parsed)) {
+      const index4 = parsed.findIndex((t) => t.slug === "4-char-devi-darshan");
+      const new6 = defaultVal.find((t) => t.slug === "6-devi-darshan-yatra");
+      if (index4 !== -1 && new6) {
+        parsed[index4] = JSON.parse(JSON.stringify(new6));
+      }
+      const existingSlugs = new Set(parsed.map((t) => t.slug));
+      let updated = false;
+      defaultVal.forEach((t) => {
+        if (!existingSlugs.has(t.slug)) {
+          parsed.push(JSON.parse(JSON.stringify(t)));
+          updated = true;
+        }
+      });
+      if (updated || index4 !== -1) {
+        localStorage.setItem(key, JSON.stringify(parsed));
+      }
+    }
+    return parsed;
   } catch (e) {
     return JSON.parse(JSON.stringify(defaultVal));
   }
@@ -142,16 +162,40 @@ export const defaultTourPackages = [
     category: "himachal",
   },
   {
-    slug: "4-char-devi-darshan",
-    name: "4 Char Devi Darshan with Una",
-    duration: "4 Nights / 5 Days",
-    circuitBadge: "Devi Darshan Circuit",
-    featureNote: "Specialist Pilgrim Drivers",
-    whatsappNote: "Details for 4 Devi Darshan Yatra (4N/5D)",
-    image: "/images/tours/4-char-devi-darshan.jpg",
+    slug: "6-devi-darshan-yatra",
+    name: "6 Sacred Devi Darshan Yatra",
+    duration: "5 Nights / 6 Days",
+    circuitBadge: "6 Holy Shaktipeeths",
+    featureNote: "Chintpurni • Jwala Ji • Baglamukhi • Kangra • Chamunda • Naina Devi",
+    whatsappNote: "Details for 6 Devi Darshan Yatra (5N/6D)",
+    image: "/images/tours/6-devi-darshan.jpg",
     summary:
-      "Maa Chintpurni Devi, Maa Jwala Ji (Eternal Flame), Maa Kangra Brajeshwari Devi, and Maa Chamunda Devi with Anandpur Sahib halt.",
+      "Complete pilgrimage to all 6 sacred shrines: Maa Chintpurni, Maa Jwala Ji (Eternal Flame), Maa Baglamukhi Temple (Bankhandi Siddhapeeth), Maa Kangra Brajeshwari Devi, Maa Chamunda Nandikeshwar, and Maa Naina Devi Temple (Bilaspur) with Anandpur Sahib halt.",
     category: "yatra",
+  },
+  {
+    slug: "12-jyotirlinga-darshan-yatra",
+    name: "12 Jyotirlinga Darshan Yatra",
+    duration: "Customized Pan-India Circuits",
+    circuitBadge: "Sacred Mahadev Yatra",
+    featureNote: "Kedarnath • Somnath • Mahakal • Kashi • Rameshwaram & Pan-India",
+    whatsappNote: "Details for 12 Jyotirlinga Darshan Yatra",
+    image: "/images/tours/12-jyotirlinga.jpg",
+    summary:
+      "Comprehensive pilgrimage covering Lord Shiva's 12 holy Jyotirlingas with dedicated sanitized cabs, experienced chauffeurs, senior citizen assistance, and VIP darshan guidance.",
+    category: "yatra",
+  },
+  {
+    slug: "spiti-valley-circuit",
+    name: "Spiti Valley Road Trip & High-Altitude Circuit",
+    duration: "8 Nights / 9 Days",
+    circuitBadge: "Middle Land Adventure",
+    featureNote: "Kaza • Key Monastery • Chandratal Lake • Hikkim • Atal Tunnel",
+    whatsappNote: "Details for Spiti Valley Circuit Tour (8N/9D)",
+    image: "/images/tours/spiti-valley.jpg",
+    summary:
+      "Epic trans-Himalayan expedition via Shimla, Kinnaur, Kalpa, Tabo, Kaza, Key Monastery, Kibber, world's highest post office at Hikkim, Komik, Langza, Chandratal Lake, Kunzum Pass, and Atal Tunnel Manali.",
+    category: "himachal",
   },
   {
     slug: "una-manali-shimla",
@@ -208,7 +252,7 @@ export const defaultTourPackages = [
     circuitBadge: "Holy Char Dham",
     featureNote: "Yamunotri • Gangotri • Kedarnath • Badrinath",
     whatsappNote: "Details for Complete Uttarakhand Char Dham Yatra (10N/11D)",
-    image: "/images/tours/4-char-devi-darshan.jpg",
+    image: "/images/tours/6-devi-darshan.jpg",
     summary:
       "Sacred pilgrimage to Yamunotri, Gangotri, Kedarnath Jyotirlinga, and Badrinath Dham with Haridwar Ganga Aarti and Rishikesh.",
     category: "yatra",
@@ -220,7 +264,7 @@ export const defaultTourPackages = [
     circuitBadge: "Do Dham Sacred Yatra",
     featureNote: "Innova / Ertiga / Tempo",
     whatsappNote: "Details for Do Dham Kedarnath Badrinath Yatra (5N/6D)",
-    image: "/images/tours/4-char-devi-darshan.jpg",
+    image: "/images/tours/12-jyotirlinga.jpg",
     summary:
       "Direct darshan of Lord Shiva at Kedarnath Dham and Lord Badri Vishal at Badrinath Dham with Haridwar and Rishikesh.",
     category: "yatra",
@@ -432,14 +476,14 @@ export const defaultTestimonials = [
     initials: "AM",
     color: "bg-amber-600",
     quote:
-      "Very good experience. Company owner (Lavkush Dutta) is very humble and very nice in talking. The Driver Raj Kumar (Ricky) was not Driver for us in the three days trip to Manikaran Sahib, he become like family member for us. Stopped the Car whenever asked him to because we were travelling with little kids.",
+      "Very good experience. Company owner (Lav Dutta) is very humble and very nice in talking. The Driver Raj Kumar (Ricky) was not Driver for us in the three days trip to Manikaran Sahib, he become like family member for us. Stopped the Car whenever asked him to because we were travelling with little kids.",
   },
   {
     name: "Sunil Mittal",
     initials: "SM",
     color: "bg-blue-600",
     quote:
-      "Hired taxi from Dutta Travels this month from Shimla and Manali with family. I fully satisfied with the service, the cab was very good condition and neat and clean. The driver Mr. Raj Kumar was cooperative and helpful in guiding us the entire trip. Thanks owner Mr. Lavkush Dutta.",
+      "Hired taxi from Dutta Travels this month from Shimla and Manali with family. I fully satisfied with the service, the cab was very good condition and neat and clean. The driver Mr. Raj Kumar was cooperative and helpful in guiding us the entire trip. Thanks owner Mr. Lav Dutta.",
   },
   {
     name: "Aditya Singh",

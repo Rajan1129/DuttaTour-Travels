@@ -40,7 +40,9 @@ const destinationPresets = [
 ];
 
 const tourPresets = [
-  { label: "4 Char Devi Darshan Yatra (Chintpurni, Jwala Ji, Kangra, Chamunda)", value: "/images/tours/4-char-devi-darshan.jpg" },
+  { label: "6 Sacred Devi Darshan Yatra (Chintpurni, Jwala Ji, Baglamukhi, Kangra, Chamunda, Naina Devi)", value: "/images/tours/6-devi-darshan.jpg" },
+  { label: "12 Sacred Jyotirlinga Darshan Yatra", value: "/images/tours/12-jyotirlinga.jpg" },
+  { label: "Spiti Valley Circuit (8N/9D Middle Land Expedition)", value: "/images/tours/spiti-valley.jpg" },
   { label: "Una with Dalhousie & Dharamshala (3N/4D)", value: "/images/tours/una-dalhousie-dharamshala.jpg" },
   { label: "Una - Manali to Shimla Tour (4N/5D)", value: "/images/tours/una-manali-shimla.jpg" },
   { label: "Grand Himachal Circuit (7N/8D)", value: "/images/tours/shimla-manali-dharamshala-dalhousie.jpg" },
@@ -51,21 +53,21 @@ const tourPresets = [
 const initialArticles = [
   {
     id: "art-1",
-    title: "Complete Guide to 4 Devi Darshan Yatra from Una & Amb",
-    slug: "4-devi-darshan-yatra-guide",
+    title: "Complete Guide to 6 Devi Darshan Yatra from Una & Amb",
+    slug: "6-devi-darshan-yatra-guide",
     category: "Pilgrimage & Temples",
-    h1: "Una to 4 Devi Darshan: Chintpurni, Jwala Ji, Kangra & Chamunda Yatra Guide",
+    h1: "Una to 6 Devi Darshan: Chintpurni, Jwala Ji, Baglamukhi, Kangra, Chamunda & Naina Devi Yatra Guide",
     description:
-      "A complete guide for devotees planning the sacred 4 Devi Darshan pilgrimage starting from Una and Amb Andaura. Temple timings, routes, VIP slips, and cab booking tips.",
-    seoTitle: "4 Devi Darshan Yatra Guide from Una | Chintpurni, Jwala Ji Cab | Dutta Travels",
+      "A complete guide for devotees planning the sacred 6 Devi Darshan pilgrimage starting from Una and Amb Andaura. Temple timings, routes, VIP slips, and cab booking tips.",
+    seoTitle: "6 Devi Darshan Yatra Guide from Una | Chintpurni, Baglamukhi, Naina Devi Cab | Dutta Travels",
     seoDescription:
-      "Complete pilgrimage guide for 4 Devi Darshan from Una & Amb Andaura. Covering Maa Chintpurni, Jwala Ji, Brajeshwari Kangra, and Chamunda Devi with verified hill cabs.",
-    featuredImage: "/images/tours/4-char-devi-darshan.jpg",
+      "Complete pilgrimage guide for 6 Devi Darshan from Una & Amb Andaura. Covering Maa Chintpurni, Jwala Ji, Baglamukhi, Brajeshwari Kangra, Chamunda Devi, and Naina Devi with verified hill cabs.",
+    featuredImage: "/images/tours/6-devi-darshan.jpg",
     published: true,
     createdAt: "2026-03-10",
     contentHtml: `
-      <h2>The Sacred Devi Circuit of Himachal Pradesh</h2>
-      <p>Every year, lakhs of devotees travel to Una and Amb to embark on the sacred 4 Devi Darshan yatra. Situated in the Shivalik and Dhauladhar foothills, these ancient Shaktipeeths are revered for granting divine blessings.</p>
+      <h2>The Sacred 6 Devi Circuit of Himachal Pradesh</h2>
+      <p>Every year, lakhs of devotees travel to Una and Amb to embark on the sacred 6 Devi Darshan yatra. Situated in the Shivalik and Dhauladhar foothills, these ancient Shaktipeeths and Siddhapeeths are revered for granting divine blessings.</p>
       
       <h3>1. Maa Chintpurni Devi (Una District)</h3>
       <p>Located roughly 52 km from Una and only 26 km from Amb Andaura Railway Station, Maa Chintpurni fulfills the deepest wishes of devotees. Best visited in the early morning before peak crowds gather.</p>
@@ -73,14 +75,20 @@ const initialArticles = [
       <h3>2. Maa Jwala Ji (Kangra District)</h3>
       <p>Around 35 km ahead of Chintpurni, Jwala Ji is famous for the eternal nine sacred natural flames that burn without any fuel. It is an awe-inspiring spiritual experience for the entire family.</p>
       
-      <h3>3. Maa Brajeshwari Devi (Kangra Town)</h3>
+      <h3>3. Maa Baglamukhi Temple (Bankhandi)</h3>
+      <p>Situated in Bankhandi near Ranital on the Jwala Ji - Kangra road, this revered Siddhapeeth is sought by devotees for overcoming difficulties, inner strength, and sacred hawan rituals.</p>
+      
+      <h3>4. Maa Brajeshwari Devi (Kangra Town)</h3>
       <p>Located near the historic Kangra Fort, this ancient Shaktipeeth represents the divine maternal protection of Goddess Durga. Temple trusts provide streamlined queue facilities for elderly devotees.</p>
       
-      <h3>4. Maa Chamunda Devi (Dharamshala Road)</h3>
-      <p>Set along the serene Baner river against the snow-capped Dhauladhar peaks, Maa Chamunda is the fierce protector deity. The peaceful temple complex is the perfect concluding shrine of the 4 Devi darshan circuit.</p>
+      <h3>5. Maa Chamunda Devi (Dharamshala Road)</h3>
+      <p>Set along the serene Baner river against the snow-capped Dhauladhar peaks, Maa Chamunda is the fierce protector deity. The peaceful temple complex is a divine highlight of the pilgrimage.</p>
+      
+      <h3>6. Maa Naina Devi Temple (Bilaspur / Anandpur Border)</h3>
+      <p>Perched high on a hilltop with scenic cable car ropeway access overlooking Gobind Sagar Lake, Maa Naina Devi blesses devotees on their return route towards Una and Anandpur Sahib.</p>
       
       <h3>Recommended Cab Booking & Itinerary</h3>
-      <p>Dutta Tour & Travel operates specialized same-day return and 2-day relaxed Devi Darshan circuits with certified local mountain chauffeurs. Book your Innova Crysta or Ertiga directly from Prem Nagar Una or Amb Andaura station.</p>
+      <p>Dutta Tour & Travel operates specialized 2-day and 3-day relaxed 6 Devi Darshan circuits with certified local mountain chauffeurs. Book your Innova Crysta or Ertiga directly from Prem Nagar Una or Amb Andaura station.</p>
     `,
   },
   {
@@ -893,7 +901,7 @@ export default function AdminDashboard() {
             <div className="hidden md:flex flex-col">
               <span className={`text-xs font-bold ${c.textLabel}`}>Admin Command Center</span>
               <span className={`text-[10px] ${c.textSecondary}`}>
-                Prem Nagar HQ &bull; Lavkush Dutta (+91 8894021277)
+                Prem Nagar HQ &bull; Lav Dutta (+91 8894021277)
               </span>
             </div>
           </div>
@@ -1289,7 +1297,7 @@ export default function AdminDashboard() {
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 <div>
                   <label className={`block text-xs font-bold ${c.textLabel} uppercase tracking-wide mb-1`}>
-                    Primary Phone (Lavkush Dutta) *
+                    Primary Phone (Lav Dutta) *
                   </label>
                   <input
                     type="text"
@@ -1897,7 +1905,7 @@ export default function AdminDashboard() {
                     <input
                       type="text"
                       required
-                      placeholder="e.g. Una to 4 Devi Darshan Yatra Guide"
+                      placeholder="e.g. Una to 6 Devi Darshan Yatra Guide"
                       value={articleForm.title}
                       onChange={(e) => handleTitleChange(e.target.value)}
                       className={`w-full rounded-xl px-3.5 py-2.5 text-sm border focus:outline-none ${c.input}`}

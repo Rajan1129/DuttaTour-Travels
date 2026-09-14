@@ -2,6 +2,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import { business, whatsappLink } from "../data/business";
 import WhatsAppIcon from "./WhatsAppIcon";
+import ChatbotWidget from "./ChatbotWidget";
 
 export default function Layout({ children }) {
   return (
@@ -38,6 +39,9 @@ export default function Layout({ children }) {
           <span>WhatsApp Cab</span>
         </a>
       </div>
+
+      {/* 24/7 AI Chauffeur Desk Customer Assistance Chatbot */}
+      <ChatbotWidget />
     </div>
   );
 }

@@ -62,7 +62,7 @@ export default function Home() {
     if (tab === "outstation") {
       setDestinationCircuit("Shimla & Kufri (Himachal)");
     } else if (tab === "devi-darshan") {
-      setDestinationCircuit("4 Char Devi Darshan (Chintpurni, Jwala Ji, Kangra, Chamunda)");
+      setDestinationCircuit("6 Sacred Devi Darshan (Chintpurni, Jwala Ji, Baglamukhi, Kangra, Chamunda, Naina Devi)");
     } else if (tab === "station-pickup") {
       setDestinationCircuit("Amb Andaura Station Pickup -> Una / Dharamshala");
     }
@@ -373,8 +373,14 @@ export default function Home() {
                         <option value="Manali & Solang Valley">Manali &amp; Solang Valley</option>
                         <option value="Dharamshala & McLeodganj">Dharamshala &amp; McLeodganj</option>
                         <option value="Una to Dalhousie & Khajjiar">Una to Dalhousie &amp; Khajjiar</option>
-                        <option value="4 Char Devi Darshan (Chintpurni, Jwala Ji, Kangra, Chamunda)">
-                          4 Char Devi Darshan (Chintpurni, Jwala Ji, Kangra, Chamunda)
+                        <option value="6 Sacred Devi Darshan (Chintpurni, Jwala Ji, Baglamukhi, Kangra, Chamunda, Naina Devi)">
+                          6 Sacred Devi Darshan (Chintpurni, Jwala Ji, Baglamukhi, Kangra, Chamunda, Naina Devi)
+                        </option>
+                        <option value="12 Sacred Jyotirlinga Darshan Yatra">
+                          12 Sacred Jyotirlinga Darshan Yatra
+                        </option>
+                        <option value="Spiti Valley Circuit (Kaza, Key, Chandratal)">
+                          Spiti Valley Circuit (Kaza, Key, Chandratal)
                         </option>
                         <option value="Amb Andaura Station Pickup -> Una / Dharamshala">
                           Amb Andaura Station Pickup &rarr; Una / Dharamshala
@@ -646,8 +652,14 @@ export default function Home() {
                   <option value="Shimla & Kufri (Himachal)">Shimla &amp; Kufri (Himachal)</option>
                   <option value="Manali & Solang Valley">Manali &amp; Solang Valley</option>
                   <option value="Una to Dalhousie & Khajjiar">Una to Dalhousie &amp; Khajjiar</option>
-                  <option value="4 Char Devi Darshan (Chintpurni, Jwala Ji, Kangra, Chamunda)">
-                    4 Char Devi Darshan (Chintpurni, Jwala Ji, Kangra, Chamunda)
+                  <option value="6 Sacred Devi Darshan (Chintpurni, Jwala Ji, Baglamukhi, Kangra, Chamunda, Naina Devi)">
+                    6 Sacred Devi Darshan (Chintpurni, Jwala Ji, Baglamukhi, Kangra, Chamunda, Naina Devi)
+                  </option>
+                  <option value="12 Sacred Jyotirlinga Darshan Yatra">
+                    12 Sacred Jyotirlinga Darshan Yatra
+                  </option>
+                  <option value="Spiti Valley Circuit (Kaza, Key, Chandratal)">
+                    Spiti Valley Circuit (Kaza, Key, Chandratal)
                   </option>
                   <option value="Amb Andaura Station Pickup -> Una / Dharamshala">
                     Amb Andaura Station Pickup &rarr; Una / Dharamshala
@@ -885,7 +897,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Assistance Banner: Talk to Owner Lavkush Dutta (Screenshot 2 bottom) */}
+          {/* Assistance Banner: Talk to Owner Lav Dutta (Screenshot 2 bottom) */}
           <div className="mt-14 bg-[#edf2fe] rounded-2xl p-4 sm:p-5 flex flex-col sm:flex-row items-center justify-between gap-4 border border-blue-100">
             <div className="flex items-center gap-3.5">
               <div className="w-12 h-12 rounded-full bg-[#f57c00] flex items-center justify-center text-white shadow-md flex-shrink-0">
@@ -896,7 +908,7 @@ export default function Home() {
                   NEED ROUTE ASSISTANCE?
                 </span>
                 <span className="text-base sm:text-lg font-black text-[#1e2638]">
-                  Talk to Owner Lavkush Dutta
+                  Talk to Owner Lav Dutta
                 </span>
               </div>
             </div>

@@ -51,7 +51,7 @@ export default function TourPackages({ initialCategory = "all" }) {
   const [searchQuery, setSearchQuery] = useState("");
 
   // Booking Form State
-  const [selectedPackage, setSelectedPackage] = useState("4 Char Devi Darshan with Una (4N/5D)");
+  const [selectedPackage, setSelectedPackage] = useState("6 Sacred Devi Darshan Yatra (5N/6D)");
   const [pickupCity, setPickupCity] = useState("Una (Prem Nagar / Railway Station)");
   const [travelDate, setTravelDate] = useState(() => new Date().toISOString().split("T")[0]);
   const [vehicleType, setVehicleType] = useState("Innova Crysta");
@@ -448,7 +448,7 @@ export default function TourPackages({ initialCategory = "all" }) {
             {/* Popular quick-search suggestions */}
             <div className="flex flex-wrap items-center justify-center gap-1.5 mt-2.5 text-[11px] text-gray-500">
               <span className="font-semibold text-gray-400">Popular searches:</span>
-              {["Devi Darshan", "Manali", "Shimla", "Kashmir", "Dalhousie", "Ladakh", "Char Dham"].map((tag) => (
+              {["6 Devi Darshan", "12 Jyotirlinga", "Spiti Valley", "Manali", "Shimla", "Kashmir", "Dalhousie", "Ladakh", "Char Dham"].map((tag) => (
                 <button
                   key={tag}
                   type="button"
@@ -472,8 +472,8 @@ export default function TourPackages({ initialCategory = "all" }) {
           <div className="flex flex-wrap items-center justify-center gap-2 mb-8">
             {[
               { id: "all", label: "All Packages" },
-              { id: "himachal", label: "Himachal Holidays" },
-              { id: "yatra", label: "Devi Darshan Yatra" },
+              { id: "himachal", label: "Himachal & Spiti Holidays" },
+              { id: "yatra", label: "6 Devi Darshan & Jyotirlinga Yatra" },
               { id: "kashmir-ladakh", label: "Kashmir & Ladakh" },
             ].map((cat) => (
               <button
@@ -808,7 +808,7 @@ export default function TourPackages({ initialCategory = "all" }) {
                   NEED A CUSTOM HIMALAYAN TOUR?
                 </span>
                 <h3 className="text-xl sm:text-2xl font-black text-white">
-                  Plan Your Tour with Lavkush Dutta
+                  Plan Your Tour with Lav Dutta
                 </h3>
                 <p className="text-xs text-gray-300">
                   Direct dispatch from Prem Nagar, Una HQ. Transparent pricing, verified pahadi drivers, and 100% private cabs.
@@ -825,7 +825,7 @@ export default function TourPackages({ initialCategory = "all" }) {
                 <span>{business.phones[0]}</span>
               </a>
               <a
-                href={whatsappLink("Hello Lavkush Dutta, I want to discuss a custom tour package.")}
+                href={whatsappLink("Hello Lav Dutta, I want to discuss a custom tour package.")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 md:flex-none inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#00c853] hover:bg-[#00b047] text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-[0.98] whitespace-nowrap"

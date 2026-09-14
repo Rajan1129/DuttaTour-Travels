@@ -644,7 +644,7 @@ export default function AmbAndauraRailwayStation() {
                 <span>{business.phones[0]}</span>
               </a>
               <a
-                href={whatsappLink("Hello Lavkush Dutta, I need platform pickup at Amb Andaura Station.")}
+                href={whatsappLink("Hello Lav Dutta, I need platform pickup at Amb Andaura Station.")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 md:flex-none inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#00c853] hover:bg-[#00b047] text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-[0.98] whitespace-nowrap"

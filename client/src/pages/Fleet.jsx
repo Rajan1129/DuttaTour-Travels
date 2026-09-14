@@ -320,7 +320,7 @@ export default function Fleet() {
               </h3>
               <p className="text-xs text-gray-600 leading-relaxed">
                 Zero surge pricing, transparent toll and state permit breakdowns, and direct
-                assistance from owner Lavkush Dutta.
+                assistance from owner Lav Dutta.
               </p>
             </div>
           </div>
@@ -358,9 +358,9 @@ export default function Fleet() {
                 note: "Vande Bharat arrival pickup directly from platform to McLeodganj.",
               },
               {
-                title: "4 Devi Darshan Pilgrimage",
-                dist: "260 KM &bull; 2-3 Days Circuit",
-                note: "Chintpurni Ji, Jwala Ji, Kangra Brajeshwari, and Chamunda Devi.",
+                title: "6 Devi Darshan Pilgrimage",
+                dist: "380 KM &bull; 3-5 Days Circuit",
+                note: "Chintpurni Ji, Jwala Ji, Baglamukhi, Kangra, Chamunda Devi, and Naina Devi.",
               },
               {
                 title: "Una to Chandigarh Airport (IXC)",
@@ -478,7 +478,7 @@ export default function Fleet() {
                   NEED CUSTOM FLEET QUOTE?
                 </span>
                 <h3 className="text-xl sm:text-2xl font-black text-white">
-                  Speak Directly with Lavkush Dutta
+                  Speak Directly with Lav Dutta
                 </h3>
                 <p className="text-xs text-gray-300">
                   Prompt vehicle recommendation based on your luggage, passenger count, and route.
@@ -495,7 +495,7 @@ export default function Fleet() {
                 <span>{business.phones[0]}</span>
               </a>
               <a
-                href={whatsappLink("Hello Lavkush Dutta, I want to book a taxi from your fleet.")}
+                href={whatsappLink("Hello Lav Dutta, I want to book a taxi from your fleet.")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 md:flex-none inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#00c853] hover:bg-[#00b047] text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-[0.98] whitespace-nowrap"
