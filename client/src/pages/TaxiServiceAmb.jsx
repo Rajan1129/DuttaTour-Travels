@@ -11,7 +11,7 @@ const ambFaqs = [
   {
     question: "How do I book a taxi from Amb Andaura Railway Station (AADR) for Vande Bharat Express?",
     answer:
-      "You can pre-book your taxi by calling +91 8894021277 or booking via WhatsApp with your train arrival time (e.g. Vande Bharat Express 22447 at 13:00). Our chauffeur will be waiting outside the platform with a meet-and-greet name board and assist with your luggage.",
+      "You can pre-book your taxi by calling +91 7807481503 or booking via WhatsApp with your train arrival time (e.g. Vande Bharat Express 22447 at 13:00). Our chauffeur will be waiting outside the platform with a meet-and-greet name board and assist with your luggage.",
   },
   {
     question: "What is the taxi fare from Amb Andaura to Maa Chintpurni Devi Temple?",
@@ -242,7 +242,7 @@ export default function TaxiServiceAmb() {
                   <span>Instant Call: {business.phones[0]}</span>
                 </a>
                 <a
-                  href={whatsappLink("Hello Dutta Travels, I need a taxi in Amb / Amb Andaura Railway Station.")}
+                  href={whatsappLink("Hello Mandyal Travels, I need a taxi in Amb / Amb Andaura Railway Station.")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#00c853] hover:bg-[#00b047] text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-[0.98]"
@@ -459,7 +459,7 @@ export default function TaxiServiceAmb() {
                 </p>
               </div>
               <a
-                href={whatsappLink("Hello Dutta Travels, I need a taxi from Amb to Maa Chintpurni Devi Dham")}
+                href={whatsappLink("Hello Mandyal Travels, I need a taxi from Amb to Maa Chintpurni Devi Dham")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xs font-bold text-[#f57c00] hover:underline flex items-center gap-1 self-start"
@@ -505,7 +505,7 @@ export default function TaxiServiceAmb() {
                 </p>
               </div>
               <a
-                href={whatsappLink("Hello Dutta Travels, I need local taxi service in Amb / Gagret")}
+                href={whatsappLink("Hello Mandyal Travels, I need local taxi service in Amb / Gagret")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xs font-bold text-[#f57c00] hover:underline flex items-center gap-1 self-start"
@@ -580,7 +580,7 @@ export default function TaxiServiceAmb() {
 
                   <a
                     href={whatsappLink(
-                      `Hello Dutta Travels, I want to book a taxi from Amb to ${route.destination}. Please share the best rate.`
+                      `Hello Mandyal Travels, I want to book a taxi from Amb to ${route.destination}. Please share the best rate.`
                     )}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -653,7 +653,7 @@ export default function TaxiServiceAmb() {
                   </div>
 
                   <a
-                    href={whatsappLink(`Hello Dutta Travels, I want to book ${car.name} in Amb / AADR.`)}
+                    href={whatsappLink(`Hello Mandyal Travels, I want to book ${car.name} in Amb / AADR.`)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="py-2.5 px-3 rounded-xl bg-[#943e00] hover:bg-[#7a3200] text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow-sm transition-all active:scale-[0.98]"
@@ -767,7 +767,7 @@ export default function TaxiServiceAmb() {
                   ARRIVING AT AMB ANDAURA STATION?
                 </span>
                 <h3 className="text-xl sm:text-2xl font-black text-white">
-                  Book Your Amb Taxi with Lav Dutta
+                  Book Your Amb Taxi with Manoj Mandyal
                 </h3>
                 <p className="text-xs text-gray-300">
                   Instant cab dispatch at Amb Andaura (AADR) platform. Honest pricing, clean cabs, and verified pahadi drivers.
@@ -784,7 +784,7 @@ export default function TaxiServiceAmb() {
                 <span>{business.phones[0]}</span>
               </a>
               <a
-                href={whatsappLink("Hello Lav Dutta, I need a taxi in Amb / Amb Andaura.")}
+                href={whatsappLink("Hello Manoj Mandyal, I need a taxi in Amb / Amb Andaura.")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 md:flex-none inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#00c853] hover:bg-[#00b047] text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-[0.98] whitespace-nowrap"

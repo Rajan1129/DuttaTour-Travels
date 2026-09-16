@@ -1,4 +1,4 @@
-# Dutta Tour & Travel — MERN site with SEO foundation
+# Mandyal Tour & Travel — MERN site with SEO foundation
 
 ## ⚠️ Read this first
 
@@ -128,20 +128,20 @@ server/
 
 | Page | Primary intent | Secondary keywords | Title |
 |---|---|---|---|
-| `/` | taxi & travel services in Una | taxi service Una HP, taxi booking Una, Himachal taxi service | Taxi Service in Una, Himachal Pradesh \| Dutta Tour & Travel |
-| `/taxi-services` | taxi services | taxi service in Una, outstation taxi from Una | Taxi Services in Una \| Local & Outstation Taxi \| Dutta Tour & Travel |
-| `/taxi-service-una` | taxi service in Una | local taxi Una, outstation taxi Una | Taxi Service in Una, Himachal Pradesh \| Dutta Tour & Travel |
-| `/taxi-service-amb` | taxi service in Amb | Amb taxi service, Amb Andaura Railway Station taxi | Taxi Service in Amb, Himachal Pradesh \| Dutta Tour & Travel |
-| `/amb-andaura-railway-station-taxi` | Amb Andaura Railway Station taxi | railway station taxi Una/Amb | Amb Andaura Railway Station Taxi \| Pickup & Drop \| Dutta Tour & Travel |
-| `/outstation-taxi` | outstation taxi from Una | Una to Shimla/Manali/Chandigarh taxi | Outstation Taxi from Una \| Dutta Tour & Travel |
-| `/airport-transfers` | airport taxi from Una | airport transfer Una | Airport Taxi & Transfers from Una \| Dutta Tour & Travel |
-| `/fleet` | taxi fleet / vehicles | Innova Crysta, tempo traveller, Fortuner | Taxi Fleet in Una \| Cars & Travel Vehicles \| Dutta Tour & Travel |
-| `/tour-packages` | tour packages from Una | Himachal tours, Kashmir tour, 4 Dham Yatra, Char Devi Darshan | Himachal, Kashmir & Yatra Tour Packages \| Dutta Tour & Travel |
-| `/destinations` | destinations and routes from Una | Una to Shimla/Manali/Dharamshala taxi | Destinations & Popular Taxi Routes from Una \| Dutta Tour & Travel |
-| `/travel-guide` | travel info and planning | Himachal road trip, Una travel guide | Himachal Travel Guide & Road Trip Ideas \| Dutta Tour & Travel |
-| `/about` | about the business | Dutta Tour and Travel Una | About Dutta Tour & Travel \| Taxi & Travel Services in Una |
-| `/contact` | contact / book a taxi | taxi booking Una, phone number | Contact Dutta Tour & Travel \| Book a Taxi in Una |
-| `/una-to-<city>-taxi` (×8) | Una to `<city>` taxi | route-specific | Una to `<city>` Taxi \| Dutta Tour & Travel |
+| `/` | taxi & travel services in Una | taxi service Una HP, taxi booking Una, Himachal taxi service | Taxi Service in Una, Himachal Pradesh \| Mandyal Tour & Travel |
+| `/taxi-services` | taxi services | taxi service in Una, outstation taxi from Una | Taxi Services in Una \| Local & Outstation Taxi \| Mandyal Tour & Travel |
+| `/taxi-service-una` | taxi service in Una | local taxi Una, outstation taxi Una | Taxi Service in Una, Himachal Pradesh \| Mandyal Tour & Travel |
+| `/taxi-service-amb` | taxi service in Amb | Amb taxi service, Amb Andaura Railway Station taxi | Taxi Service in Amb, Himachal Pradesh \| Mandyal Tour & Travel |
+| `/amb-andaura-railway-station-taxi` | Amb Andaura Railway Station taxi | railway station taxi Una/Amb | Amb Andaura Railway Station Taxi \| Pickup & Drop \| Mandyal Tour & Travel |
+| `/outstation-taxi` | outstation taxi from Una | Una to Shimla/Manali/Chandigarh taxi | Outstation Taxi from Una \| Mandyal Tour & Travel |
+| `/airport-transfers` | airport taxi from Una | airport transfer Una | Airport Taxi & Transfers from Una \| Mandyal Tour & Travel |
+| `/fleet` | taxi fleet / vehicles | Innova Crysta, tempo traveller, Fortuner | Taxi Fleet in Una \| Cars & Travel Vehicles \| Mandyal Tour & Travel |
+| `/tour-packages` | tour packages from Una | Himachal tours, Kashmir tour, 4 Dham Yatra, Char Devi Darshan | Himachal, Kashmir & Yatra Tour Packages \| Mandyal Tour & Travel |
+| `/destinations` | destinations and routes from Una | Una to Shimla/Manali/Dharamshala taxi | Destinations & Popular Taxi Routes from Una \| Mandyal Tour & Travel |
+| `/travel-guide` | travel info and planning | Himachal road trip, Una travel guide | Himachal Travel Guide & Road Trip Ideas \| Mandyal Tour & Travel |
+| `/about` | about the business | Mandyal Tour and Travel Una | About Mandyal Tour & Travel \| Taxi & Travel Services in Una |
+| `/contact` | contact / book a taxi | taxi booking Una, phone number | Contact Mandyal Tour & Travel \| Book a Taxi in Una |
+| `/una-to-<city>-taxi` (×8) | Una to `<city>` taxi | route-specific | Una to `<city>` Taxi \| Mandyal Tour & Travel |
 
 No two pages target the same primary keyword, so there's no keyword
 cannibalisation between Una/Amb/railway-station/outstation.

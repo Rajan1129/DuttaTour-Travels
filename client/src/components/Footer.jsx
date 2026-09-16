@@ -11,12 +11,12 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               <img
                 src="/logo.png"
-                alt="Dutta Tour & Travels Logo"
+                alt="Mandyal Tour & Travels Logo"
                 className="h-11 w-auto object-contain bg-white rounded-xl p-1"
               />
               <div className="flex flex-col">
-                <span className="font-extrabold text-lg text-white">Dutta Travels</span>
-                <span className="font-bold text-[10px] text-[#f57c00] uppercase tracking-wider">DUTTA MOTORS &bull; UNA</span>
+                <span className="font-extrabold text-lg text-white">Mandyal Travels</span>
+                <span className="font-bold text-[10px] text-[#f57c00] uppercase tracking-wider">MANDYAL MOTORS &bull; UNA</span>
               </div>
             </div>
             <p className="text-xs text-gray-400 leading-relaxed">{business.description}</p>

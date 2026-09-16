@@ -11,7 +11,7 @@ const airportFaqs = [
   {
     question: "How early should I book an airport taxi from Una to Chandigarh or Delhi Airport?",
     answer:
-      "We recommend booking at least 12 to 24 hours in advance to guarantee vehicle allocation, especially for early-morning departures (e.g. 2:00 AM or 4:00 AM pickups in Una for morning flights). Urgent same-day bookings can also be confirmed immediately by calling our 24/7 hotline at +91 8894021277.",
+      "We recommend booking at least 12 to 24 hours in advance to guarantee vehicle allocation, especially for early-morning departures (e.g. 2:00 AM or 4:00 AM pickups in Una for morning flights). Urgent same-day bookings can also be confirmed immediately by calling our 24/7 hotline at +91 7807481503.",
   },
   {
     question: "What happens if my inbound flight to Chandigarh or Delhi is delayed?",
@@ -184,7 +184,7 @@ export default function AirportTransfers() {
               </h1>
 
               <p className="text-sm sm:text-base text-gray-200 leading-relaxed font-normal">
-                Never worry about missing a flight. Dutta Tour &amp; Travel delivers punctual, 24/7
+                Never worry about missing a flight. Mandyal Tour &amp; Travel delivers punctual, 24/7
                 doorstep airport transfers between Una / Amb and <strong>Chandigarh Airport (IXC)</strong>,{" "}
                 <strong>Delhi IGI Airport (DEL)</strong>, <strong>Amritsar (ATQ)</strong>, and{" "}
                 <strong>Kangra Airport (DHM)</strong>.
@@ -224,7 +224,7 @@ export default function AirportTransfers() {
                   <span>Instant Call: {business.phones[0]}</span>
                 </a>
                 <a
-                  href={whatsappLink("Hello Dutta Travels, I need an airport taxi transfer from Una.")}
+                  href={whatsappLink("Hello Mandyal Travels, I need an airport taxi transfer from Una.")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#00c853] hover:bg-[#00b047] text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-[0.98]"
@@ -472,7 +472,7 @@ export default function AirportTransfers() {
                   <div className="flex items-center gap-3 pt-1">
                     <a
                       href={whatsappLink(
-                        `Hello Dutta Travels, I need an airport taxi transfer to ${apt.name} (${apt.code}). Please share best rate.`
+                        `Hello Mandyal Travels, I need an airport taxi transfer to ${apt.name} (${apt.code}). Please share best rate.`
                       )}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -506,7 +506,7 @@ export default function AirportTransfers() {
               PEACE OF MIND GUARANTEE
             </span>
             <h2 className="text-3xl sm:text-4xl font-black text-[#1e2638] tracking-tight mt-1">
-              Why Book Airport Transfers with Dutta Travels?
+              Why Book Airport Transfers with Mandyal Travels?
             </h2>
             <p className="text-sm text-gray-600 mt-2">
               Catching an international flight requires uncompromising punctuality, reliable cars,
@@ -620,7 +620,7 @@ export default function AirportTransfers() {
                   </div>
 
                   <a
-                    href={whatsappLink(`Hello Dutta Travels, I want to book ${car.name} for an airport transfer.`)}
+                    href={whatsappLink(`Hello Mandyal Travels, I want to book ${car.name} for an airport transfer.`)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="py-2.5 px-3 rounded-xl bg-[#943e00] hover:bg-[#7a3200] text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow-sm transition-all active:scale-[0.98]"
@@ -687,7 +687,7 @@ export default function AirportTransfers() {
                   HAVE AN UPCOMING FLIGHT?
                 </span>
                 <h3 className="text-xl sm:text-2xl font-black text-white">
-                  Reserve Your Airport Cab with Lav Dutta
+                  Reserve Your Airport Cab with Manoj Mandyal
                 </h3>
                 <p className="text-xs text-gray-300">
                   Direct dispatch from Prem Nagar, Una HQ. 24/7 midnight pickups, sanitized AC cabs, and guaranteed punctuality.
@@ -704,7 +704,7 @@ export default function AirportTransfers() {
                 <span>{business.phones[0]}</span>
               </a>
               <a
-                href={whatsappLink("Hello Lav Dutta, I need to book an airport taxi.")}
+                href={whatsappLink("Hello Manoj Mandyal, I need to book an airport taxi.")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 md:flex-none inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#00c853] hover:bg-[#00b047] text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-[0.98] whitespace-nowrap"

@@ -46,7 +46,7 @@ export default function RouteTaxi({ slug }) {
     });
 
     const msg =
-      `*NEW ROUTE CAB BOOKING - DUTTA TRAVELS*\n\n` +
+      `*NEW ROUTE CAB BOOKING - MANDYAL TRAVELS*\n\n` +
       `• *Route:* ${destination.routeTitle || destination.name}\n` +
       (passengerName.trim() ? `• *Passenger Name:* ${passengerName.trim()}\n` : "") +
       (passengerPhone.trim() ? `• *Mobile / WhatsApp:* ${passengerPhone.trim()}\n` : "") +
@@ -137,7 +137,7 @@ export default function RouteTaxi({ slug }) {
                   <span>Instant Call: {business.phones[0]}</span>
                 </a>
                 <a
-                  href={whatsappLink(`Hello Dutta Travels, I need a taxi for ${destination.name}`)}
+                  href={whatsappLink(`Hello Mandyal Travels, I need a taxi for ${destination.name}`)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#00c853] hover:bg-[#00b047] text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-[0.98]"
@@ -357,7 +357,7 @@ export default function RouteTaxi({ slug }) {
 
                   <a
                     href={whatsappLink(
-                      `Hello Dutta Travels, I want to book ${car.name} for ${destination.name} route.`
+                      `Hello Mandyal Travels, I want to book ${car.name} for ${destination.name} route.`
                     )}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -497,7 +497,7 @@ export default function RouteTaxi({ slug }) {
               </div>
               <div className="flex flex-col">
                 <span className="text-[11px] font-extrabold uppercase tracking-widest text-amber-400">
-                  ROUTE ASSISTANCE &bull; LAV DUTTA
+                  ROUTE ASSISTANCE &bull; MANOJ MANDYAL
                 </span>
                 <h3 className="text-xl sm:text-2xl font-black text-white">
                   Need Help Planning {destination.name}?
@@ -517,7 +517,7 @@ export default function RouteTaxi({ slug }) {
                 <span>{business.phones[0]}</span>
               </a>
               <a
-                href={whatsappLink(`Hello Lav Dutta, I need assistance for ${destination.name}`)}
+                href={whatsappLink(`Hello Manoj Mandyal, I need assistance for ${destination.name}`)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 md:flex-none inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#00c853] hover:bg-[#00b047] text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-[0.98] whitespace-nowrap"

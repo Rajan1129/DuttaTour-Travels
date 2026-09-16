@@ -263,7 +263,7 @@ export default function ShortTrips() {
                   <span>Instant Call: {business.phones[0]}</span>
                 </a>
                 <a
-                  href={whatsappLink("Hello Dutta Travels, I want to book a short trip from Una.")}
+                  href={whatsappLink("Hello Mandyal Travels, I want to book a short trip from Una.")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#00c853] hover:bg-[#00b047] text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-[0.98]"
@@ -515,7 +515,7 @@ export default function ShortTrips() {
                 <div className="p-5 pt-0">
                   <a
                     href={whatsappLink(
-                      `Hello Dutta Travels, I want to book the "${trip.title}" (${trip.duration}) short trip.`
+                      `Hello Mandyal Travels, I want to book the "${trip.title}" (${trip.duration}) short trip.`
                     )}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -638,7 +638,7 @@ export default function ShortTrips() {
                   </div>
 
                   <a
-                    href={whatsappLink(`Hello Dutta Travels, I want to book ${car.name} for a short trip.`)}
+                    href={whatsappLink(`Hello Mandyal Travels, I want to book ${car.name} for a short trip.`)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="py-2.5 px-3 rounded-xl bg-[#943e00] hover:bg-[#7a3200] text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow-sm transition-all active:scale-[0.98]"
@@ -705,7 +705,7 @@ export default function ShortTrips() {
                   PLANNING A DAY OUTING?
                 </span>
                 <h3 className="text-xl sm:text-2xl font-black text-white">
-                  Book Your Short Trip with Lav Dutta
+                  Book Your Short Trip with Manoj Mandyal
                 </h3>
                 <p className="text-xs text-gray-300">
                   Direct dispatch from Prem Nagar, Una HQ. Clean AC vehicles, courteous drivers, and flexible sightseeing stops.
@@ -722,7 +722,7 @@ export default function ShortTrips() {
                 <span>{business.phones[0]}</span>
               </a>
               <a
-                href={whatsappLink("Hello Lav Dutta, I want to book a same-day short trip from Una.")}
+                href={whatsappLink("Hello Manoj Mandyal, I want to book a same-day short trip from Una.")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 md:flex-none inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#00c853] hover:bg-[#00b047] text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-[0.98] whitespace-nowrap"

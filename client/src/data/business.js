@@ -1,4 +1,4 @@
-// Single source of truth for real Dutta Tour & Travel business information.
+// Single source of truth for real Mandyal Tour & Travel business information.
 // Every page pulls from here so no page invents or duplicates business facts.
 
 const loadStorage = (key, defaultVal) => {
@@ -7,7 +7,7 @@ const loadStorage = (key, defaultVal) => {
     const saved = localStorage.getItem(key);
     if (!saved) return JSON.parse(JSON.stringify(defaultVal));
     const parsed = JSON.parse(saved);
-    if (key === "dutta_admin_tours" && Array.isArray(parsed)) {
+    if (key === "mandyal_admin_tours" && Array.isArray(parsed)) {
       const index4 = parsed.findIndex((t) => t.slug === "4-char-devi-darshan");
       const new6 = defaultVal.find((t) => t.slug === "6-devi-darshan-yatra");
       if (index4 !== -1 && new6) {
@@ -32,8 +32,8 @@ const loadStorage = (key, defaultVal) => {
 };
 
 export const defaultBusiness = {
-  name: "Dutta Tour & Travel",
-  legalTradeNames: ["Dutta Travels", "Dutta Motors"],
+  name: "Mandyal Tour & Travels",
+  legalTradeNames: ["Mandyal Travels", "Mandyal Motors"],
   tagline: "Una's trusted travel service",
   description:
     "Cab service and tempo traveller rentals based in Una, Himachal Pradesh, offering local taxi, outstation taxi, railway and airport transfers, and Himachal tour packages.",
@@ -46,11 +46,11 @@ export const defaultBusiness = {
     fullAddress:
       "F796+M34, Adjacent Punjab & Sind Bank, Una-Amb Road, Prem Nagar, Una, Himachal Pradesh 174303",
   },
-  phones: ["+91 8894021277", "+91 6230433588"],
-  phonesTel: ["+918894021277", "+916230433588"],
-  whatsappNumber: "918894021277",
-  email: "duttalav@gmail.com",
-  siteUrl: "https://www.duttatourtravel.com", // update to the real production domain before deploy
+  phones: ["+91 7807481503", "+91 8894021277"],
+  phonesTel: ["+917807481503", "+918894021277"],
+  whatsappNumber: "917807481503",
+  email: "mandyalmanoj@gmail.com",
+  siteUrl: "https://www.mandyaltourtravel.com",
 };
 
 export const defaultFleet = [
@@ -476,41 +476,41 @@ export const defaultTestimonials = [
     initials: "AM",
     color: "bg-amber-600",
     quote:
-      "Very good experience. Company owner (Lav Dutta) is very humble and very nice in talking. The Driver Raj Kumar (Ricky) was not Driver for us in the three days trip to Manikaran Sahib, he become like family member for us. Stopped the Car whenever asked him to because we were travelling with little kids.",
+      "Very good experience. Company owner (Manoj Mandyal) is very humble and very nice in talking. The Driver Raj Kumar (Ricky) was not Driver for us in the three days trip to Manikaran Sahib, he become like family member for us. Stopped the Car whenever asked him to because we were travelling with little kids.",
   },
   {
     name: "Sunil Mittal",
     initials: "SM",
     color: "bg-blue-600",
     quote:
-      "Hired taxi from Dutta Travels this month from Shimla and Manali with family. I fully satisfied with the service, the cab was very good condition and neat and clean. The driver Mr. Raj Kumar was cooperative and helpful in guiding us the entire trip. Thanks owner Mr. Lav Dutta.",
+      "Hired taxi from Mandyal Travels this month from Shimla and Manali with family. I fully satisfied with the service, the cab was very good condition and neat and clean. The driver Mr. Raj Kumar was cooperative and helpful in guiding us the entire trip. Thanks owner Mr. Manoj Mandyal.",
   },
   {
     name: "Aditya Singh",
     initials: "AS",
     color: "bg-rose-600",
     quote:
-      "Used Dutta Travels for a three-day excursion for Amritsar and had a wonderful time. Mr. Ravi, the driver, was very courteous, professional, and cooperative. Will use them once more when necessary. Highly advise using their services if you want a hassle-free trip.",
+      "Used Mandyal Travels for a three-day excursion for Amritsar and had a wonderful time. Mr. Ravi, the driver, was very courteous, professional, and cooperative. Will use them once more when necessary. Highly advise using their services if you want a hassle-free trip.",
   },
   {
     name: "Agastya Garg",
     initials: "AG",
     color: "bg-orange-600",
     quote:
-      "Recently booked a cab with Dutta Travels and had an amazing experience. He was really friendly, soft-spoken, and made sure I had a safe and smooth ride to Shimla, Manali 7 days tour. I highly recommend him as a cab driver. Thanks, for the great service!",
+      "Recently booked a cab with Mandyal Travels and had an amazing experience. He was really friendly, soft-spoken, and made sure I had a safe and smooth ride to Shimla, Manali 7 days tour. I highly recommend him as a cab driver. Thanks, for the great service!",
   },
 ];
 
 // Live editable data instances synced with localStorage
-export const business = loadStorage("dutta_admin_business", defaultBusiness);
-export const fleet = loadStorage("dutta_admin_fleet", defaultFleet);
-export const destinations = loadStorage("dutta_admin_destinations", defaultDestinations);
-export const tourPackages = loadStorage("dutta_admin_tours", defaultTourPackages);
-export const stats = loadStorage("dutta_admin_stats", defaultStats);
-export const testimonials = loadStorage("dutta_admin_testimonials", defaultTestimonials);
+export const business = loadStorage("mandyal_admin_business", defaultBusiness);
+export const fleet = loadStorage("mandyal_admin_fleet", defaultFleet);
+export const destinations = loadStorage("mandyal_admin_destinations", defaultDestinations);
+export const tourPackages = loadStorage("mandyal_admin_tours", defaultTourPackages);
+export const stats = loadStorage("mandyal_admin_stats", defaultStats);
+export const testimonials = loadStorage("mandyal_admin_testimonials", defaultTestimonials);
 
 export const whatsappLink = (message) =>
-  `https://wa.me/${business.whatsappNumber || "918894021277"}?text=${encodeURIComponent(message)}`;
+  `https://wa.me/${business.whatsappNumber || "917807481503"}?text=${encodeURIComponent(message)}`;
 
 // Admin sync functions to persist edits and update live in-memory objects
 export function saveBusiness(newBusiness) {
@@ -519,8 +519,9 @@ export function saveBusiness(newBusiness) {
     business.phonesTel = business.phones.map((p) => p.replace(/\s+/g, ""));
   }
   if (typeof window !== "undefined") {
-    localStorage.setItem("dutta_admin_business", JSON.stringify(business));
-    window.dispatchEvent(new Event("dutta_data_updated"));
+    localStorage.setItem("mandyal_admin_business", JSON.stringify(business));
+    window.dispatchEvent(new Event("mandyal_data_updated"));
+    window.dispatchEvent(new Event("mandyal_data_updated"));
   }
 }
 
@@ -528,8 +529,9 @@ export function saveFleet(newFleet) {
   fleet.length = 0;
   fleet.push(...newFleet);
   if (typeof window !== "undefined") {
-    localStorage.setItem("dutta_admin_fleet", JSON.stringify(fleet));
-    window.dispatchEvent(new Event("dutta_data_updated"));
+    localStorage.setItem("mandyal_admin_fleet", JSON.stringify(fleet));
+    window.dispatchEvent(new Event("mandyal_data_updated"));
+    window.dispatchEvent(new Event("mandyal_data_updated"));
   }
 }
 
@@ -537,8 +539,9 @@ export function saveDestinations(newDestinations) {
   destinations.length = 0;
   destinations.push(...newDestinations);
   if (typeof window !== "undefined") {
-    localStorage.setItem("dutta_admin_destinations", JSON.stringify(destinations));
-    window.dispatchEvent(new Event("dutta_data_updated"));
+    localStorage.setItem("mandyal_admin_destinations", JSON.stringify(destinations));
+    window.dispatchEvent(new Event("mandyal_data_updated"));
+    window.dispatchEvent(new Event("mandyal_data_updated"));
   }
 }
 
@@ -546,8 +549,9 @@ export function saveTourPackages(newTours) {
   tourPackages.length = 0;
   tourPackages.push(...newTours);
   if (typeof window !== "undefined") {
-    localStorage.setItem("dutta_admin_tours", JSON.stringify(tourPackages));
-    window.dispatchEvent(new Event("dutta_data_updated"));
+    localStorage.setItem("mandyal_admin_tours", JSON.stringify(tourPackages));
+    window.dispatchEvent(new Event("mandyal_data_updated"));
+    window.dispatchEvent(new Event("mandyal_data_updated"));
   }
 }
 
@@ -555,8 +559,9 @@ export function saveStats(newStats) {
   stats.length = 0;
   stats.push(...newStats);
   if (typeof window !== "undefined") {
-    localStorage.setItem("dutta_admin_stats", JSON.stringify(stats));
-    window.dispatchEvent(new Event("dutta_data_updated"));
+    localStorage.setItem("mandyal_admin_stats", JSON.stringify(stats));
+    window.dispatchEvent(new Event("mandyal_data_updated"));
+    window.dispatchEvent(new Event("mandyal_data_updated"));
   }
 }
 
@@ -564,8 +569,9 @@ export function saveTestimonials(newTestimonials) {
   testimonials.length = 0;
   testimonials.push(...newTestimonials);
   if (typeof window !== "undefined") {
-    localStorage.setItem("dutta_admin_testimonials", JSON.stringify(testimonials));
-    window.dispatchEvent(new Event("dutta_data_updated"));
+    localStorage.setItem("mandyal_admin_testimonials", JSON.stringify(testimonials));
+    window.dispatchEvent(new Event("mandyal_data_updated"));
+    window.dispatchEvent(new Event("mandyal_data_updated"));
   }
 }
 
@@ -573,7 +579,7 @@ export function saveTestimonials(newTestimonials) {
 export function recordBookingInquiry({ name, phone, pickup, drop, car, date, notes }) {
   if (typeof window === "undefined") return;
   try {
-    const raw = localStorage.getItem("dutta_admin_inquiries");
+    const raw = localStorage.getItem("mandyal_admin_inquiries");
     const parsed = raw ? JSON.parse(raw) : [];
     const list = Array.isArray(parsed)
       ? parsed.filter(
@@ -596,8 +602,9 @@ export function recordBookingInquiry({ name, phone, pickup, drop, car, date, not
       status: "Confirmed",
     };
     list.unshift(newEntry);
-    localStorage.setItem("dutta_admin_inquiries", JSON.stringify(list));
-    window.dispatchEvent(new Event("dutta_inquiries_updated"));
+    localStorage.setItem("mandyal_admin_inquiries", JSON.stringify(list));
+    window.dispatchEvent(new Event("mandyal_inquiries_updated"));
+    window.dispatchEvent(new Event("mandyal_inquiries_updated"));
   } catch (err) {
     console.error("Failed to save booking inquiry", err);
   }
@@ -605,13 +612,13 @@ export function recordBookingInquiry({ name, phone, pickup, drop, car, date, not
 
 export function resetAllData() {
   if (typeof window !== "undefined") {
-    localStorage.removeItem("dutta_admin_business");
-    localStorage.removeItem("dutta_admin_fleet");
-    localStorage.removeItem("dutta_admin_destinations");
-    localStorage.removeItem("dutta_admin_tours");
-    localStorage.removeItem("dutta_admin_stats");
-    localStorage.removeItem("dutta_admin_testimonials");
-    localStorage.removeItem("dutta_admin_inquiries");
+    localStorage.removeItem("mandyal_admin_business");
+    localStorage.removeItem("mandyal_admin_fleet");
+    localStorage.removeItem("mandyal_admin_destinations");
+    localStorage.removeItem("mandyal_admin_tours");
+    localStorage.removeItem("mandyal_admin_stats");
+    localStorage.removeItem("mandyal_admin_testimonials");
+    localStorage.removeItem("mandyal_admin_inquiries");
   }
   Object.keys(business).forEach((k) => delete business[k]);
   Object.assign(business, JSON.parse(JSON.stringify(defaultBusiness)));
@@ -632,6 +639,7 @@ export function resetAllData() {
   testimonials.push(...JSON.parse(JSON.stringify(defaultTestimonials)));
 
   if (typeof window !== "undefined") {
-    window.dispatchEvent(new Event("dutta_data_updated"));
+    window.dispatchEvent(new Event("mandyal_data_updated"));
+    window.dispatchEvent(new Event("mandyal_data_updated"));
   }
 }

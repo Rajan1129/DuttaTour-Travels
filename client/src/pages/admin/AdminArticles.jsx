@@ -19,7 +19,7 @@ const emptyForm = {
 };
 
 export default function AdminArticles() {
-  const [token, setToken] = useState(localStorage.getItem("dutta_admin_token") || "");
+  const [token, setToken] = useState(localStorage.getItem("mandyal_admin_token") || "");
   const [articles, setArticles] = useState([]);
   const [form, setForm] = useState(emptyForm);
   const [status, setStatus] = useState("");
@@ -39,7 +39,7 @@ export default function AdminArticles() {
 
   const saveToken = (t) => {
     setToken(t);
-    localStorage.setItem("dutta_admin_token", t);
+    localStorage.setItem("mandyal_admin_token", t);
   };
 
   const submit = async (e) => {
@@ -62,7 +62,7 @@ export default function AdminArticles() {
 
   return (
     <div className="min-h-screen bg-surface p-6 max-w-3xl mx-auto flex flex-col gap-space-lg">
-      <SEO path="/admin/articles" title="Admin | Dutta Tour & Travel" description="Admin area." noindex />
+      <SEO path="/admin/articles" title="Admin | Mandyal Tour & Travel" description="Admin area." noindex />
       <h1 className="font-headline-lg font-bold">Travel Guide — Admin</h1>
 
       <div className="flex items-center gap-space-sm">

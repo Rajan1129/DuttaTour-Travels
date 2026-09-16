@@ -82,15 +82,15 @@ export default function Header() {
             <Link to="/" className="flex items-center gap-2 sm:gap-2.5">
               <img
                 src="/logo.png"
-                alt="Dutta Tour & Travels"
+                alt="Mandyal Tour & Travels"
                 className="h-9 sm:h-12 w-auto object-contain"
               />
               <div className="flex flex-col">
                 <span className="font-extrabold text-[16px] sm:text-[22px] text-[#1e2638] leading-tight tracking-tight">
-                  Dutta Travels
+                  Mandyal Travels
                 </span>
                 <span className="font-bold text-[8.5px] sm:text-[11px] text-[#e65100] uppercase tracking-wider">
-                  DUTTA MOTORS &bull; UNA
+                  MANDYAL MOTORS &bull; UNA
                 </span>
               </div>
             </Link>
@@ -215,7 +215,7 @@ export default function Header() {
 
             {/* Desktop Direct Booking */}
             <a
-              href={whatsappLink("Hello Dutta Travels, I would like to make a Direct Cab Booking")}
+              href={whatsappLink("Hello Mandyal Travels, I would like to make a Direct Cab Booking")}
               target="_blank"
               rel="noopener noreferrer"
               className="hidden sm:inline-flex items-center gap-1.5 px-5 sm:px-6 py-2.5 rounded-full bg-[#f57c00] hover:bg-[#e65100] text-white text-xs sm:text-sm font-bold shadow-md hover:shadow-lg transition-all"
@@ -227,7 +227,7 @@ export default function Header() {
             {/* Mobile Circular Phone Call Button */}
             <a
               href={`tel:${business.phonesTel[0]}`}
-              title="Call Dutta Travels"
+              title="Call Mandyal Travels"
               className="lg:hidden w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#fdeedc] text-[#8f4200] flex items-center justify-center shadow-sm"
             >
               <span className="material-symbols-outlined text-[20px]">call</span>

@@ -10,7 +10,7 @@ const contactFaqs = [
   {
     question: "How quickly do you confirm taxi bookings?",
     answer:
-      "When you message or call us on WhatsApp (+91 8894021277), founder Lav Dutta responds within 5 to 10 minutes with cab availability, vehicle options, and an all-inclusive transparent quote.",
+      "When you message or call us on WhatsApp (+91 7807481503), founder Manoj Mandyal responds within 5 to 10 minutes with cab availability, vehicle options, and an all-inclusive transparent quote.",
   },
   {
     question: "What details are required for Amb Andaura Vande Bharat pickup?",
@@ -121,11 +121,11 @@ export default function Contact() {
             </div>
 
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight tracking-tight mb-6">
-              Get in Touch with Dutta Tour &amp; Travel
+              Get in Touch with Mandyal Tour &amp; Travel
             </h1>
 
             <p className="text-base sm:text-lg text-gray-300 leading-relaxed mb-8">
-              Connect directly with owner <strong className="text-white font-semibold">Lav Dutta</strong> for
+              Connect directly with owner <strong className="text-white font-semibold">Manoj Mandyal</strong> for
               immediate cab reservations, Amb Andaura Vande Bharat platform pickups, airport transfers, and
               Himachal pilgrimage itineraries. Free consultations and all-inclusive transparent quotes.
             </p>
@@ -140,7 +140,7 @@ export default function Contact() {
               </a>
 
               <a
-                href={whatsappLink("Hello Lav Ji, I want to book a taxi with Dutta Tour & Travel.")}
+                href={whatsappLink("Hello Manoj Ji, I want to book a taxi with Mandyal Tour & Travel.")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-lg hover:shadow-xl transition-all"
@@ -213,7 +213,7 @@ export default function Contact() {
                 </h2>
                 <p className="text-xs sm:text-sm text-gray-600 mt-2">
                   Fill in your travel details below and click dispatch. Your request will open directly in
-                  WhatsApp for immediate confirmation with Lav Dutta.
+                  WhatsApp for immediate confirmation with Manoj Mandyal.
                 </p>
               </div>
 
@@ -433,7 +433,7 @@ export default function Contact() {
                     LD
                   </div>
                   <div>
-                    <h3 className="font-extrabold text-lg text-white">Lav Dutta</h3>
+                    <h3 className="font-extrabold text-lg text-white">Manoj Mandyal</h3>
                     <span className="text-xs text-orange-400 font-bold uppercase tracking-wider block">
                       Founder &amp; Managing Director
                     </span>
@@ -441,7 +441,7 @@ export default function Contact() {
                 </div>
 
                 <p className="text-xs text-gray-300 leading-relaxed mb-6">
-                  Speaks directly with every guest. Call or message Lav Ji anytime for emergency train
+                  Speaks directly with every guest. Call or message Manoj Ji anytime for emergency train
                   pickups, hill route advice, or customized tour arrangements.
                 </p>
 
@@ -455,7 +455,7 @@ export default function Contact() {
                   </a>
 
                   <a
-                    href={whatsappLink("Hello Lav Ji, I need to book a taxi.")}
+                    href={whatsappLink("Hello Manoj Ji, I need to book a taxi.")}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-colors shadow-sm"
@@ -483,7 +483,7 @@ export default function Contact() {
 
                 <div>
                   <h4 className="font-extrabold text-base text-[#1e2638] mb-1">
-                    Dutta Tour &amp; Travel (Dutta Motors)
+                    Mandyal Tour &amp; Travel (Mandyal Motors)
                   </h4>
                   <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
                     {business.location.fullAddress}
@@ -560,7 +560,7 @@ export default function Contact() {
               Simple &amp; Hassle-Free
             </span>
             <h2 className="text-2xl sm:text-3xl font-bold text-[#1e2638]">
-              How Booking Works with Dutta Travels
+              How Booking Works with Mandyal Travels
             </h2>
           </div>
 
@@ -581,7 +581,7 @@ export default function Contact() {
               </div>
               <h3 className="font-bold text-base text-[#1e2638]">Instant Transparent Quote</h3>
               <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                Receive an all-inclusive fixed quote from Lav Dutta with verified vehicle details and zero hidden extras.
+                Receive an all-inclusive fixed quote from Manoj Mandyal with verified vehicle details and zero hidden extras.
               </p>
             </div>
 
@@ -664,7 +664,7 @@ export default function Contact() {
             </a>
 
             <a
-              href={whatsappLink("Hello Lav Ji, I need an immediate taxi.")}
+              href={whatsappLink("Hello Manoj Ji, I need an immediate taxi.")}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-lg hover:shadow-xl transition-all"

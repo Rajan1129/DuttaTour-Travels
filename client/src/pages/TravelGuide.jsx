@@ -13,7 +13,7 @@ export default function TravelGuide() {
   const seo = seoConfig.travelGuide;
   const crumbs = [{ name: "Home", path: "/" }, { name: "Travel Guide" }];
   const [articles, setArticles] = useState(() => {
-    const saved = localStorage.getItem("dutta_admin_articles");
+    const saved = localStorage.getItem("mandyal_admin_articles");
     return saved ? JSON.parse(saved) : defaultArticles;
   });
   const [loading, setLoading] = useState(false);

@@ -30,12 +30,12 @@ export default function TaxiServices() {
         <div className="flex flex-col gap-2 max-w-2xl">
           <h1 className="font-headline-xl font-bold">Taxi Services in Una</h1>
           <p className="text-body-lg text-on-surface-variant">
-            Dutta Tour &amp; Travel provides local and outstation taxi services from Una, Himachal
+            Mandyal Tour &amp; Travel provides local and outstation taxi services from Una, Himachal
             Pradesh, including railway and airport transfers and travel across the wider Himachal
             region. Choose the service that matches your journey below.
           </p>
         </div>
-        <CtaButtons whatsappMessage="Hello Dutta Travels, I need a cab quote" />
+        <CtaButtons whatsappMessage="Hello Mandyal Travels, I need a cab quote" />
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-space-lg pt-space-md">
           {services.map((s) => (
             <Link

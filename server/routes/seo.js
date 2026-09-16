@@ -3,7 +3,7 @@ import Article from "../models/Article.js";
 
 const router = express.Router();
 
-const SITE_URL = process.env.SITE_URL || "https://www.duttatourtravel.com";
+const SITE_URL = process.env.SITE_URL || "https://www.mandyaltourtravel.com";
 
 // Static, canonical, indexable public routes. Keep in sync with App.jsx.
 const staticRoutes = [

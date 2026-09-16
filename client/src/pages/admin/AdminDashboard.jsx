@@ -59,7 +59,7 @@ const initialArticles = [
     h1: "Una to 6 Devi Darshan: Chintpurni, Jwala Ji, Baglamukhi, Kangra, Chamunda & Naina Devi Yatra Guide",
     description:
       "A complete guide for devotees planning the sacred 6 Devi Darshan pilgrimage starting from Una and Amb Andaura. Temple timings, routes, VIP slips, and cab booking tips.",
-    seoTitle: "6 Devi Darshan Yatra Guide from Una | Chintpurni, Baglamukhi, Naina Devi Cab | Dutta Travels",
+    seoTitle: "6 Devi Darshan Yatra Guide from Una | Chintpurni, Baglamukhi, Naina Devi Cab | Mandyal Travels",
     seoDescription:
       "Complete pilgrimage guide for 6 Devi Darshan from Una & Amb Andaura. Covering Maa Chintpurni, Jwala Ji, Baglamukhi, Brajeshwari Kangra, Chamunda Devi, and Naina Devi with verified hill cabs.",
     featuredImage: "/images/tours/6-devi-darshan.jpg",
@@ -88,7 +88,7 @@ const initialArticles = [
       <p>Perched high on a hilltop with scenic cable car ropeway access overlooking Gobind Sagar Lake, Maa Naina Devi blesses devotees on their return route towards Una and Anandpur Sahib.</p>
       
       <h3>Recommended Cab Booking & Itinerary</h3>
-      <p>Dutta Tour & Travel operates specialized 2-day and 3-day relaxed 6 Devi Darshan circuits with certified local mountain chauffeurs. Book your Innova Crysta or Ertiga directly from Prem Nagar Una or Amb Andaura station.</p>
+      <p>Mandyal Tour & Travel operates specialized 2-day and 3-day relaxed 6 Devi Darshan circuits with certified local mountain chauffeurs. Book your Innova Crysta or Ertiga directly from Prem Nagar Una or Amb Andaura station.</p>
     `,
   },
   {
@@ -99,7 +99,7 @@ const initialArticles = [
     h1: "Amb Andaura (AADR) Vande Bharat: Arrival Timings, Platform Pickup & Taxi Guide",
     description:
       "Practical travel guide for passengers arriving on the New Delhi - Amb Andaura Vande Bharat Express (22447). Platform meet-and-greet, onward taxi options to Dharamshala, Chintpurni, and Manali.",
-    seoTitle: "Amb Andaura Vande Bharat Taxi Guide | Platform Cab Booking | Dutta Travels",
+    seoTitle: "Amb Andaura Vande Bharat Taxi Guide | Platform Cab Booking | Mandyal Travels",
     seoDescription:
       "Arriving on Vande Bharat at Amb Andaura (AADR)? Learn about platform taxi pickup, onward travel times to Dharamshala, Chintpurni, Kangra, and best cab options.",
     featuredImage: "/images/destinations/dharamshala.jpg",
@@ -117,8 +117,8 @@ const initialArticles = [
         <li><strong>Kullu-Manali:</strong> 240 km (~6.5 hours via Kiratpur-Nerchowk expressway)</li>
       </ul>
       
-      <h3>Why Pre-Book Your Station Chauffeur with Dutta Travels?</h3>
-      <p>Because Amb Andaura is a terminal rural railway station, local walk-up taxis can be limited during weekend peak rushes. Dutta Tour & Travel provides confirmed platform pickups with flight/train delay monitoring, sanitized yellow-plate cars, and courteous local pahadi drivers.</p>
+      <h3>Why Pre-Book Your Station Chauffeur with Mandyal Travels?</h3>
+      <p>Because Amb Andaura is a terminal rural railway station, local walk-up taxis can be limited during weekend peak rushes. Mandyal Tour & Travel provides confirmed platform pickups with flight/train delay monitoring, sanitized yellow-plate cars, and courteous local pahadi drivers.</p>
     `,
   },
   {
@@ -129,7 +129,7 @@ const initialArticles = [
     h1: "Una to Manali Road Trip Guide: Kiratpur 4-Lane, Atal Tunnel & Mountain Driving Tips",
     description:
       "Essential guide for travelers driving from Una to Kullu, Manali, and Atal Tunnel Sissu. Route conditions, new 4-lane expressway updates, and hill safety notes.",
-    seoTitle: "Una to Manali Road Trip & Taxi Guide | Kiratpur 4-Lane | Dutta Travels",
+    seoTitle: "Una to Manali Road Trip & Taxi Guide | Kiratpur 4-Lane | Mandyal Travels",
     seoDescription:
       "Plan your Una to Manali taxi journey via the new Kiratpur-Nerchowk 4-lane expressway. Learn travel times, Atal Tunnel access, and scenic stops along the Beas River.",
     featuredImage: "/images/destinations/manali.jpg",
@@ -302,7 +302,7 @@ function ImagePicker({ label, value, onChange, presets = [], isDark = true }) {
 
 export default function AdminDashboard() {
   const navigate = useNavigate();
-  const token = localStorage.getItem("dutta_admin_token");
+  const token = localStorage.getItem("mandyal_admin_token");
 
   // Redirect if not logged in
   useEffect(() => {
@@ -313,7 +313,7 @@ export default function AdminDashboard() {
 
   // Theme State: "dark" | "light"
   const [theme, setTheme] = useState(() => {
-    return localStorage.getItem("dutta_admin_theme") || "dark";
+    return localStorage.getItem("mandyal_admin_theme") || "dark";
   });
 
   const isDark = theme === "dark";
@@ -321,7 +321,7 @@ export default function AdminDashboard() {
   const toggleTheme = () => {
     const next = isDark ? "light" : "dark";
     setTheme(next);
-    localStorage.setItem("dutta_admin_theme", next);
+    localStorage.setItem("mandyal_admin_theme", next);
   };
 
   // Theme-aware Style Tokens
@@ -386,7 +386,7 @@ export default function AdminDashboard() {
 
   // 7. Articles (Travel Guide CMS)
   const [articles, setArticles] = useState(() => {
-    const saved = localStorage.getItem("dutta_admin_articles");
+    const saved = localStorage.getItem("mandyal_admin_articles");
     return saved ? JSON.parse(saved) : initialArticles;
   });
   const [articleForm, setArticleForm] = useState(emptyArticleForm);
@@ -396,7 +396,7 @@ export default function AdminDashboard() {
   // 8. Inquiries / Dispatch Desk (Real bookings only - zero fake mock entries)
   const [inquiries, setInquiries] = useState(() => {
     try {
-      const saved = localStorage.getItem("dutta_admin_inquiries");
+      const saved = localStorage.getItem("mandyal_admin_inquiries");
       if (!saved) return [];
       const parsed = JSON.parse(saved);
       return Array.isArray(parsed)
@@ -423,17 +423,17 @@ export default function AdminDashboard() {
 
   // Save articles and inquiries to localStorage whenever modified
   useEffect(() => {
-    localStorage.setItem("dutta_admin_articles", JSON.stringify(articles));
+    localStorage.setItem("mandyal_admin_articles", JSON.stringify(articles));
   }, [articles]);
 
   useEffect(() => {
-    localStorage.setItem("dutta_admin_inquiries", JSON.stringify(inquiries));
+    localStorage.setItem("mandyal_admin_inquiries", JSON.stringify(inquiries));
   }, [inquiries]);
 
   // Purge any legacy fake mock entries from localStorage on mount
   useEffect(() => {
     try {
-      const saved = localStorage.getItem("dutta_admin_inquiries");
+      const saved = localStorage.getItem("mandyal_admin_inquiries");
       if (saved) {
         const parsed = JSON.parse(saved);
         if (Array.isArray(parsed)) {
@@ -445,7 +445,7 @@ export default function AdminDashboard() {
               inq.name !== "Sunil Sharma"
           );
           if (cleaned.length !== parsed.length) {
-            localStorage.setItem("dutta_admin_inquiries", JSON.stringify(cleaned));
+            localStorage.setItem("mandyal_admin_inquiries", JSON.stringify(cleaned));
             setInquiries(cleaned);
           }
         }
@@ -459,7 +459,7 @@ export default function AdminDashboard() {
   useEffect(() => {
     const handleInqUpdate = () => {
       try {
-        const saved = localStorage.getItem("dutta_admin_inquiries");
+        const saved = localStorage.getItem("mandyal_admin_inquiries");
         if (saved) {
           const parsed = JSON.parse(saved);
           if (Array.isArray(parsed)) {
@@ -478,8 +478,8 @@ export default function AdminDashboard() {
         console.error("Error syncing inquiries", err);
       }
     };
-    window.addEventListener("dutta_inquiries_updated", handleInqUpdate);
-    return () => window.removeEventListener("dutta_inquiries_updated", handleInqUpdate);
+    window.addEventListener("mandyal_inquiries_updated", handleInqUpdate);
+    return () => window.removeEventListener("mandyal_inquiries_updated", handleInqUpdate);
   }, []);
 
   // -------------------------------------------------------------
@@ -866,7 +866,7 @@ export default function AdminDashboard() {
   };
 
   const handleLogout = () => {
-    localStorage.removeItem("dutta_admin_token");
+    localStorage.removeItem("mandyal_admin_token");
     navigate("/admin/login");
   };
 
@@ -887,8 +887,8 @@ export default function AdminDashboard() {
     <div className={`min-h-screen w-full overflow-y-auto ${c.pageBg} transition-colors duration-200 selection:bg-orange-500 selection:text-white`}>
       <SEO
         path="/admin/dashboard"
-        title="Admin Command Center | Dutta Tour & Travel"
-        description="Full CRUD Admin Management Console for Dutta Tour & Travel."
+        title="Admin Command Center | Mandyal Tour & Travel"
+        description="Full CRUD Admin Management Console for Mandyal Tour & Travel."
         noindex
       />
 
@@ -914,15 +914,15 @@ export default function AdminDashboard() {
             >
               <img
                 src="/logo.png"
-                alt="Dutta Tour & Travels"
+                alt="Mandyal Tour & Travels"
                 className="h-10 sm:h-11 w-auto object-contain bg-white rounded-xl p-1 shadow-md"
               />
               <div className="flex flex-col">
                 <span className={`font-extrabold text-base sm:text-lg ${c.textPrimary} leading-tight tracking-tight`}>
-                  Dutta Travels
+                  Mandyal Travels
                 </span>
                 <span className="font-bold text-[9px] sm:text-[10px] text-[#f57c00] uppercase tracking-wider">
-                  DUTTA MOTORS &bull; UNA
+                  MANDYAL MOTORS &bull; UNA
                 </span>
               </div>
             </Link>
@@ -932,7 +932,7 @@ export default function AdminDashboard() {
             <div className="hidden md:flex flex-col">
               <span className={`text-xs font-bold ${c.textLabel}`}>Admin Command Center</span>
               <span className={`text-[10px] ${c.textSecondary}`}>
-                Prem Nagar HQ &bull; Lav Dutta (+91 8894021277)
+                Prem Nagar HQ &bull; Manoj Mandyal (+91 7807481503)
               </span>
             </div>
           </div>
@@ -1328,7 +1328,7 @@ export default function AdminDashboard() {
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 <div>
                   <label className={`block text-xs font-bold ${c.textLabel} uppercase tracking-wide mb-1`}>
-                    Primary Phone (Lav Dutta) *
+                    Primary Phone (Manoj Mandyal) *
                   </label>
                   <input
                     type="text"
@@ -2164,7 +2164,7 @@ export default function AdminDashboard() {
                 Log Walk-In / Phone Booking
               </h2>
               <p className={`text-xs ${c.textSecondary} mb-4`}>
-                Record phone calls received at Prem Nagar HQ (+91 8894021277) for driver dispatch.
+                Record phone calls received at Prem Nagar HQ (+91 7807481503) for driver dispatch.
               </p>
 
               <form onSubmit={handleAddInquiry} className="flex flex-col gap-3.5">
@@ -2306,7 +2306,7 @@ export default function AdminDashboard() {
 
                       <div className="flex items-center gap-2 self-start sm:self-auto shrink-0">
                         <a
-                          href={whatsappLink(`Hello ${inq.name}, regarding your trip from ${inq.pickup} to ${inq.drop} with Dutta Travels:`)}
+                          href={whatsappLink(`Hello ${inq.name}, regarding your trip from ${inq.pickup} to ${inq.drop} with Mandyal Travels:`)}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="px-3 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs inline-flex items-center gap-1.5 shadow-sm"
@@ -2911,7 +2911,7 @@ export default function AdminDashboard() {
             </h3>
 
             <p className={`text-xs ${c.textSecondary} mb-6 leading-relaxed`}>
-              This will restore all default fleet vehicles, destinations, tour packages, business contact info, and testimonials to the original verified Dutta Tour &amp; Travel configuration.
+              This will restore all default fleet vehicles, destinations, tour packages, business contact info, and testimonials to the original verified Mandyal Tour &amp; Travel configuration.
             </p>
 
             <div className="flex items-center justify-center gap-3">

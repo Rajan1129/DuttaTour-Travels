@@ -4,7 +4,7 @@
 export function adminAuth(req, res, next) {
   const header = req.headers.authorization || "";
   const token = header.startsWith("Bearer ") ? header.slice(7) : null;
-  const expected = process.env.ADMIN_API_TOKEN || "dutta-admin-secret-2026";
+  const expected = process.env.ADMIN_API_TOKEN || "mandyal-admin-secret-2026";
 
   if (!token || token !== expected) {
     return res.status(401).json({ error: "Unauthorized. Invalid admin token." });

@@ -30,7 +30,7 @@ export default function Layout({ children }) {
         </a>
 
         <a
-          href={whatsappLink("Hello Dutta Travels, I would like to book a cab.")}
+          href={whatsappLink("Hello Mandyal Travels, I would like to book a cab.")}
           target="_blank"
           rel="noopener noreferrer"
           className="flex-1 py-3.5 px-3 rounded-2xl bg-[#25D366] hover:bg-[#20bd5a] text-white flex items-center justify-center gap-2 font-bold text-xs sm:text-sm shadow-md active:scale-95 transition-all"

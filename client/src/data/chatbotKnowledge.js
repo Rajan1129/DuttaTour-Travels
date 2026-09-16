@@ -1,14 +1,14 @@
-// Intelligent Knowledge Base & Semantic Matcher for Dutta Tour & Travel AI Assistant
-// Owner: Lav Dutta | HQ: Prem Nagar, Una, Himachal Pradesh
+// Intelligent Knowledge Base & Semantic Matcher for Mandyal Tour & Travel AI Assistant
+// Owner: Manoj Mandyal | HQ: Prem Nagar, Una, Himachal Pradesh
 
 import { business } from "./business";
 
 export const BOT_AVATAR = "/logo.png";
-export const BOT_NAME = "Dutta Chauffeur Desk AI";
-export const OWNER_NAME = "Lav Dutta";
-export const PRIMARY_PHONE = business?.phones?.[0] || "+91 8894021277";
-export const SECONDARY_PHONE = business?.phones?.[1] || "+91 6230433588";
-export const WHATSAPP_NUMBER = business?.whatsappNumber || "918894021277";
+export const BOT_NAME = "Mandyal Chauffeur Desk AI";
+export const OWNER_NAME = "Manoj Mandyal";
+export const PRIMARY_PHONE = business?.phones?.[0] || "+91 7807481503";
+export const SECONDARY_PHONE = business?.phones?.[1] || "+91 8894021277";
+export const WHATSAPP_NUMBER = business?.whatsappNumber || "917807481503";
 
 export const QUICK_SUGGESTIONS = [
   { id: "6-devi", label: "🕉️ 6 Devi Darshan", query: "Tell me about the 6 Devi Darshan Yatra package and temples" },
@@ -16,7 +16,7 @@ export const QUICK_SUGGESTIONS = [
   { id: "spiti", label: "🏔️ Spiti Valley", query: "Spiti Valley road trip itinerary and details" },
   { id: "vande-bharat", label: "🚄 Amb Vande Bharat", query: "How does Amb Andaura Vande Bharat platform pickup work?" },
   { id: "fleet-fares", label: "🚘 Fleet & Fares", query: "What cars are available and how are taxi fares calculated?" },
-  { id: "contact-owner", label: "📞 Speak with Lav Dutta", query: "I want to speak with owner Lav Dutta directly" },
+  { id: "contact-owner", label: "📞 Speak with Manoj Mandyal", query: "I want to speak with owner Manoj Mandyal directly" },
 ];
 
 export const KNOWLEDGE_BASE = [
@@ -32,7 +32,7 @@ export const KNOWLEDGE_BASE = [
     summary: "Complete 5N/6D or customized circuit covering all 6 holy Shaktipeeths & Siddhapeeths.",
     answer: `**6 Sacred Devi Darshan Yatra (5N/6D or 2-3 Day Express):**
 
-Dutta Tour & Travel specializes in the sacred Devi pilgrimage starting directly from **Una or Amb Andaura Railway Station**:
+Mandyal Tour & Travels specializes in the sacred Devi pilgrimage starting directly from **Una or Amb Andaura Railway Station**:
 
 1. **Maa Chintpurni Devi (Chhinnamastika Dham, Una):** Wish-fulfilling shrine, priority queue assistance & battery carts for elders.
 2. **Maa Jwala Ji (Kangra):** World-renowned eternal 9 natural flames burning without fuel.
@@ -45,7 +45,7 @@ Dutta Tour & Travel specializes in the sacred Devi pilgrimage starting directly 
     action: {
       type: "whatsapp",
       label: "Book 6 Devi Darshan on WhatsApp",
-      query: "Hello Lav Dutta, I would like to book the 6 Devi Darshan Yatra."
+      query: "Hello Manoj Mandyal, I would like to book the 6 Devi Darshan Yatra."
     }
   },
   {
@@ -60,7 +60,7 @@ Dutta Tour & Travel specializes in the sacred Devi pilgrimage starting directly 
     summary: "Pan-India Shiva pilgrimage with dedicated private vehicle, verified chauffeur & customized legs.",
     answer: `**12 Sacred Jyotirlinga Mahayatra:**
 
-Experience the supreme blessing of Lord Shiva across India with Dutta Tour & Travel:
+Experience the supreme blessing of Lord Shiva across India with Mandyal Tour & Travels:
 
 • **The 12 Holy Jyotirlingas:**
   1. Somnath (Gujarat)
@@ -80,7 +80,7 @@ Experience the supreme blessing of Lord Shiva across India with Dutta Tour & Tra
     action: {
       type: "whatsapp",
       label: "Plan 12 Jyotirlinga on WhatsApp",
-      query: "Hello Lav Dutta, I want details and quotation for 12 Jyotirlinga Yatra."
+      query: "Hello Manoj Mandyal, I want details and quotation for 12 Jyotirlinga Yatra."
     }
   },
   {
@@ -106,7 +106,7 @@ An unforgettable high-altitude road journey through Himachal's cold mountain des
     action: {
       type: "whatsapp",
       label: "Inquire Spiti Valley on WhatsApp",
-      query: "Hello Lav Dutta, I want to book Spiti Valley Tour Package."
+      query: "Hello Manoj Mandyal, I want to book Spiti Valley Tour Package."
     }
   },
   {
@@ -120,7 +120,7 @@ An unforgettable high-altitude road journey through Himachal's cold mountain des
     summary: "Guaranteed meet-and-greet right outside the platform with live train tracking and zero delay waiting fee.",
     answer: `**Amb Andaura (AADR) Vande Bharat Express Platform Pickup:**
 
-Dutta Tour & Travel operates a dedicated station dispatch desk for the **New Delhi - Amb Andaura Vande Bharat Express (Train 22447 / 22448)**:
+Mandyal Tour & Travels operates a dedicated station dispatch desk for the **New Delhi - Amb Andaura Vande Bharat Express (Train 22447 / 22448)**:
 
 • **Platform Meet & Greet:** Your chauffeur waits right outside the platform exit with your name card and helps with all heavy luggage.
 • **Live Train Tracking:** Even if the train arrives behind schedule, your cab waits patiently with **ZERO waiting surcharge**.
@@ -135,7 +135,7 @@ Dutta Tour & Travel operates a dedicated station dispatch desk for the **New Del
     action: {
       type: "whatsapp",
       label: "Book Vande Bharat Pickup on WhatsApp",
-      query: "Hello Lav Dutta, I need a taxi pickup from Amb Andaura Vande Bharat platform."
+      query: "Hello Manoj Mandyal, I need a taxi pickup from Amb Andaura Vande Bharat platform."
     }
   },
   {
@@ -157,7 +157,7 @@ Our headquarters in **Prem Nagar, Una** is just 5 minutes from Una Himachal Rail
     action: {
       type: "whatsapp",
       label: "Book Una Station Cab",
-      query: "Hello Lav Dutta, I need a cab from Una Himachal Railway Station."
+      query: "Hello Manoj Mandyal, I need a cab from Una Himachal Railway Station."
     }
   },
   {
@@ -177,7 +177,7 @@ Our headquarters in **Prem Nagar, Una** is just 5 minutes from Una Himachal Rail
     action: {
       type: "whatsapp",
       label: "Book Airport Cab on WhatsApp",
-      query: "Hello Lav Dutta, I need a cab for Chandigarh Airport (IXC)."
+      query: "Hello Manoj Mandyal, I need a cab for Chandigarh Airport (IXC)."
     }
   },
   {
@@ -191,7 +191,7 @@ Our headquarters in **Prem Nagar, Una** is just 5 minutes from Una Himachal Rail
     summary: "100% upfront, transparent quotations with zero hidden surprises or surge fees.",
     answer: `**Honest, Transparent Pricing Policy:**
 
-At Dutta Tour & Travel, founded by **Lav Dutta**, we follow a strict **Zero Hidden Cost Policy**:
+At Mandyal Tour & Travels, founded by **Manoj Mandyal**, we follow a strict **Zero Hidden Cost Policy**:
 
 • **How Our Quotes Work:**
   1. **Route & Distance:** Rates are calculated on realistic hill kilometers and travel hours.
@@ -199,11 +199,11 @@ At Dutta Tour & Travel, founded by **Lav Dutta**, we follow a strict **Zero Hidd
   3. **All-Inclusive Option:** We can include vehicle rental, certified driver allowance, state border road taxes, and highway tolls in one transparent quote.
   4. **No Surge Pricing:** No sudden midnight spikes or festival surge traps.
 
-💬 **Why We Give Real-Time Quotes:** Mountain routes vary by stops, season, and passenger needs. Connect directly with Lav Dutta for an honest, best-guaranteed quote in under 5 minutes!`,
+💬 **Why We Give Real-Time Quotes:** Mountain routes vary by stops, season, and passenger needs. Connect directly with Manoj Mandyal for an honest, best-guaranteed quote in under 5 minutes!`,
     action: {
       type: "whatsapp",
-      label: "Get Instant Quote from Lav Dutta",
-      query: "Hello Lav Dutta, please provide a customized quote for my journey."
+      label: "Get Instant Quote from Manoj Mandyal",
+      query: "Hello Manoj Mandyal, please provide a customized quote for my journey."
     }
   },
   {
@@ -256,8 +256,8 @@ Driving on Himachal roads requires specialized mountain instinct, not just city 
 • **Night Driving:** Trained and authorized for night outstation journeys to Delhi, Chandigarh, or Amritsar.`,
     action: {
       type: "whatsapp",
-      label: "Chat with Lav Dutta",
-      query: "Hello Lav Dutta, I have safety and chauffeur related questions."
+      label: "Chat with Manoj Mandyal",
+      query: "Hello Manoj Mandyal, I have safety and chauffeur related questions."
     }
   },
   {
@@ -273,7 +273,7 @@ Driving on Himachal roads requires specialized mountain instinct, not just city 
 
 • **Booking Steps:**
   1. Share your travel date, pickup location, destination, and passenger count on WhatsApp or call.
-  2. Receive a transparent quote and vehicle photos from Lav Dutta.
+  2. Receive a transparent quote and vehicle photos from Manoj Mandyal.
   3. Confirm your booking with a small token advance to block the vehicle.
 
 • **Accepted Payment Methods:**
@@ -286,7 +286,7 @@ Driving on Himachal roads requires specialized mountain instinct, not just city 
     action: {
       type: "whatsapp",
       label: "Start Booking on WhatsApp",
-      query: "Hello Lav Dutta, I want to book a taxi."
+      query: "Hello Manoj Mandyal, I want to book a taxi."
     }
   },
   {
@@ -309,33 +309,33 @@ Embark on the revered pilgrimage to Devbhoomi Uttarakhand starting comfortably f
     action: {
       type: "whatsapp",
       label: "Inquire Char Dham on WhatsApp",
-      query: "Hello Lav Dutta, I want to book Char Dham Yatra."
+      query: "Hello Manoj Mandyal, I want to book Char Dham Yatra."
     }
   },
   {
-    id: "about-owner-lav-dutta",
+    id: "about-owner-manoj-mandyal",
     category: "About Us",
     keywords: [
-      "owner", "lav dutta", "lav", "who owns", "office", "prem nagar", "address", "phone number",
-      "contact number", "call owner", "dutta motors"
+      "owner", "manoj mandyal", "manoj", "mandyal", "who owns", "office", "prem nagar", "address", "phone number",
+      "contact number", "call owner", "mandyal motors"
     ],
-    title: "About Owner Lav Dutta & Prem Nagar HQ",
-    summary: "Founded and personally managed by Lav Dutta with 10+ years of trust in Una, Himachal Pradesh.",
-    answer: `**About Dutta Tour & Travel & Owner Lav Dutta:**
+    title: "About Owner Manoj Mandyal & Prem Nagar HQ",
+    summary: "Founded and personally managed by Manoj Mandyal with trusted mountain service in Una, Himachal Pradesh.",
+    answer: `**About Mandyal Tour & Travels & Owner Manoj Mandyal:**
 
-• **Founder & Managing Director:** **Mr. Lav Dutta**
+• **Founder & Managing Director:** **Mr. Manoj Mandyal**
 • **Office Address:** Prem Nagar, Una - Amb Road, Una, Himachal Pradesh - 174303 (Adjacent to Punjab & Sind Bank)
 • **Direct Phone Numbers:**
   - Primary: **${PRIMARY_PHONE}**
   - Secondary: **${SECONDARY_PHONE}**
-  - WhatsApp: **+91 88940 21277**
+  - WhatsApp: **+91 78074 81503**
 • **Operating Hours:** 24 Hours / 7 Days a week (Round-the-clock emergency dispatch)
 
-Mr. Lav Dutta personally oversees vehicle condition, driver allocation, and passenger safety for every journey.`,
+Mr. Manoj Mandyal personally oversees vehicle condition, driver allocation, and passenger safety for every journey.`,
     action: {
       type: "tel",
-      label: `Call Lav Dutta (${PRIMARY_PHONE})`,
-      tel: "09418004510"
+      label: `Call Manoj Mandyal (${PRIMARY_PHONE})`,
+      tel: PRIMARY_PHONE.replace(/\s+/g, "")
     }
   },
   {
@@ -360,7 +360,7 @@ Mr. Lav Dutta personally oversees vehicle condition, driver allocation, and pass
     action: {
       type: "whatsapp",
       label: "Plan Holiday on WhatsApp",
-      query: "Hello Lav Dutta, I want to discuss a customized Himachal holiday tour."
+      query: "Hello Manoj Mandyal, I want to discuss a customized Himachal holiday tour."
     }
   },
   {
@@ -376,27 +376,59 @@ Mr. Lav Dutta personally oversees vehicle condition, driver allocation, and pass
     action: {
       type: "whatsapp",
       label: "Ask Question on WhatsApp",
-      query: "Hello Lav Dutta, I have a question about vehicle features."
+      query: "Hello Manoj Mandyal, I have a question about vehicle features."
     }
   }
 ];
 
-// NLP Matcher: Scores user input against knowledge items
+/**
+ * Intelligent Semantic Matching Algorithm
+ * Returns the most accurate, genuine knowledge card or a warm personalized fallback.
+ */
 export function findBestBotAnswer(userQuery) {
+  return searchKnowledgeBase(userQuery);
+}
+
+export function searchKnowledgeBase(userQuery) {
   if (!userQuery || typeof userQuery !== "string") {
     return getGreetingResponse();
   }
 
-  const rawQuery = userQuery.trim().toLowerCase();
+  const query = userQuery.toLowerCase().trim();
 
-  // 1. Detect simple greetings
-  const greetings = ["hi", "hello", "hey", "namaste", "pranam", "good morning", "good evening", "kese ho", "kaise ho", "help"];
-  if (greetings.some((g) => rawQuery === g || rawQuery.startsWith(g + " "))) {
-    return getGreetingResponse();
+  // 1. Direct Quick Suggestion Matches
+  if (query.includes("devi") || query.includes("darshan") || query.includes("chintpurni") || query.includes("jwala") || query.includes("naina")) {
+    const item = KNOWLEDGE_BASE.find((k) => k.id === "6-devi-darshan");
+    if (item) return buildResponse(item);
   }
 
-  // 2. Tokenize and normalize query
-  const cleanQuery = rawQuery
+  if (query.includes("jyotirling") || query.includes("12") || query.includes("shiva") || query.includes("kedarnath")) {
+    const item = KNOWLEDGE_BASE.find((k) => k.id === "12-jyotirlinga");
+    if (item) return buildResponse(item);
+  }
+
+  if (query.includes("spiti") || query.includes("kaza") || query.includes("chandratal")) {
+    const item = KNOWLEDGE_BASE.find((k) => k.id === "spiti-valley");
+    if (item) return buildResponse(item);
+  }
+
+  if (query.includes("vande") || query.includes("22447") || query.includes("amb station") || (query.includes("amb") && query.includes("train"))) {
+    const item = KNOWLEDGE_BASE.find((k) => k.id === "vande-bharat-amb");
+    if (item) return buildResponse(item);
+  }
+
+  if (query.includes("airport") || query.includes("ixc") || query.includes("chandigarh")) {
+    const item = KNOWLEDGE_BASE.find((k) => k.id === "chandigarh-airport");
+    if (item) return buildResponse(item);
+  }
+
+  if (query.includes("owner") || query.includes("manoj") || query.includes("mandyal") || query.includes("contact") || query.includes("phone") || query.includes("office") || query.includes("call")) {
+    const item = KNOWLEDGE_BASE.find((k) => k.id === "about-owner-manoj-mandyal");
+    if (item) return buildResponse(item);
+  }
+
+  // 2. Tokenize user query
+  const cleanQuery = query
     .replace(/[^\w\s]/gi, " ")
     .replace(/\s+/g, " ")
     .trim();
@@ -410,7 +442,7 @@ export function findBestBotAnswer(userQuery) {
     vande: "vande-bharat", train: "station", platform: "station",
     spiti: "spiti", kaza: "spiti", chandratal: "spiti",
     shiva: "jyotirlinga", mahakal: "jyotirlinga", kedarnath: "kedarnath",
-    owner: "lav", lavkush: "lav", number: "contact"
+    owner: "manoj", manoj: "manoj", mandyal: "manoj", number: "contact"
   };
 
   const expandedTokens = new Set(tokens);
@@ -428,23 +460,24 @@ export function findBestBotAnswer(userQuery) {
     let score = 0;
 
     // Check exact keyword matches
-    for (const kw of item.keywords) {
-      const kwLower = kw.toLowerCase();
-      if (cleanQuery.includes(kwLower)) {
-        score += kwLower.split(" ").length * 5; // Multi-word keyword match gets big boost
+    item.keywords.forEach((kw) => {
+      if (cleanQuery.includes(kw)) {
+        score += kw.includes(" ") ? 6 : 4;
       }
-      for (const token of expandedTokens) {
-        if (kwLower === token) {
-          score += 3;
-        } else if (kwLower.includes(token) && token.length > 3) {
-          score += 1;
-        }
-      }
-    }
+    });
 
-    // Title / Summary bonus
-    if (item.title.toLowerCase().includes(cleanQuery)) score += 10;
-    if (item.summary.toLowerCase().includes(cleanQuery)) score += 5;
+    // Check individual token presence
+    expandedTokens.forEach((token) => {
+      if (item.keywords.includes(token)) {
+        score += 2;
+      }
+      if (item.title.toLowerCase().includes(token)) {
+        score += 3;
+      }
+      if (item.summary.toLowerCase().includes(token)) {
+        score += 1;
+      }
+    });
 
     if (score > highestScore) {
       highestScore = score;
@@ -469,14 +502,14 @@ export function findBestBotAnswer(userQuery) {
     title: "Personalized Chauffeur Assistance",
     answer: `Thank you for your question! We want to give you the most accurate and genuine answer for your specific journey.
 
-Because hill routes, temple darshan timings, and vehicle availability can vary depending on weather and group size, **Lav Dutta** (Founder & Managing Director) is ready to assist you right now with real-time route advice and an honest quote.
+Because hill routes, temple darshan timings, and vehicle availability can vary depending on weather and group size, **Manoj Mandyal** (Founder & Managing Director) is ready to assist you right now with real-time route advice and an honest quote.
 
-📞 **Call Directly:** [${PRIMARY_PHONE}](tel:09418004510) or [${SECONDARY_PHONE}](tel:08219477943)
-💬 **Instant WhatsApp:** Click the button below to message Lav Dutta directly with your exact query.`,
+📞 **Call Directly:** [${PRIMARY_PHONE}](tel:${PRIMARY_PHONE.replace(/\s+/g, "")}) or [${SECONDARY_PHONE}](tel:${SECONDARY_PHONE.replace(/\s+/g, "")})
+💬 **Instant WhatsApp:** Click the button below to message Manoj Mandyal directly with your exact query.`,
     action: {
       type: "whatsapp",
-      label: "Ask Lav Dutta on WhatsApp",
-      query: `Hello Lav Dutta, I have a query: "${userQuery}"`
+      label: "Ask Manoj Mandyal on WhatsApp",
+      query: `Hello Manoj Mandyal, I have a query: "${userQuery}"`
     },
     relatedSuggestions: QUICK_SUGGESTIONS.slice(0, 4)
   };
@@ -485,8 +518,8 @@ Because hill routes, temple darshan timings, and vehicle availability can vary d
 export function getGreetingResponse() {
   return {
     found: true,
-    title: "Namaste & Welcome to Dutta Tour & Travel!",
-    answer: `Namaste! I am the **Dutta Chauffeur Desk AI Assistant**, here 24/7 to help you plan your journey across Himachal Pradesh and North India.
+    title: "Namaste & Welcome to Mandyal Tour & Travels!",
+    answer: `Namaste! I am the **Mandyal Chauffeur Desk AI Assistant**, here 24/7 to help you plan your journey across Himachal Pradesh and North India.
 
 How can I assist you today?
 • 🕉️ **6 Sacred Devi Darshan Yatra** (Chintpurni, Jwala Ji, Baglamukhi, Kangra, Chamunda & Naina Devi)
@@ -494,9 +527,19 @@ How can I assist you today?
 • 🏔️ **Spiti Valley Road Trip** (8N/9D Middle Land Circuit)
 • 🚄 **Amb Andaura Vande Bharat Platform Pickup** (Zero waiting fee)
 • 🚘 **Fleet & Honest Pricing** (Innova Crysta, Ertiga, Dzire, Urbania, Fortuner)
-• 📞 **Speak Directly with Owner Lav Dutta**
+• 📞 **Speak Directly with Owner Manoj Mandyal**
 
 Select a quick topic below or type your question in English or Hindi!`,
     relatedSuggestions: QUICK_SUGGESTIONS
+  };
+}
+
+function buildResponse(item) {
+  return {
+    found: true,
+    title: item.title,
+    answer: item.answer,
+    action: item.action,
+    relatedSuggestions: QUICK_SUGGESTIONS.filter((s) => s.id !== item.id).slice(0, 3)
   };
 }

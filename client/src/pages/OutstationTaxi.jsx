@@ -9,9 +9,9 @@ import { localBusinessSchema, breadcrumbSchema, faqSchema } from "../data/schema
 
 const outstationFaqs = [
   {
-    question: "How do I book an outstation taxi with Dutta Tour & Travels?",
+    question: "How do I book an outstation taxi with Mandyal Tour & Travels?",
     answer:
-      "You can book instantly by calling our 24/7 dispatch hotline at +91 8894021277 or sending your trip details via WhatsApp. Provide your pickup location in Una or Amb, destination, travel dates, and vehicle preference to receive an instant, customized quote.",
+      "You can book instantly by calling our 24/7 dispatch hotline at +91 7807481503 or sending your trip details via WhatsApp. Provide your pickup location in Una or Amb, destination, travel dates, and vehicle preference to receive an instant, customized quote.",
   },
   {
     question: "Do you offer both one-way drops and round-trip outstation journeys?",
@@ -143,7 +143,7 @@ export default function OutstationTaxi() {
               </h1>
 
               <p className="text-sm sm:text-base text-gray-200 leading-relaxed font-normal">
-                Planning an outstation trip from Una or Amb Andaura? Dutta Tour &amp; Travel delivers
+                Planning an outstation trip from Una or Amb Andaura? Mandyal Tour &amp; Travel delivers
                 flawless outstation taxi services across Himachal Pradesh, Punjab, Chandigarh, and
                 Delhi NCR. Travel comfortably in sanitized commercial vehicles with seasoned mountain
                 chauffeurs.
@@ -183,7 +183,7 @@ export default function OutstationTaxi() {
                   <span>Instant Call: {business.phones[0]}</span>
                 </a>
                 <a
-                  href={whatsappLink("Hello Dutta Travels, I need an outstation taxi quote.")}
+                  href={whatsappLink("Hello Mandyal Travels, I need an outstation taxi quote.")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#00c853] hover:bg-[#00b047] text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-[0.98]"
@@ -380,7 +380,7 @@ export default function OutstationTaxi() {
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
           <div className="text-center max-w-2xl mx-auto mb-10">
             <span className="text-xs font-black uppercase tracking-widest text-[#f57c00]">
-              WHY BOOK WITH DUTTA TRAVELS
+              WHY BOOK WITH MANDYAL TRAVELS
             </span>
             <h2 className="text-3xl sm:text-4xl font-black text-[#1e2638] tracking-tight mt-1">
               Engineered for Safe Hill Journeys
@@ -540,7 +540,7 @@ export default function OutstationTaxi() {
                   </div>
 
                   <a
-                    href={whatsappLink(`Hello Dutta Travels, I want to book an outstation taxi to ${d.name}.`)}
+                    href={whatsappLink(`Hello Mandyal Travels, I want to book an outstation taxi to ${d.name}.`)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full py-2 px-3 rounded-xl bg-[#182030] hover:bg-[#f57c00] text-white font-bold text-xs flex items-center justify-center gap-1 transition-colors"
@@ -612,7 +612,7 @@ export default function OutstationTaxi() {
                   </div>
 
                   <a
-                    href={whatsappLink(`Hello Dutta Travels, I want to book ${car.name} for an outstation trip.`)}
+                    href={whatsappLink(`Hello Mandyal Travels, I want to book ${car.name} for an outstation trip.`)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="py-2.5 px-3 rounded-xl bg-[#943e00] hover:bg-[#7a3200] text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow-sm transition-all active:scale-[0.98]"
@@ -679,7 +679,7 @@ export default function OutstationTaxi() {
                   READY FOR YOUR HIMALAYAN ROAD TRIP?
                 </span>
                 <h3 className="text-xl sm:text-2xl font-black text-white">
-                  Get a Custom Outstation Quote with Lav Dutta
+                  Get a Custom Outstation Quote with Manoj Mandyal
                 </h3>
                 <p className="text-xs text-gray-300">
                   Direct dispatch from Prem Nagar, Una HQ. Competitive tariffs, sanitized cabs, and trusted pahadi drivers.
@@ -696,7 +696,7 @@ export default function OutstationTaxi() {
                 <span>{business.phones[0]}</span>
               </a>
               <a
-                href={whatsappLink("Hello Lav Dutta, I need an outstation taxi quote.")}
+                href={whatsappLink("Hello Manoj Mandyal, I need an outstation taxi quote.")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 md:flex-none inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#00c853] hover:bg-[#00b047] text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-[0.98] whitespace-nowrap"

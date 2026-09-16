@@ -5,7 +5,7 @@ import SEO from "../components/SEO";
 export default function NotFound() {
   return (
     <Layout>
-      <SEO path="/404" title="Page Not Found | Dutta Tour & Travel" description="The page you're looking for could not be found." noindex />
+      <SEO path="/404" title="Page Not Found | Mandyal Tour & Travel" description="The page you're looking for could not be found." noindex />
       <section className="max-w-[840px] mx-auto px-margin py-space-xl flex flex-col items-center text-center gap-space-md">
         <span className="font-headline-xl font-bold text-primary">404</span>
         <h1 className="font-headline-lg font-bold">We couldn't find that page</h1>

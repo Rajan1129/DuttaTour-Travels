@@ -89,7 +89,7 @@ export default function Home() {
       notes: tabName,
     });
 
-    const msg = `*NEW CAB BOOKING INQUIRY - DUTTA TRAVELS*\n\n` +
+    const msg = `*NEW CAB BOOKING INQUIRY - MANDYAL TRAVELS*\n\n` +
       (customerName.trim() ? `• *Passenger Name:* ${customerName.trim()}\n` : "") +
       (customerPhone.trim() ? `• *Passenger WhatsApp/Phone:* ${customerPhone.trim()}\n` : "") +
       `• *Trip Type:* ${tabName}\n` +
@@ -123,7 +123,7 @@ export default function Home() {
       notes: `Direct Vehicle Booking (${selectedFleetCar.category})`,
     });
 
-    const msg = `*NEW CAB BOOKING INQUIRY - DUTTA TRAVELS*\n\n` +
+    const msg = `*NEW CAB BOOKING INQUIRY - MANDYAL TRAVELS*\n\n` +
       `• *Vehicle Selected:* ${selectedFleetCar.name} (${selectedFleetCar.category})\n` +
       (fleetModalName.trim() ? `• *Passenger Name:* ${fleetModalName.trim()}\n` : "") +
       (fleetModalPhone.trim() ? `• *Mobile / WhatsApp:* ${fleetModalPhone.trim()}\n` : "") +
@@ -154,7 +154,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <img
             src="/hero-bg.jpg"
-            alt="Himachal Mountain Highway Dutta Tour & Travels"
+            alt="Himachal Mountain Highway Mandyal Tour & Travels"
             className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#141b2b]/95 via-[#141b2b]/85 to-[#141b2b]/75" />
@@ -170,7 +170,7 @@ export default function Home() {
               {/* Badges */}
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-xs font-semibold text-orange-200">
                 <span className="material-symbols-outlined text-[15px] text-emerald-400">verified</span>
-                <span>VERIFIED HP GOVT. REGD. FLEET &bull; DUTTA MOTORS</span>
+                <span>VERIFIED HP GOVT. REGD. FLEET &bull; MANDYAL MOTORS</span>
               </div>
 
               <div className="flex items-center gap-2 text-xs xl:text-sm text-gray-300">
@@ -181,7 +181,7 @@ export default function Home() {
               {/* Main Headline */}
               <h1 className="text-4xl xl:text-5xl font-black text-white tracking-tight leading-[1.12]">
                 Welcome to <br />
-                <span className="text-white">Dutta Tour &amp; Travels</span>
+                <span className="text-white">Mandyal Tour &amp; Travels</span>
               </h1>
 
               {/* Paragraph */}
@@ -277,7 +277,7 @@ export default function Home() {
                   <span>Instant Booking: {business.phones[0]}</span>
                 </a>
                 <a
-                  href={whatsappLink("Hello Dutta Travels, I need assistance with a cab booking")}
+                  href={whatsappLink("Hello Mandyal Travels, I need assistance with a cab booking")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-gray-100 text-[#1e2638] font-bold text-xs sm:text-sm shadow-md transition-all hover:scale-[1.02] active:scale-[0.98]"
@@ -499,7 +499,7 @@ export default function Home() {
 
                 {/* Booking Notice and Footer Badges */}
                 <p className="text-[10.5px] text-center text-gray-500 leading-normal">
-                  Details instantly shared with your WhatsApp &amp; Dutta Travels Admin Panel for prompt dispatch.
+                  Details instantly shared with your WhatsApp &amp; Mandyal Travels Admin Panel for prompt dispatch.
                 </p>
 
                 <div className="pt-1.5 border-t border-gray-100 flex items-center justify-between text-[10.5px] font-semibold text-gray-600">
@@ -521,7 +521,7 @@ export default function Home() {
         {/* MOBILE HERO VIEW (Comfortable, spacious, high-contrast mobile design) */}
         {/* ----------------------------------------------------------------------- */}
         <div className="lg:hidden relative z-10 px-4 py-5 flex flex-col gap-5">
-          {/* Card 1: About Dutta Tour & Travels (Dark Scenic Hero Card) */}
+          {/* Card 1: About Mandyal Tour & Travels (Dark Scenic Hero Card) */}
           <div className="relative rounded-3xl overflow-hidden shadow-2xl p-6 border border-white/15">
             {/* Mountain Background for this card */}
             <div className="absolute inset-0 z-0">
@@ -542,7 +542,7 @@ export default function Home() {
 
               {/* Heading */}
               <h1 className="text-2xl sm:text-3xl font-black text-white tracking-tight leading-snug">
-                Dutta Tour &amp; Travels
+                Mandyal Tour &amp; Travels
               </h1>
 
               {/* Description */}
@@ -565,7 +565,7 @@ export default function Home() {
                 </a>
 
                 <a
-                  href={whatsappLink("Hello Dutta Travels, I need assistance with a cab booking")}
+                  href={whatsappLink("Hello Mandyal Travels, I need assistance with a cab booking")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="py-3 px-3 rounded-2xl bg-[#25D366] hover:bg-[#20bd5a] text-white flex items-center justify-center gap-2 font-bold shadow-md active:scale-95 transition-all"
@@ -814,13 +814,13 @@ export default function Home() {
               <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3] sm:aspect-[1.15]">
                 <img
                   src="/himachal-scenic.jpg"
-                  alt="Himachal Pradesh Hill Highway Dutta Motors"
+                  alt="Himachal Pradesh Hill Highway Mandyal Motors"
                   className="w-full h-full object-cover"
                 />
                 {/* Bottom Left Scrim Badge */}
                 <div className="absolute bottom-4 left-4 bg-black/60 backdrop-blur-md px-3.5 py-2 rounded-xl text-white">
                   <span className="block text-[10px] font-extrabold uppercase text-[#f57c00] tracking-wider">
-                    DUTTA MOTORS HERITAGE
+                    MANDYAL MOTORS HERITAGE
                   </span>
                   <span className="block text-xs font-bold">
                     Himachal Tourism Regd. Fleet
@@ -843,7 +843,7 @@ export default function Home() {
             {/* Right Side: Copy & 3 Pillars */}
             <div className="lg:col-span-7 flex flex-col gap-4">
               <span className="text-xs font-extrabold uppercase tracking-widest text-[#f57c00]">
-                WELCOME TO DUTTA TOUR &amp; TRAVELS
+                WELCOME TO MANDYAL TOUR &amp; TRAVELS
               </span>
               <h2 className="text-3xl sm:text-4xl font-black text-[#1e2638] tracking-tight leading-snug">
                 Trusted &amp; Leading in Hill Car Rent Services
@@ -897,7 +897,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Assistance Banner: Talk to Owner Lav Dutta (Screenshot 2 bottom) */}
+          {/* Assistance Banner: Talk to Owner Manoj Mandyal (Screenshot 2 bottom) */}
           <div className="mt-14 bg-[#edf2fe] rounded-2xl p-4 sm:p-5 flex flex-col sm:flex-row items-center justify-between gap-4 border border-blue-100">
             <div className="flex items-center gap-3.5">
               <div className="w-12 h-12 rounded-full bg-[#f57c00] flex items-center justify-center text-white shadow-md flex-shrink-0">
@@ -908,7 +908,7 @@ export default function Home() {
                   NEED ROUTE ASSISTANCE?
                 </span>
                 <span className="text-base sm:text-lg font-black text-[#1e2638]">
-                  Talk to Owner Lav Dutta
+                  Talk to Owner Manoj Mandyal
                 </span>
               </div>
             </div>
@@ -1048,7 +1048,7 @@ export default function Home() {
                       <span>Direct Booking</span>
                     </button>
                     <a
-                      href={whatsappLink(`Hello Dutta Travels, I want to book ${car.name}`)}
+                      href={whatsappLink(`Hello Mandyal Travels, I want to book ${car.name}`)}
                       target="_blank"
                       rel="noopener noreferrer"
                       title="Chat on WhatsApp"
@@ -1120,7 +1120,7 @@ export default function Home() {
                     </h3>
                     <div className="flex items-center gap-1.5 flex-shrink-0">
                       <a
-                        href={whatsappLink(`Hello Dutta Travels, I want to book a taxi for ${dest.name} (${dest.distanceKm} KM)`)}
+                        href={whatsappLink(`Hello Mandyal Travels, I want to book a taxi for ${dest.name} (${dest.distanceKm} KM)`)}
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={(e) => e.stopPropagation()}
@@ -1164,7 +1164,7 @@ export default function Home() {
               </p>
             </div>
             <a
-              href={whatsappLink("Hello Dutta Travels, I would like to request a Custom Tour Itinerary")}
+              href={whatsappLink("Hello Mandyal Travels, I would like to request a Custom Tour Itinerary")}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 text-sm font-bold text-[#f57c00] hover:underline"
@@ -1217,7 +1217,7 @@ export default function Home() {
                     <span>{pkg.featureNote}</span>
                   </span>
                   <a
-                    href={whatsappLink(`Hello Dutta Travels, please share the full details for ${pkg.name} (${pkg.duration})`)}
+                    href={whatsappLink(`Hello Mandyal Travels, please share the full details for ${pkg.name} (${pkg.duration})`)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="font-bold text-white bg-[#f57c00] hover:bg-[#e65100] px-3.5 py-1.5 rounded-lg shadow-sm transition-all flex items-center gap-1 active:scale-95"

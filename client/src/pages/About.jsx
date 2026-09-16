@@ -9,9 +9,9 @@ import { localBusinessSchema, breadcrumbSchema, faqSchema } from "../data/schema
 
 const aboutFaqs = [
   {
-    question: "Who owns and manages Dutta Tour & Travel?",
+    question: "Who owns and manages Mandyal Tour & Travel?",
     answer:
-      "Dutta Tour & Travel (also operating as Dutta Travels and Dutta Motors) is founded and actively managed by Mr. Lav Dutta. Based at Prem Nagar on the Una-Amb Road, the business personally oversees every booking, vehicle maintenance, and driver dispatch.",
+      "Mandyal Tour & Travel (also operating as Mandyal Travels and Mandyal Motors) is founded and actively managed by Mr. Manoj Mandyal. Based at Prem Nagar on the Una-Amb Road, the business personally oversees every booking, vehicle maintenance, and driver dispatch.",
   },
   {
     question: "Are all vehicles registered with commercial yellow plates and tourist permits?",
@@ -24,14 +24,14 @@ const aboutFaqs = [
       "Our chauffeurs have between 8 to 15+ years of dedicated mountain driving experience across Himachal Pradesh, Jammu & Kashmir, Uttarakhand, and Punjab. They are trained in high-altitude hairpin turns, winter snow driving, monsoon conditions, and polite, family-friendly customer service.",
   },
   {
-    question: "Can Dutta Travels pick us up directly from Amb Andaura or Una Railway Station?",
+    question: "Can Mandyal Travels pick us up directly from Amb Andaura or Una Railway Station?",
     answer:
       "Yes! Direct railway station meet-and-greet is one of our primary specialties. We monitor train schedules for the New Delhi - Amb Andaura Vande Bharat Express and Himachal Express in real-time, ensuring your cab is parked and waiting outside the platform before you step off.",
   },
   {
     question: "Do you specialize in Devi Darshan and pilgrimage yatras?",
     answer:
-      "Yes. A cornerstone of Dutta Travels is pilgrimage hospitality. We operate dedicated 6 Devi Darshan circuits covering Chintpurni, Jwala Ji, Baglamukhi, Kangra Brajeshwari, Chamunda Devi, and Naina Devi, as well as the 12 Jyotirlinga Mahayatra, Spiti Valley expeditions, Katra Vaishno Devi, and Uttarakhand Char Dham.",
+      "Yes. A cornerstone of Mandyal Travels is pilgrimage hospitality. We operate dedicated 6 Devi Darshan circuits covering Chintpurni, Jwala Ji, Baglamukhi, Kangra Brajeshwari, Chamunda Devi, and Naina Devi, as well as the 12 Jyotirlinga Mahayatra, Spiti Valley expeditions, Katra Vaishno Devi, and Uttarakhand Char Dham.",
   },
   {
     question: "How are trip quotes calculated without hidden charges?",
@@ -69,7 +69,7 @@ const coreValues = [
   {
     icon: "support_agent",
     title: "Direct Owner Oversight 24/7",
-    desc: "When you book with Dutta Travels, you have direct phone and WhatsApp access to founder Lav Dutta. No robotic call centres or unhelpful automated bots.",
+    desc: "When you book with Mandyal Travels, you have direct phone and WhatsApp access to founder Manoj Mandyal. No robotic call centres or unhelpful automated bots.",
   },
 ];
 
@@ -136,8 +136,8 @@ export default function About() {
             </h1>
 
             <p className="text-base sm:text-lg text-gray-300 leading-relaxed mb-8">
-              Founded and operated by <strong className="text-white font-semibold">Lav Dutta</strong>,{" "}
-              <span className="text-[#f57c00] font-semibold">Dutta Tour &amp; Travel (Dutta Motors)</span> has grown
+              Founded and operated by <strong className="text-white font-semibold">Manoj Mandyal</strong>,{" "}
+              <span className="text-[#f57c00] font-semibold">Mandyal Tour &amp; Travel (Mandyal Motors)</span> has grown
               from a local Una taxi service into Himachal&apos;s most reliable transport partner for pilgrims,
               holidaying families, and daily outstation commuters.
             </p>
@@ -148,11 +148,11 @@ export default function About() {
                 className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-[#f57c00] hover:bg-[#e65100] text-white font-bold text-sm shadow-lg hover:shadow-xl transition-all"
               >
                 <span className="material-symbols-outlined text-[20px]">call</span>
-                <span>Speak with Lav Dutta</span>
+                <span>Speak with Manoj Mandyal</span>
               </a>
 
               <a
-                href={whatsappLink("Hello Lav Ji, I would like to know more about Dutta Tour & Travel services and book a cab.")}
+                href={whatsappLink("Hello Manoj Ji, I would like to know more about Mandyal Tour & Travel services and book a cab.")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-lg hover:shadow-xl transition-all"
@@ -217,7 +217,7 @@ export default function About() {
               </p>
 
               <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                Over a decade ago, <strong>Lav Dutta</strong> recognized a significant gap in the region: plain taxi
+                Over a decade ago, <strong>Manoj Mandyal</strong> recognized a significant gap in the region: plain taxi
                 aggregators and inexperienced casual drivers frequently struggled with steep mountain inclines, unexpected
                 weather shifts, and long hairpin ghats. Senior pilgrims and families traveling with infants often found
                 themselves rushed or dealing with surprise hidden charges midway through their journey.
@@ -230,12 +230,12 @@ export default function About() {
                   hospitality that makes you feel like you are traveling with your own family.&rdquo;
                 </p>
                 <span className="block mt-3 text-xs font-bold text-gray-600 uppercase tracking-wider">
-                  — Lav Dutta, Founder &amp; Managing Director
+                  — Manoj Mandyal, Founder &amp; Managing Director
                 </span>
               </div>
 
               <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                Today, operating as <strong>Dutta Tour &amp; Travel</strong> and <strong>Dutta Motors</strong> from our
+                Today, operating as <strong>Mandyal Tour &amp; Travel</strong> and <strong>Mandyal Motors</strong> from our
                 conveniently situated Prem Nagar headquarters (adjacent Punjab &amp; Sind Bank), we maintain a fleet of modern,
                 commercial yellow-plate vehicles driven by certified hill chauffeurs who live and breathe Himachal&apos;s mountain roads.
               </p>
@@ -250,13 +250,13 @@ export default function About() {
                   <div className="flex items-center gap-3 mb-3">
                     <img
                       src="/logo.png"
-                      alt="Dutta Tour & Travels"
+                      alt="Mandyal Tour & Travels"
                       className="h-12 w-auto object-contain bg-gray-50 rounded-xl p-1 border border-gray-200"
                     />
                     <div>
-                      <h3 className="font-extrabold text-lg text-[#1e2638]">Dutta Tour &amp; Travel</h3>
+                      <h3 className="font-extrabold text-lg text-[#1e2638]">Mandyal Tour &amp; Travel</h3>
                       <p className="text-xs font-bold text-[#f57c00] uppercase tracking-wide">
-                        DUTTA MOTORS &bull; UNA (H.P.)
+                        MANDYAL MOTORS &bull; UNA (H.P.)
                       </p>
                     </div>
                   </div>
@@ -274,7 +274,7 @@ export default function About() {
                     </span>
                     <div>
                       <strong className="text-gray-900 block">Founder &amp; Owner</strong>
-                      <span>Mr. Lav Dutta</span>
+                      <span>Mr. Manoj Mandyal</span>
                     </div>
                   </div>
 
@@ -364,7 +364,7 @@ export default function About() {
               Our Non-Negotiable Standards
             </span>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1e2638] leading-tight">
-              Why Thousands of Travelers Trust Dutta Travels
+              Why Thousands of Travelers Trust Mandyal Travels
             </h2>
             <p className="text-sm sm:text-base text-gray-600 mt-3">
               We combine strict safety standards, legal compliance, and genuine hill hospitality to ensure
@@ -467,7 +467,7 @@ export default function About() {
               Verified Pilgrim &amp; Tourist Reviews
             </span>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1e2638] leading-tight">
-              Real Experiences with Lav Dutta &amp; Team
+              Real Experiences with Manoj Mandyal &amp; Team
             </h2>
             <p className="text-sm sm:text-base text-gray-600 mt-3">
               Read how travelers and families describe our chauffeurs, vehicle condition, and personal warmth.
@@ -522,7 +522,7 @@ export default function About() {
               Frequently Asked Questions
             </span>
             <h2 className="text-2xl sm:text-3xl font-bold text-[#1e2638]">
-              Everything You Need to Know About Dutta Travels
+              Everything You Need to Know About Mandyal Travels
             </h2>
           </div>
 
@@ -569,11 +569,11 @@ export default function About() {
           </span>
 
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white max-w-2xl mx-auto leading-tight mb-4">
-            Plan Your Himachal Journey with Dutta Travels Today
+            Plan Your Himachal Journey with Mandyal Travels Today
           </h2>
 
           <p className="text-gray-300 text-sm sm:text-base max-w-xl mx-auto mb-8 leading-relaxed">
-            Call founder Lav Dutta directly or message us on WhatsApp for guaranteed on-time pickups, certified hill
+            Call founder Manoj Mandyal directly or message us on WhatsApp for guaranteed on-time pickups, certified hill
             chauffeurs, and honest upfront quotes with zero surprises.
           </p>
 
@@ -587,7 +587,7 @@ export default function About() {
             </a>
 
             <a
-              href={whatsappLink("Hello Lav Ji, I am on the About Us page and would like to book a cab.")}
+              href={whatsappLink("Hello Manoj Ji, I am on the About Us page and would like to book a cab.")}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-lg hover:shadow-xl transition-all"

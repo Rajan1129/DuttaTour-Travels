@@ -24,7 +24,7 @@ const tourFaqs = [
       "Yes, all our packages are 100% private. The vehicle and chauffeur are dedicated exclusively to your family or travel group on full-day standby for the entire duration of the tour.",
   },
   {
-    question: "What is included in the tour package quote from Dutta Tour & Travel?",
+    question: "What is included in the tour package quote from Mandyal Tour & Travel?",
     answer:
       "We provide transparent, all-inclusive cab packages covering dedicated commercial vehicle rental, experienced mountain driver allowances, fuel, state border entry permits, and all national highway tolls with zero hidden costs.",
   },
@@ -116,7 +116,7 @@ export default function TourPackages({ initialCategory = "all" }) {
     });
 
     const msg =
-      `*NEW TOUR PACKAGE INQUIRY - DUTTA TRAVELS*\n\n` +
+      `*NEW TOUR PACKAGE INQUIRY - MANDYAL TRAVELS*\n\n` +
       `• *Selected Package:* ${modalPackage.name} (${modalPackage.duration})\n` +
       `• *Circuit:* ${modalPackage.circuitBadge}\n` +
       (modalName.trim() ? `• *Customer Name:* ${modalName.trim()}\n` : "") +
@@ -183,7 +183,7 @@ export default function TourPackages({ initialCategory = "all" }) {
         <div className="absolute inset-0 z-0 opacity-20">
           <img
             src="/hero-bg.jpg"
-            alt="Himachal Tour Packages Dutta Tour and Travel"
+            alt="Himachal Tour Packages Mandyal Tour and Travel"
             className="w-full h-full object-cover object-center"
           />
         </div>
@@ -203,7 +203,7 @@ export default function TourPackages({ initialCategory = "all" }) {
 
               <p className="text-sm sm:text-base text-gray-200 leading-relaxed font-normal">
                 Explore majestic Himalayan mountain valleys, revered Shaktipeeth pilgrimage circuits,
-                and high-altitude landscapes with Dutta Tour &amp; Travel. Enjoy 100% private, sanitized
+                and high-altitude landscapes with Mandyal Tour &amp; Travel. Enjoy 100% private, sanitized
                 cabs with experienced pahadi chauffeurs on standby throughout your journey.
               </p>
 
@@ -241,7 +241,7 @@ export default function TourPackages({ initialCategory = "all" }) {
                   <span>Instant Call: {business.phones[0]}</span>
                 </a>
                 <a
-                  href={whatsappLink("Hello Dutta Travels, I want to inquire about tour packages.")}
+                  href={whatsappLink("Hello Mandyal Travels, I want to inquire about tour packages.")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#00c853] hover:bg-[#00b047] text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-[0.98]"
@@ -530,7 +530,7 @@ export default function TourPackages({ initialCategory = "all" }) {
                   Clear Filters
                 </button>
                 <a
-                  href={whatsappLink(`Hello Dutta Travels, I am looking for a custom tour package for "${searchQuery}". Please help me with a custom quote.`)}
+                  href={whatsappLink(`Hello Mandyal Travels, I am looking for a custom tour package for "${searchQuery}". Please help me with a custom quote.`)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-2 rounded-xl bg-[#00c853] hover:bg-[#00b047] text-white font-bold text-xs shadow-md transition-colors inline-flex items-center gap-1.5"
@@ -624,7 +624,7 @@ export default function TourPackages({ initialCategory = "all" }) {
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
           <div className="text-center max-w-2xl mx-auto mb-10">
             <span className="text-xs font-black uppercase tracking-widest text-[#f57c00]">
-              THE DUTTA TRAVELS ADVANTAGE
+              THE MANDYAL TRAVELS ADVANTAGE
             </span>
             <h2 className="text-3xl sm:text-4xl font-black text-[#1e2638] tracking-tight mt-1">
               Why Book Your Tour Package with Us?
@@ -741,7 +741,7 @@ export default function TourPackages({ initialCategory = "all" }) {
                   </div>
 
                   <a
-                    href={whatsappLink(`Hello Dutta Travels, I want to book ${car.name} for a tour package.`)}
+                    href={whatsappLink(`Hello Mandyal Travels, I want to book ${car.name} for a tour package.`)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="py-2.5 px-3 rounded-xl bg-[#943e00] hover:bg-[#7a3200] text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow-sm transition-all active:scale-[0.98]"
@@ -808,7 +808,7 @@ export default function TourPackages({ initialCategory = "all" }) {
                   NEED A CUSTOM HIMALAYAN TOUR?
                 </span>
                 <h3 className="text-xl sm:text-2xl font-black text-white">
-                  Plan Your Tour with Lav Dutta
+                  Plan Your Tour with Manoj Mandyal
                 </h3>
                 <p className="text-xs text-gray-300">
                   Direct dispatch from Prem Nagar, Una HQ. Transparent pricing, verified pahadi drivers, and 100% private cabs.
@@ -825,7 +825,7 @@ export default function TourPackages({ initialCategory = "all" }) {
                 <span>{business.phones[0]}</span>
               </a>
               <a
-                href={whatsappLink("Hello Lav Dutta, I want to discuss a custom tour package.")}
+                href={whatsappLink("Hello Manoj Mandyal, I want to discuss a custom tour package.")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 md:flex-none inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#00c853] hover:bg-[#00b047] text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-[0.98] whitespace-nowrap"
@@ -975,7 +975,7 @@ export default function TourPackages({ initialCategory = "all" }) {
               </div>
 
               <p className="text-[10.5px] text-center text-gray-500 mt-0.5">
-                Logged directly into Dutta Travels Admin Panel &amp; shared via WhatsApp for instant confirmation.
+                Logged directly into Mandyal Travels Admin Panel &amp; shared via WhatsApp for instant confirmation.
               </p>
             </form>
           </div>

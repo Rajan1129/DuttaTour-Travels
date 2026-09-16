@@ -11,7 +11,7 @@ import { defaultArticles } from "../data/defaultArticles";
 export default function TravelGuideArticle() {
   const { slug } = useParams();
   const [article, setArticle] = useState(() => {
-    const saved = localStorage.getItem("dutta_admin_articles");
+    const saved = localStorage.getItem("mandyal_admin_articles");
     const all = saved ? JSON.parse(saved) : defaultArticles;
     return all.find((a) => a.slug === slug) || null;
   });

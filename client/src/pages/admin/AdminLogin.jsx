@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import SEO from "../../components/SEO";
 
 export default function AdminLogin() {
-  const [username, setUsername] = useState(localStorage.getItem("dutta_admin_user") || "");
+  const [username, setUsername] = useState(localStorage.getItem("mandyal_admin_user") || "");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [rememberMe, setRememberMe] = useState(true);
@@ -12,8 +12,8 @@ export default function AdminLogin() {
   const navigate = useNavigate();
 
   // Defined admin credentials requested by user
-  const TARGET_USERNAME = "duttatravels@lav.com";
-  const TARGET_PASSWORD = "lav#duttaservice";
+  const TARGET_USERNAME = "mandyaltravels@manoj.com";
+  const TARGET_PASSWORD = "manoj#mandyalservice";
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -38,13 +38,13 @@ export default function AdminLogin() {
     setIsSubmitting(true);
 
     if (rememberMe) {
-      localStorage.setItem("dutta_admin_user", TARGET_USERNAME);
+      localStorage.setItem("mandyal_admin_user", TARGET_USERNAME);
     } else {
-      localStorage.removeItem("dutta_admin_user");
+      localStorage.removeItem("mandyal_admin_user");
     }
 
     // Set admin token for backend API compatibility
-    localStorage.setItem("dutta_admin_token", "dutta-admin-secret-2026");
+    localStorage.setItem("mandyal_admin_token", "mandyal-admin-secret-2026");
 
     setTimeout(() => {
       setIsSubmitting(false);
@@ -53,22 +53,22 @@ export default function AdminLogin() {
   };
 
   const [theme, setTheme] = useState(() => {
-    return localStorage.getItem("dutta_admin_theme") || "dark";
+    return localStorage.getItem("mandyal_admin_theme") || "dark";
   });
   const isDark = theme === "dark";
 
   const toggleTheme = () => {
     const next = isDark ? "light" : "dark";
     setTheme(next);
-    localStorage.setItem("dutta_admin_theme", next);
+    localStorage.setItem("mandyal_admin_theme", next);
   };
 
   return (
     <div className={`min-h-screen w-full overflow-y-auto ${isDark ? "bg-[#141b2b] text-white" : "bg-[#f4f6fa] text-gray-800"} flex items-center justify-center p-4 py-8 selection:bg-orange-500 selection:text-white transition-colors duration-200`}>
       <SEO
         path="/admin/login"
-        title="Admin Login | Dutta Tour & Travel"
-        description="Admin portal login for Dutta Tour & Travel management."
+        title="Admin Login | Mandyal Tour & Travel"
+        description="Admin portal login for Mandyal Tour & Travel management."
         noindex
       />
 
@@ -99,15 +99,15 @@ export default function AdminLogin() {
           <Link to="/" className="flex items-center gap-3 hover:opacity-95 transition-opacity">
             <img
               src="/logo.png"
-              alt="Dutta Tour & Travels"
+              alt="Mandyal Tour & Travels"
               className="h-11 sm:h-12 w-auto object-contain bg-white rounded-xl p-1 shadow-md"
             />
             <div className="flex flex-col text-left">
               <span className={`font-extrabold text-xl sm:text-2xl ${isDark ? "text-white" : "text-gray-900"} leading-tight tracking-tight`}>
-                Dutta Travels
+                Mandyal Travels
               </span>
               <span className="font-bold text-[9px] sm:text-[10px] text-[#f57c00] uppercase tracking-wider">
-                DUTTA MOTORS &bull; UNA
+                MANDYAL MOTORS &bull; UNA
               </span>
             </div>
           </Link>

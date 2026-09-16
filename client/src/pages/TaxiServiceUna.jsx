@@ -9,9 +9,9 @@ import { localBusinessSchema, breadcrumbSchema, faqSchema } from "../data/schema
 
 const unaFaqs = [
   {
-    question: "How do I book a taxi in Una with Dutta Tour & Travels?",
+    question: "How do I book a taxi in Una with Mandyal Tour & Travels?",
     answer:
-      "You can book instantly by calling our 24/7 chauffeur desk at +91 8894021277 or sending your pickup details on WhatsApp. We confirm driver allocation and share cab details immediately.",
+      "You can book instantly by calling our 24/7 chauffeur desk at +91 7807481503 or sending your pickup details on WhatsApp. We confirm driver allocation and share cab details immediately.",
   },
   {
     question: "Do you provide pickup from Una Railway Station (UHL) and Amb Andaura (AADR)?",
@@ -142,7 +142,7 @@ export default function TaxiServiceUna() {
               </h1>
 
               <p className="text-sm sm:text-base text-gray-200 leading-relaxed font-normal">
-                Looking for a dependable, clean, and punctual cab in Una? Dutta Tour &amp; Travels
+                Looking for a dependable, clean, and punctual cab in Una? Mandyal Tour &amp; Travels
                 provides 24/7 taxi booking for local city travel, Una Railway Station (UHL), Amb
                 Andaura Vande Bharat platform transfers, 6 Devi Darshan yatra, and outstation hill
                 journeys across Himachal Pradesh and North India.
@@ -182,7 +182,7 @@ export default function TaxiServiceUna() {
                   <span>Instant Call: {business.phones[0]}</span>
                 </a>
                 <a
-                  href={whatsappLink("Hello Dutta Travels, I need a taxi in Una.")}
+                  href={whatsappLink("Hello Mandyal Travels, I need a taxi in Una.")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#00c853] hover:bg-[#00b047] text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-[0.98]"
@@ -378,7 +378,7 @@ export default function TaxiServiceUna() {
                 </p>
               </div>
               <a
-                href={whatsappLink("Hello Dutta Travels, I need local taxi service in Una")}
+                href={whatsappLink("Hello Mandyal Travels, I need local taxi service in Una")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xs font-bold text-[#f57c00] hover:underline flex items-center gap-1 self-start"
@@ -446,7 +446,7 @@ export default function TaxiServiceUna() {
                 </p>
               </div>
               <a
-                href={whatsappLink("Hello Dutta Travels, I want to book 6 Devi Darshan yatra from Una")}
+                href={whatsappLink("Hello Mandyal Travels, I want to book 6 Devi Darshan yatra from Una")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xs font-bold text-[#f57c00] hover:underline flex items-center gap-1 self-start"
@@ -579,7 +579,7 @@ export default function TaxiServiceUna() {
                   </div>
 
                   <a
-                    href={whatsappLink(`Hello Dutta Travels, I want to book ${car.name} in Una.`)}
+                    href={whatsappLink(`Hello Mandyal Travels, I want to book ${car.name} in Una.`)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="py-2.5 px-3 rounded-xl bg-[#943e00] hover:bg-[#7a3200] text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow-sm transition-all active:scale-[0.98]"
@@ -687,7 +687,7 @@ export default function TaxiServiceUna() {
                   NEED A CAB IN UNA RIGHT NOW?
                 </span>
                 <h3 className="text-xl sm:text-2xl font-black text-white">
-                  Speak Directly with Lav Dutta
+                  Speak Directly with Manoj Mandyal
                 </h3>
                 <p className="text-xs text-gray-300">
                   Instant cab dispatch from Prem Nagar HQ. Fair rates, clean cars, and courteous drivers.
@@ -704,7 +704,7 @@ export default function TaxiServiceUna() {
                 <span>{business.phones[0]}</span>
               </a>
               <a
-                href={whatsappLink("Hello Lav Dutta, I need a taxi in Una.")}
+                href={whatsappLink("Hello Manoj Mandyal, I need a taxi in Una.")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 md:flex-none inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#00c853] hover:bg-[#00b047] text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-[0.98] whitespace-nowrap"

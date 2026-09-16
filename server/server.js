@@ -48,5 +48,5 @@ app.get("*", (req, res, next) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Dutta Tour & Travel server running on port ${PORT}`);
+  console.log(`Mandyal Tour & Travel server running on port ${PORT}`);
 });
