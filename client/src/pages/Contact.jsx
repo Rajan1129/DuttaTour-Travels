@@ -148,14 +148,6 @@ export default function Contact() {
                 <span className="material-symbols-outlined text-[20px]">chat</span>
                 <span>Instant WhatsApp Chat</span>
               </a>
-
-              <a
-                href={`tel:${business.phonesTel[1]}`}
-                className="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl bg-white/10 hover:bg-white/15 text-white font-semibold text-sm border border-white/10 transition-all"
-              >
-                <span className="material-symbols-outlined text-[18px]">support_agent</span>
-                <span>Alt Line: {business.phones[1]}</span>
-              </a>
             </div>
           </div>
         </div>
@@ -430,7 +422,7 @@ export default function Contact() {
 
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 rounded-2xl bg-[#f57c00] text-white flex items-center justify-center text-xl font-black">
-                    LD
+                    MM
                   </div>
                   <div>
                     <h3 className="font-extrabold text-lg text-white">Manoj Mandyal</h3>
@@ -462,14 +454,6 @@ export default function Contact() {
                   >
                     <span className="material-symbols-outlined text-[18px]">chat</span>
                     <span>Direct WhatsApp Chat</span>
-                  </a>
-
-                  <a
-                    href={`tel:${business.phonesTel[1]}`}
-                    className="w-full py-2.5 px-4 rounded-xl bg-white/10 hover:bg-white/15 text-gray-300 hover:text-white font-semibold text-xs flex items-center justify-center gap-2 transition-colors border border-white/10"
-                  >
-                    <span className="material-symbols-outlined text-[16px] text-orange-400">phone_iphone</span>
-                    <span>Operations Desk: {business.phones[1]}</span>
                   </a>
                 </div>
               </div>

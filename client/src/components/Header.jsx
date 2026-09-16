@@ -49,10 +49,6 @@ export default function Header() {
               <a href={`tel:${business.phonesTel[0]}`} className="hover:text-[#f57c00] transition-colors">
                 {business.phones[0]}
               </a>
-              <span className="text-gray-500">|</span>
-              <a href={`tel:${business.phonesTel[1]}`} className="hover:text-[#f57c00] transition-colors">
-                {business.phones[1]}
-              </a>
             </div>
             <div className="flex items-center gap-1.5 text-gray-200">
               <span className="material-symbols-outlined text-[15px] text-[#f57c00]">verified</span>

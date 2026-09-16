@@ -7,7 +7,6 @@ export const BOT_AVATAR = "/logo.png";
 export const BOT_NAME = "Mandyal Chauffeur Desk AI";
 export const OWNER_NAME = "Manoj Mandyal";
 export const PRIMARY_PHONE = business?.phones?.[0] || "+91 7807481503";
-export const SECONDARY_PHONE = business?.phones?.[1] || "+91 8894021277";
 export const WHATSAPP_NUMBER = business?.whatsappNumber || "917807481503";
 
 export const QUICK_SUGGESTIONS = [
@@ -326,8 +325,7 @@ Embark on the revered pilgrimage to Devbhoomi Uttarakhand starting comfortably f
 • **Founder & Managing Director:** **Mr. Manoj Mandyal**
 • **Office Address:** Prem Nagar, Una - Amb Road, Una, Himachal Pradesh - 174303 (Adjacent to Punjab & Sind Bank)
 • **Direct Phone Numbers:**
-  - Primary: **${PRIMARY_PHONE}**
-  - Secondary: **${SECONDARY_PHONE}**
+  - Call / Hotline: **${PRIMARY_PHONE}**
   - WhatsApp: **+91 78074 81503**
 • **Operating Hours:** 24 Hours / 7 Days a week (Round-the-clock emergency dispatch)
 
@@ -504,7 +502,7 @@ export function searchKnowledgeBase(userQuery) {
 
 Because hill routes, temple darshan timings, and vehicle availability can vary depending on weather and group size, **Manoj Mandyal** (Founder & Managing Director) is ready to assist you right now with real-time route advice and an honest quote.
 
-📞 **Call Directly:** [${PRIMARY_PHONE}](tel:${PRIMARY_PHONE.replace(/\s+/g, "")}) or [${SECONDARY_PHONE}](tel:${SECONDARY_PHONE.replace(/\s+/g, "")})
+📞 **Call Directly:** [${PRIMARY_PHONE}](tel:${PRIMARY_PHONE.replace(/\s+/g, "")})
 💬 **Instant WhatsApp:** Click the button below to message Manoj Mandyal directly with your exact query.`,
     action: {
       type: "whatsapp",

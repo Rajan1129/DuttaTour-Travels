@@ -1146,7 +1146,7 @@ export default function AdminDashboard() {
                     </div>
                     <div>
                       <span className={`${c.textSecondary} block text-[11px]`}>Primary Contact:</span>
-                      <span className={c.textPrimary}>{businessData.phones[0]} &bull; {businessData.phones[1]}</span>
+                      <span className={c.textPrimary}>{businessData.phones[0]}</span>
                     </div>
                     <div>
                       <span className={`${c.textSecondary} block text-[11px]`}>WhatsApp Dispatch:</span>

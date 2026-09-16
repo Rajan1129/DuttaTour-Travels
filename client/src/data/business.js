@@ -46,8 +46,8 @@ export const defaultBusiness = {
     fullAddress:
       "F796+M34, Adjacent Punjab & Sind Bank, Una-Amb Road, Prem Nagar, Una, Himachal Pradesh 174303",
   },
-  phones: ["+91 7807481503", "+91 8894021277"],
-  phonesTel: ["+917807481503", "+918894021277"],
+  phones: ["+91 7807481503"],
+  phonesTel: ["+917807481503"],
   whatsappNumber: "917807481503",
   email: "mandyalmanoj@gmail.com",
   siteUrl: "https://www.mandyaltourtravel.com",

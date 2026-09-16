@@ -301,10 +301,6 @@ export default function About() {
                         <a href={`tel:${business.phonesTel[0]}`} className="hover:text-[#f57c00]">
                           {business.phones[0]}
                         </a>
-                        <span>|</span>
-                        <a href={`tel:${business.phonesTel[1]}`} className="hover:text-[#f57c00]">
-                          {business.phones[1]}
-                        </a>
                       </div>
                     </div>
                   </div>
