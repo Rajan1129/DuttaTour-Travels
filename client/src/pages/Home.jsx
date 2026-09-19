@@ -552,15 +552,15 @@ export default function Home() {
               </p>
 
               {/* Dual Action Buttons (Side by Side) */}
-              <div className="w-full grid grid-cols-2 gap-3 pt-1">
+              <div className="w-full grid grid-cols-2 gap-2.5 sm:gap-3 pt-1">
                 <a
                   href={`tel:${business.phonesTel[0]}`}
-                  className="py-3 px-3 rounded-2xl bg-[#1e2638] hover:bg-[#283248] text-white flex items-center justify-center gap-2 font-bold shadow-md border border-white/15 active:scale-95 transition-all"
+                  className="min-h-[58px] py-2.5 px-2.5 sm:px-3 rounded-2xl bg-[#1e2638] hover:bg-[#283248] text-white flex items-center justify-center gap-2 sm:gap-2.5 font-bold shadow-md border border-white/15 active:scale-95 transition-all text-center"
                 >
-                  <span className="material-symbols-outlined text-[20px] text-[#f57c00]">call</span>
-                  <div className="text-left leading-tight">
+                  <span className="material-symbols-outlined text-[20px] text-[#f57c00] shrink-0">call</span>
+                  <div className="text-left leading-tight truncate">
                     <span className="block text-[10px] text-gray-300 font-medium">Instant Call</span>
-                    <span className="text-xs font-black">{business.phones[0]}</span>
+                    <span className="text-[11px] sm:text-xs font-black tracking-tight">{business.phones[0]}</span>
                   </div>
                 </a>
 
@@ -568,12 +568,12 @@ export default function Home() {
                   href={whatsappLink("Hello Mandyal Tour and Travels, I need assistance with a cab booking")}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="py-3 px-3 rounded-2xl bg-[#25D366] hover:bg-[#20bd5a] text-white flex items-center justify-center gap-2 font-bold shadow-md active:scale-95 transition-all"
+                  className="min-h-[58px] py-2.5 px-2.5 sm:px-3 rounded-2xl bg-[#25D366] hover:bg-[#20bd5a] text-white flex items-center justify-center gap-2 sm:gap-2.5 font-bold shadow-md active:scale-95 transition-all text-center"
                 >
                   <WhatsAppIcon className="w-5 h-5 fill-white flex-shrink-0" />
-                  <div className="text-left leading-tight">
+                  <div className="text-left leading-tight truncate">
                     <span className="block text-[10px] text-green-100 font-medium">Direct Chat</span>
-                    <span className="text-xs font-black">WhatsApp</span>
+                    <span className="text-[11px] sm:text-xs font-black tracking-tight">WhatsApp</span>
                   </div>
                 </a>
               </div>

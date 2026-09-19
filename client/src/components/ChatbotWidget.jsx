@@ -199,7 +199,7 @@ export default function ChatbotWidget() {
       {/* ========================================================================= */}
       {/* 1. FLOATING TRIGGER BUTTON (Bottom-Right, safe above mobile footer) */}
       {/* ========================================================================= */}
-      <div className="fixed bottom-20 sm:bottom-6 right-4 sm:right-6 z-50 flex flex-col items-end">
+      <div className="fixed bottom-[88px] sm:bottom-6 right-3 sm:right-6 z-40 flex flex-col items-end">
         {!isOpen && !hasInteracted && (
           <div className="mb-2 bg-[#182030] text-white text-xs font-semibold px-3 py-1.5 rounded-full shadow-lg border border-orange-500/30 flex items-center gap-1.5 animate-bounce">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
