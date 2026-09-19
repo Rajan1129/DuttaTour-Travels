@@ -50,7 +50,7 @@ export const defaultBusiness = {
   phonesTel: ["+917807481503"],
   whatsappNumber: "917807481503",
   email: "mandyalmanoj@gmail.com",
-  siteUrl: "https://www.mandyaltourtravel.com",
+  siteUrl: "https://mandyaltourandtravels.in",
 };
 
 export const defaultFleet = [
