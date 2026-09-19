@@ -32,7 +32,7 @@ export default function Header() {
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-1.5 text-gray-200">
               <span className="material-symbols-outlined text-[15px] text-[#f57c00]">location_on</span>
-              <span>Prem Nagar, Una, Himachal Pradesh</span>
+              <span>Andaura, Amb, Himachal Pradesh 177203</span>
             </div>
             <div className="flex items-center gap-1.5 text-gray-200">
               <span className="material-symbols-outlined text-[15px] text-[#f57c00]">mail</span>
@@ -81,14 +81,9 @@ export default function Header() {
                 alt="Mandyal Tour & Travels"
                 className="h-9 sm:h-12 w-auto object-contain"
               />
-              <div className="flex flex-col">
-                <span className="font-extrabold text-[15px] sm:text-[20px] xl:text-[22px] text-[#1e2638] leading-tight tracking-tight whitespace-nowrap">
-                  Mandyal Tour and Travels
-                </span>
-                <span className="font-bold text-[8px] sm:text-[10px] xl:text-[11px] text-[#e65100] uppercase tracking-wider">
-                  MANDYAL MOTORS &bull; UNA
-                </span>
-              </div>
+              <span className="font-extrabold text-[15px] sm:text-[20px] xl:text-[22px] text-[#1e2638] leading-tight tracking-tight whitespace-nowrap">
+                Mandyal Tour and Travels
+              </span>
             </Link>
           </div>
 
