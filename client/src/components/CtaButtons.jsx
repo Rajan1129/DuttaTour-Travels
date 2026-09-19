@@ -1,7 +1,7 @@
 import { business, whatsappLink } from "../data/business";
 import WhatsAppIcon from "./WhatsAppIcon";
 
-export default function CtaButtons({ whatsappMessage = "Hello Mandyal Travels, I need a cab quote", className = "" }) {
+export default function CtaButtons({ whatsappMessage = "Hello Mandyal Tour and Travels, I need a cab quote", className = "" }) {
   return (
     <div className={`flex flex-wrap items-center gap-space-md ${className}`}>
       <a

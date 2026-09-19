@@ -318,7 +318,7 @@ export default function CharDham() {
                   <span>Instant Call: {business.phones[0]}</span>
                 </a>
                 <a
-                  href={whatsappLink("Hello Mandyal Travels, I want to book Char Dham / Jyotirlinga / Devi Darshan Yatra.")}
+                  href={whatsappLink("Hello Mandyal Tour and Travels, I want to book Char Dham / Jyotirlinga / Devi Darshan Yatra.")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#00c853] hover:bg-[#00b047] text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-[0.98]"
@@ -531,7 +531,7 @@ export default function CharDham() {
                 <div className="pt-3 border-t border-gray-200/70 flex items-center justify-between">
                   <span className="text-xs text-gray-500 font-semibold">{temple.timing}</span>
                   <a
-                    href={whatsappLink(`Hello Mandyal Travels, I want to include ${temple.name} in my pilgrimage.`)}
+                    href={whatsappLink(`Hello Mandyal Tour and Travels, I want to include ${temple.name} in my pilgrimage.`)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-xs font-bold text-[#f57c00] hover:underline flex items-center gap-1"
@@ -600,7 +600,7 @@ export default function CharDham() {
 
                   <a
                     href={whatsappLink(
-                      `Hello Mandyal Travels, I am interested in "${itinerary.title}" (${itinerary.duration}). Please share detailed plan and best quote.`
+                      `Hello Mandyal Tour and Travels, I am interested in "${itinerary.title}" (${itinerary.duration}). Please share detailed plan and best quote.`
                     )}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -734,7 +734,7 @@ export default function CharDham() {
                   </div>
 
                   <a
-                    href={whatsappLink(`Hello Mandyal Travels, I want to book ${car.name} for Char Dham yatra.`)}
+                    href={whatsappLink(`Hello Mandyal Tour and Travels, I want to book ${car.name} for Char Dham yatra.`)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="py-2.5 px-3 rounded-xl bg-[#943e00] hover:bg-[#7a3200] text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow-sm transition-all active:scale-[0.98]"

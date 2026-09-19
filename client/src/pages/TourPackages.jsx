@@ -116,7 +116,7 @@ export default function TourPackages({ initialCategory = "all" }) {
     });
 
     const msg =
-      `*NEW TOUR PACKAGE INQUIRY - MANDYAL TRAVELS*\n\n` +
+      `*NEW TOUR PACKAGE INQUIRY - MANDYAL TOUR AND TRAVELS*\n\n` +
       `• *Selected Package:* ${modalPackage.name} (${modalPackage.duration})\n` +
       `• *Circuit:* ${modalPackage.circuitBadge}\n` +
       (modalName.trim() ? `• *Customer Name:* ${modalName.trim()}\n` : "") +
@@ -241,7 +241,7 @@ export default function TourPackages({ initialCategory = "all" }) {
                   <span>Instant Call: {business.phones[0]}</span>
                 </a>
                 <a
-                  href={whatsappLink("Hello Mandyal Travels, I want to inquire about tour packages.")}
+                  href={whatsappLink("Hello Mandyal Tour and Travels, I want to inquire about tour packages.")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#00c853] hover:bg-[#00b047] text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-[0.98]"
@@ -530,7 +530,7 @@ export default function TourPackages({ initialCategory = "all" }) {
                   Clear Filters
                 </button>
                 <a
-                  href={whatsappLink(`Hello Mandyal Travels, I am looking for a custom tour package for "${searchQuery}". Please help me with a custom quote.`)}
+                  href={whatsappLink(`Hello Mandyal Tour and Travels, I am looking for a custom tour package for "${searchQuery}". Please help me with a custom quote.`)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-2 rounded-xl bg-[#00c853] hover:bg-[#00b047] text-white font-bold text-xs shadow-md transition-colors inline-flex items-center gap-1.5"
@@ -624,7 +624,7 @@ export default function TourPackages({ initialCategory = "all" }) {
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
           <div className="text-center max-w-2xl mx-auto mb-10">
             <span className="text-xs font-black uppercase tracking-widest text-[#f57c00]">
-              THE MANDYAL TRAVELS ADVANTAGE
+              THE MANDYAL TOUR AND TRAVELS ADVANTAGE
             </span>
             <h2 className="text-3xl sm:text-4xl font-black text-[#1e2638] tracking-tight mt-1">
               Why Book Your Tour Package with Us?
@@ -741,7 +741,7 @@ export default function TourPackages({ initialCategory = "all" }) {
                   </div>
 
                   <a
-                    href={whatsappLink(`Hello Mandyal Travels, I want to book ${car.name} for a tour package.`)}
+                    href={whatsappLink(`Hello Mandyal Tour and Travels, I want to book ${car.name} for a tour package.`)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="py-2.5 px-3 rounded-xl bg-[#943e00] hover:bg-[#7a3200] text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow-sm transition-all active:scale-[0.98]"
@@ -975,7 +975,7 @@ export default function TourPackages({ initialCategory = "all" }) {
               </div>
 
               <p className="text-[10.5px] text-center text-gray-500 mt-0.5">
-                Logged directly into Mandyal Travels Admin Panel &amp; shared via WhatsApp for instant confirmation.
+                Logged directly into Mandyal Tour and Travels Admin Panel &amp; shared via WhatsApp for instant confirmation.
               </p>
             </form>
           </div>

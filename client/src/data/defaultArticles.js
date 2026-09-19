@@ -10,7 +10,7 @@ export const defaultArticles = [
     h1: "Una to 6 Devi Darshan: Chintpurni, Jwala Ji, Baglamukhi, Kangra, Chamunda & Naina Devi Yatra Guide",
     description:
       "A complete guide for devotees planning the sacred 6 Devi Darshan pilgrimage starting from Una and Amb Andaura. Temple timings, routes, Baglamukhi hawan, VIP slips, and cab booking tips.",
-    seoTitle: "6 Devi Darshan Yatra Guide from Una | Chintpurni, Baglamukhi, Naina Devi Cab | Mandyal Travels",
+    seoTitle: "6 Devi Darshan Yatra Guide from Una | Chintpurni, Baglamukhi, Naina Devi Cab | Mandyal Tour and Travels",
     seoDescription:
       "Complete pilgrimage guide for 6 Devi Darshan from Una & Amb Andaura. Covering Maa Chintpurni, Jwala Ji, Baglamukhi, Brajeshwari Kangra, Chamunda Devi, and Naina Devi with verified hill cabs.",
     featuredImage: "/images/tours/6-devi-darshan.jpg",
@@ -51,7 +51,7 @@ export const defaultArticles = [
     h1: "Amb Andaura (AADR) Vande Bharat: Arrival Timings, Platform Pickup & Taxi Guide",
     description:
       "Practical travel guide for passengers arriving on the New Delhi - Amb Andaura Vande Bharat Express (22447). Platform meet-and-greet, onward taxi options to Dharamshala, Chintpurni, and Manali.",
-    seoTitle: "Amb Andaura Vande Bharat Taxi Guide | Platform Cab Booking | Mandyal Travels",
+    seoTitle: "Amb Andaura Vande Bharat Taxi Guide | Platform Cab Booking | Mandyal Tour and Travels",
     seoDescription:
       "Arriving on Vande Bharat at Amb Andaura (AADR)? Learn about platform taxi pickup, onward travel times to Dharamshala, Chintpurni, Kangra, and best cab options.",
     featuredImage: "/images/destinations/dharamshala.jpg",
@@ -70,7 +70,7 @@ export const defaultArticles = [
         <li><strong>Kullu-Manali:</strong> 240 km (~6.5 hours via Kiratpur-Nerchowk expressway)</li>
       </ul>
       
-      <h3>Why Pre-Book Your Station Chauffeur with Mandyal Travels?</h3>
+      <h3>Why Pre-Book Your Station Chauffeur with Mandyal Tour and Travels?</h3>
       <p>Because Amb Andaura is a terminal rural railway station, local walk-up taxis can be limited during weekend peak rushes. Mandyal Tour & Travels provides confirmed platform pickups with flight/train delay monitoring, sanitized yellow-plate cars, and courteous local pahadi drivers.</p>
     `,
   },
@@ -82,7 +82,7 @@ export const defaultArticles = [
     h1: "Una to Manali Road Trip Guide: Kiratpur 4-Lane, Atal Tunnel & Mountain Driving Tips",
     description:
       "Essential guide for travelers driving from Una to Kullu, Manali, and Atal Tunnel Sissu. Route conditions, new 4-lane expressway updates, and hill safety notes.",
-    seoTitle: "Una to Manali Road Trip & Taxi Guide | Kiratpur 4-Lane | Mandyal Travels",
+    seoTitle: "Una to Manali Road Trip & Taxi Guide | Kiratpur 4-Lane | Mandyal Tour and Travels",
     seoDescription:
       "Plan your Una to Manali taxi journey via the new Kiratpur-Nerchowk 4-lane expressway. Learn travel times, Atal Tunnel access, and scenic stops along the Beas River.",
     featuredImage: "/images/destinations/manali.jpg",

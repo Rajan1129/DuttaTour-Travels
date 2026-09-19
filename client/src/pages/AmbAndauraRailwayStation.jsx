@@ -233,7 +233,7 @@ export default function AmbAndauraRailwayStation() {
                   <span>Station Hotline: {business.phones[0]}</span>
                 </a>
                 <a
-                  href={whatsappLink("Hello Mandyal Travels, I need taxi pickup from Amb Andaura Railway Station (AADR).")}
+                  href={whatsappLink("Hello Mandyal Tour and Travels, I need taxi pickup from Amb Andaura Railway Station (AADR).")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#00c853] hover:bg-[#00b047] text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-[0.98]"
@@ -427,7 +427,7 @@ export default function AmbAndauraRailwayStation() {
                     <span className="font-extrabold text-[#1e2638] text-sm">{train.arrival}</span>
                   </div>
                   <a
-                    href={whatsappLink(`Hello Mandyal Travels, I need pickup for ${train.name} at Amb Andaura.`)}
+                    href={whatsappLink(`Hello Mandyal Tour and Travels, I need pickup for ${train.name} at Amb Andaura.`)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="font-bold text-[#f57c00] hover:underline"
@@ -490,7 +490,7 @@ export default function AmbAndauraRailwayStation() {
                   </div>
                   <a
                     href={whatsappLink(
-                      `Hello Mandyal Travels, I need a taxi from Amb Andaura Railway Station to ${item.destination}. Please share the best rate.`
+                      `Hello Mandyal Tour and Travels, I need a taxi from Amb Andaura Railway Station to ${item.destination}. Please share the best rate.`
                     )}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -563,7 +563,7 @@ export default function AmbAndauraRailwayStation() {
                   </div>
 
                   <a
-                    href={whatsappLink(`Hello Mandyal Travels, I want to book ${car.name} at Amb Andaura Station.`)}
+                    href={whatsappLink(`Hello Mandyal Tour and Travels, I want to book ${car.name} at Amb Andaura Station.`)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="py-2.5 px-3 rounded-xl bg-[#943e00] hover:bg-[#7a3200] text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow-sm transition-all active:scale-[0.98]"

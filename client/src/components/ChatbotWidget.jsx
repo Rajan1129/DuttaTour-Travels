@@ -239,7 +239,7 @@ export default function ChatbotWidget() {
               <div className="relative">
                 <img
                   src="/logo.png"
-                  alt="Mandyal Travels Logo"
+                  alt="Mandyal Tour and Travels Logo"
                   className="w-10 h-10 rounded-xl bg-white/10 p-1 object-contain border border-white/15"
                 />
                 <span className="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-emerald-400 border-2 border-[#182030] rounded-full" />

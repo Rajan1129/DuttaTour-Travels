@@ -544,7 +544,7 @@ export default function Contact() {
               Simple &amp; Hassle-Free
             </span>
             <h2 className="text-2xl sm:text-3xl font-bold text-[#1e2638]">
-              How Booking Works with Mandyal Travels
+              How Booking Works with Mandyal Tour and Travels
             </h2>
           </div>
 

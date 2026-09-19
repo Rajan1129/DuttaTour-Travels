@@ -104,7 +104,7 @@ export default function AdminLogin() {
             />
             <div className="flex flex-col text-left">
               <span className={`font-extrabold text-xl sm:text-2xl ${isDark ? "text-white" : "text-gray-900"} leading-tight tracking-tight`}>
-                Mandyal Travels
+                Mandyal Tour and Travels
               </span>
               <span className="font-bold text-[9px] sm:text-[10px] text-[#f57c00] uppercase tracking-wider">
                 MANDYAL MOTORS &bull; UNA

@@ -224,7 +224,7 @@ export default function AirportTransfers() {
                   <span>Instant Call: {business.phones[0]}</span>
                 </a>
                 <a
-                  href={whatsappLink("Hello Mandyal Travels, I need an airport taxi transfer from Una.")}
+                  href={whatsappLink("Hello Mandyal Tour and Travels, I need an airport taxi transfer from Una.")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#00c853] hover:bg-[#00b047] text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-[0.98]"
@@ -472,7 +472,7 @@ export default function AirportTransfers() {
                   <div className="flex items-center gap-3 pt-1">
                     <a
                       href={whatsappLink(
-                        `Hello Mandyal Travels, I need an airport taxi transfer to ${apt.name} (${apt.code}). Please share best rate.`
+                        `Hello Mandyal Tour and Travels, I need an airport taxi transfer to ${apt.name} (${apt.code}). Please share best rate.`
                       )}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -506,7 +506,7 @@ export default function AirportTransfers() {
               PEACE OF MIND GUARANTEE
             </span>
             <h2 className="text-3xl sm:text-4xl font-black text-[#1e2638] tracking-tight mt-1">
-              Why Book Airport Transfers with Mandyal Travels?
+              Why Book Airport Transfers with Mandyal Tour and Travels?
             </h2>
             <p className="text-sm text-gray-600 mt-2">
               Catching an international flight requires uncompromising punctuality, reliable cars,
@@ -620,7 +620,7 @@ export default function AirportTransfers() {
                   </div>
 
                   <a
-                    href={whatsappLink(`Hello Mandyal Travels, I want to book ${car.name} for an airport transfer.`)}
+                    href={whatsappLink(`Hello Mandyal Tour and Travels, I want to book ${car.name} for an airport transfer.`)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="py-2.5 px-3 rounded-xl bg-[#943e00] hover:bg-[#7a3200] text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow-sm transition-all active:scale-[0.98]"

@@ -89,7 +89,7 @@ export default function Home() {
       notes: tabName,
     });
 
-    const msg = `*NEW CAB BOOKING INQUIRY - MANDYAL TRAVELS*\n\n` +
+    const msg = `*NEW CAB BOOKING INQUIRY - MANDYAL TOUR AND TRAVELS*\n\n` +
       (customerName.trim() ? `• *Passenger Name:* ${customerName.trim()}\n` : "") +
       (customerPhone.trim() ? `• *Passenger WhatsApp/Phone:* ${customerPhone.trim()}\n` : "") +
       `• *Trip Type:* ${tabName}\n` +
@@ -123,7 +123,7 @@ export default function Home() {
       notes: `Direct Vehicle Booking (${selectedFleetCar.category})`,
     });
 
-    const msg = `*NEW CAB BOOKING INQUIRY - MANDYAL TRAVELS*\n\n` +
+    const msg = `*NEW CAB BOOKING INQUIRY - MANDYAL TOUR AND TRAVELS*\n\n` +
       `• *Vehicle Selected:* ${selectedFleetCar.name} (${selectedFleetCar.category})\n` +
       (fleetModalName.trim() ? `• *Passenger Name:* ${fleetModalName.trim()}\n` : "") +
       (fleetModalPhone.trim() ? `• *Mobile / WhatsApp:* ${fleetModalPhone.trim()}\n` : "") +
@@ -277,7 +277,7 @@ export default function Home() {
                   <span>Instant Booking: {business.phones[0]}</span>
                 </a>
                 <a
-                  href={whatsappLink("Hello Mandyal Travels, I need assistance with a cab booking")}
+                  href={whatsappLink("Hello Mandyal Tour and Travels, I need assistance with a cab booking")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-gray-100 text-[#1e2638] font-bold text-xs sm:text-sm shadow-md transition-all hover:scale-[1.02] active:scale-[0.98]"
@@ -499,7 +499,7 @@ export default function Home() {
 
                 {/* Booking Notice and Footer Badges */}
                 <p className="text-[10.5px] text-center text-gray-500 leading-normal">
-                  Details instantly shared with your WhatsApp &amp; Mandyal Travels Admin Panel for prompt dispatch.
+                  Details instantly shared with your WhatsApp &amp; Mandyal Tour and Travels Admin Panel for prompt dispatch.
                 </p>
 
                 <div className="pt-1.5 border-t border-gray-100 flex items-center justify-between text-[10.5px] font-semibold text-gray-600">
@@ -565,7 +565,7 @@ export default function Home() {
                 </a>
 
                 <a
-                  href={whatsappLink("Hello Mandyal Travels, I need assistance with a cab booking")}
+                  href={whatsappLink("Hello Mandyal Tour and Travels, I need assistance with a cab booking")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="py-3 px-3 rounded-2xl bg-[#25D366] hover:bg-[#20bd5a] text-white flex items-center justify-center gap-2 font-bold shadow-md active:scale-95 transition-all"
@@ -1048,7 +1048,7 @@ export default function Home() {
                       <span>Direct Booking</span>
                     </button>
                     <a
-                      href={whatsappLink(`Hello Mandyal Travels, I want to book ${car.name}`)}
+                      href={whatsappLink(`Hello Mandyal Tour and Travels, I want to book ${car.name}`)}
                       target="_blank"
                       rel="noopener noreferrer"
                       title="Chat on WhatsApp"
@@ -1120,7 +1120,7 @@ export default function Home() {
                     </h3>
                     <div className="flex items-center gap-1.5 flex-shrink-0">
                       <a
-                        href={whatsappLink(`Hello Mandyal Travels, I want to book a taxi for ${dest.name} (${dest.distanceKm} KM)`)}
+                        href={whatsappLink(`Hello Mandyal Tour and Travels, I want to book a taxi for ${dest.name} (${dest.distanceKm} KM)`)}
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={(e) => e.stopPropagation()}
@@ -1164,7 +1164,7 @@ export default function Home() {
               </p>
             </div>
             <a
-              href={whatsappLink("Hello Mandyal Travels, I would like to request a Custom Tour Itinerary")}
+              href={whatsappLink("Hello Mandyal Tour and Travels, I would like to request a Custom Tour Itinerary")}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 text-sm font-bold text-[#f57c00] hover:underline"
@@ -1217,7 +1217,7 @@ export default function Home() {
                     <span>{pkg.featureNote}</span>
                   </span>
                   <a
-                    href={whatsappLink(`Hello Mandyal Travels, please share the full details for ${pkg.name} (${pkg.duration})`)}
+                    href={whatsappLink(`Hello Mandyal Tour and Travels, please share the full details for ${pkg.name} (${pkg.duration})`)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="font-bold text-white bg-[#f57c00] hover:bg-[#e65100] px-3.5 py-1.5 rounded-lg shadow-sm transition-all flex items-center gap-1 active:scale-95"

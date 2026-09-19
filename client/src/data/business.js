@@ -33,7 +33,7 @@ const loadStorage = (key, defaultVal) => {
 
 export const defaultBusiness = {
   name: "Mandyal Tour & Travels",
-  legalTradeNames: ["Mandyal Travels", "Mandyal Motors"],
+  legalTradeNames: ["Mandyal Tour and Travels", "Mandyal Motors"],
   tagline: "Una's trusted travel service",
   description:
     "Cab service and tempo traveller rentals based in Una, Himachal Pradesh, offering local taxi, outstation taxi, railway and airport transfers, and Himachal tour packages.",
@@ -483,21 +483,21 @@ export const defaultTestimonials = [
     initials: "SM",
     color: "bg-blue-600",
     quote:
-      "Hired taxi from Mandyal Travels this month from Shimla and Manali with family. I fully satisfied with the service, the cab was very good condition and neat and clean. The driver Mr. Raj Kumar was cooperative and helpful in guiding us the entire trip. Thanks owner Mr. Manoj Mandyal.",
+      "Hired taxi from Mandyal Tour and Travels this month from Shimla and Manali with family. I fully satisfied with the service, the cab was very good condition and neat and clean. The driver Mr. Raj Kumar was cooperative and helpful in guiding us the entire trip. Thanks owner Mr. Manoj Mandyal.",
   },
   {
     name: "Aditya Singh",
     initials: "AS",
     color: "bg-rose-600",
     quote:
-      "Used Mandyal Travels for a three-day excursion for Amritsar and had a wonderful time. Mr. Ravi, the driver, was very courteous, professional, and cooperative. Will use them once more when necessary. Highly advise using their services if you want a hassle-free trip.",
+      "Used Mandyal Tour and Travels for a three-day excursion for Amritsar and had a wonderful time. Mr. Ravi, the driver, was very courteous, professional, and cooperative. Will use them once more when necessary. Highly advise using their services if you want a hassle-free trip.",
   },
   {
     name: "Agastya Garg",
     initials: "AG",
     color: "bg-orange-600",
     quote:
-      "Recently booked a cab with Mandyal Travels and had an amazing experience. He was really friendly, soft-spoken, and made sure I had a safe and smooth ride to Shimla, Manali 7 days tour. I highly recommend him as a cab driver. Thanks, for the great service!",
+      "Recently booked a cab with Mandyal Tour and Travels and had an amazing experience. He was really friendly, soft-spoken, and made sure I had a safe and smooth ride to Shimla, Manali 7 days tour. I highly recommend him as a cab driver. Thanks, for the great service!",
   },
 ];
 

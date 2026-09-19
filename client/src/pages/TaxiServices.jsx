@@ -35,7 +35,7 @@ export default function TaxiServices() {
             region. Choose the service that matches your journey below.
           </p>
         </div>
-        <CtaButtons whatsappMessage="Hello Mandyal Travels, I need a cab quote" />
+        <CtaButtons whatsappMessage="Hello Mandyal Tour and Travels, I need a cab quote" />
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-space-lg pt-space-md">
           {services.map((s) => (
             <Link

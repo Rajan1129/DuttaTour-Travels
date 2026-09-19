@@ -242,7 +242,7 @@ export default function TaxiServiceAmb() {
                   <span>Instant Call: {business.phones[0]}</span>
                 </a>
                 <a
-                  href={whatsappLink("Hello Mandyal Travels, I need a taxi in Amb / Amb Andaura Railway Station.")}
+                  href={whatsappLink("Hello Mandyal Tour and Travels, I need a taxi in Amb / Amb Andaura Railway Station.")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#00c853] hover:bg-[#00b047] text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-[0.98]"
@@ -459,7 +459,7 @@ export default function TaxiServiceAmb() {
                 </p>
               </div>
               <a
-                href={whatsappLink("Hello Mandyal Travels, I need a taxi from Amb to Maa Chintpurni Devi Dham")}
+                href={whatsappLink("Hello Mandyal Tour and Travels, I need a taxi from Amb to Maa Chintpurni Devi Dham")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xs font-bold text-[#f57c00] hover:underline flex items-center gap-1 self-start"
@@ -505,7 +505,7 @@ export default function TaxiServiceAmb() {
                 </p>
               </div>
               <a
-                href={whatsappLink("Hello Mandyal Travels, I need local taxi service in Amb / Gagret")}
+                href={whatsappLink("Hello Mandyal Tour and Travels, I need local taxi service in Amb / Gagret")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xs font-bold text-[#f57c00] hover:underline flex items-center gap-1 self-start"
@@ -580,7 +580,7 @@ export default function TaxiServiceAmb() {
 
                   <a
                     href={whatsappLink(
-                      `Hello Mandyal Travels, I want to book a taxi from Amb to ${route.destination}. Please share the best rate.`
+                      `Hello Mandyal Tour and Travels, I want to book a taxi from Amb to ${route.destination}. Please share the best rate.`
                     )}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -653,7 +653,7 @@ export default function TaxiServiceAmb() {
                   </div>
 
                   <a
-                    href={whatsappLink(`Hello Mandyal Travels, I want to book ${car.name} in Amb / AADR.`)}
+                    href={whatsappLink(`Hello Mandyal Tour and Travels, I want to book ${car.name} in Amb / AADR.`)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="py-2.5 px-3 rounded-xl bg-[#943e00] hover:bg-[#7a3200] text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow-sm transition-all active:scale-[0.98]"

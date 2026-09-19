@@ -11,7 +11,7 @@ const aboutFaqs = [
   {
     question: "Who owns and manages Mandyal Tour & Travel?",
     answer:
-      "Mandyal Tour & Travel (also operating as Mandyal Travels and Mandyal Motors) is founded and actively managed by Mr. Manoj Mandyal. Based at Prem Nagar on the Una-Amb Road, the business personally oversees every booking, vehicle maintenance, and driver dispatch.",
+      "Mandyal Tour & Travel (also operating as Mandyal Tour and Travels and Mandyal Motors) is founded and actively managed by Mr. Manoj Mandyal. Based at Prem Nagar on the Una-Amb Road, the business personally oversees every booking, vehicle maintenance, and driver dispatch.",
   },
   {
     question: "Are all vehicles registered with commercial yellow plates and tourist permits?",
@@ -24,14 +24,14 @@ const aboutFaqs = [
       "Our chauffeurs have between 8 to 15+ years of dedicated mountain driving experience across Himachal Pradesh, Jammu & Kashmir, Uttarakhand, and Punjab. They are trained in high-altitude hairpin turns, winter snow driving, monsoon conditions, and polite, family-friendly customer service.",
   },
   {
-    question: "Can Mandyal Travels pick us up directly from Amb Andaura or Una Railway Station?",
+    question: "Can Mandyal Tour and Travels pick us up directly from Amb Andaura or Una Railway Station?",
     answer:
       "Yes! Direct railway station meet-and-greet is one of our primary specialties. We monitor train schedules for the New Delhi - Amb Andaura Vande Bharat Express and Himachal Express in real-time, ensuring your cab is parked and waiting outside the platform before you step off.",
   },
   {
     question: "Do you specialize in Devi Darshan and pilgrimage yatras?",
     answer:
-      "Yes. A cornerstone of Mandyal Travels is pilgrimage hospitality. We operate dedicated 6 Devi Darshan circuits covering Chintpurni, Jwala Ji, Baglamukhi, Kangra Brajeshwari, Chamunda Devi, and Naina Devi, as well as the 12 Jyotirlinga Mahayatra, Spiti Valley expeditions, Katra Vaishno Devi, and Uttarakhand Char Dham.",
+      "Yes. A cornerstone of Mandyal Tour and Travels is pilgrimage hospitality. We operate dedicated 6 Devi Darshan circuits covering Chintpurni, Jwala Ji, Baglamukhi, Kangra Brajeshwari, Chamunda Devi, and Naina Devi, as well as the 12 Jyotirlinga Mahayatra, Spiti Valley expeditions, Katra Vaishno Devi, and Uttarakhand Char Dham.",
   },
   {
     question: "How are trip quotes calculated without hidden charges?",
@@ -69,7 +69,7 @@ const coreValues = [
   {
     icon: "support_agent",
     title: "Direct Owner Oversight 24/7",
-    desc: "When you book with Mandyal Travels, you have direct phone and WhatsApp access to founder Manoj Mandyal. No robotic call centres or unhelpful automated bots.",
+    desc: "When you book with Mandyal Tour and Travels, you have direct phone and WhatsApp access to founder Manoj Mandyal. No robotic call centres or unhelpful automated bots.",
   },
 ];
 
@@ -360,7 +360,7 @@ export default function About() {
               Our Non-Negotiable Standards
             </span>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1e2638] leading-tight">
-              Why Thousands of Travelers Trust Mandyal Travels
+              Why Thousands of Travelers Trust Mandyal Tour and Travels
             </h2>
             <p className="text-sm sm:text-base text-gray-600 mt-3">
               We combine strict safety standards, legal compliance, and genuine hill hospitality to ensure
@@ -518,7 +518,7 @@ export default function About() {
               Frequently Asked Questions
             </span>
             <h2 className="text-2xl sm:text-3xl font-bold text-[#1e2638]">
-              Everything You Need to Know About Mandyal Travels
+              Everything You Need to Know About Mandyal Tour and Travels
             </h2>
           </div>
 
@@ -565,7 +565,7 @@ export default function About() {
           </span>
 
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white max-w-2xl mx-auto leading-tight mb-4">
-            Plan Your Himachal Journey with Mandyal Travels Today
+            Plan Your Himachal Journey with Mandyal Tour and Travels Today
           </h2>
 
           <p className="text-gray-300 text-sm sm:text-base max-w-xl mx-auto mb-8 leading-relaxed">

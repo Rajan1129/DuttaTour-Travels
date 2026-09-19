@@ -15,7 +15,7 @@ export default function Footer() {
                 className="h-11 w-auto object-contain bg-white rounded-xl p-1"
               />
               <div className="flex flex-col">
-                <span className="font-extrabold text-lg text-white">Mandyal Travels</span>
+                <span className="font-extrabold text-lg text-white">Mandyal Tour and Travels</span>
                 <span className="font-bold text-[10px] text-[#f57c00] uppercase tracking-wider">MANDYAL MOTORS &bull; UNA</span>
               </div>
             </div>

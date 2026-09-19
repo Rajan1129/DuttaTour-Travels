@@ -183,7 +183,7 @@ export default function OutstationTaxi() {
                   <span>Instant Call: {business.phones[0]}</span>
                 </a>
                 <a
-                  href={whatsappLink("Hello Mandyal Travels, I need an outstation taxi quote.")}
+                  href={whatsappLink("Hello Mandyal Tour and Travels, I need an outstation taxi quote.")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#00c853] hover:bg-[#00b047] text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-[0.98]"
@@ -380,7 +380,7 @@ export default function OutstationTaxi() {
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
           <div className="text-center max-w-2xl mx-auto mb-10">
             <span className="text-xs font-black uppercase tracking-widest text-[#f57c00]">
-              WHY BOOK WITH MANDYAL TRAVELS
+              WHY BOOK WITH MANDYAL TOUR AND TRAVELS
             </span>
             <h2 className="text-3xl sm:text-4xl font-black text-[#1e2638] tracking-tight mt-1">
               Engineered for Safe Hill Journeys
@@ -540,7 +540,7 @@ export default function OutstationTaxi() {
                   </div>
 
                   <a
-                    href={whatsappLink(`Hello Mandyal Travels, I want to book an outstation taxi to ${d.name}.`)}
+                    href={whatsappLink(`Hello Mandyal Tour and Travels, I want to book an outstation taxi to ${d.name}.`)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full py-2 px-3 rounded-xl bg-[#182030] hover:bg-[#f57c00] text-white font-bold text-xs flex items-center justify-center gap-1 transition-colors"
@@ -612,7 +612,7 @@ export default function OutstationTaxi() {
                   </div>
 
                   <a
-                    href={whatsappLink(`Hello Mandyal Travels, I want to book ${car.name} for an outstation trip.`)}
+                    href={whatsappLink(`Hello Mandyal Tour and Travels, I want to book ${car.name} for an outstation trip.`)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="py-2.5 px-3 rounded-xl bg-[#943e00] hover:bg-[#7a3200] text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow-sm transition-all active:scale-[0.98]"

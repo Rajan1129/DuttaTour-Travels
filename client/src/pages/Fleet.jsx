@@ -52,7 +52,7 @@ export default function Fleet() {
     });
 
     const msg =
-      `*NEW CAB BOOKING INQUIRY - MANDYAL TRAVELS*\n\n` +
+      `*NEW CAB BOOKING INQUIRY - MANDYAL TOUR AND TRAVELS*\n\n` +
       `• *Vehicle Selected:* ${selectedFleetCar.name} (${selectedFleetCar.category})\n` +
       (fleetModalName.trim() ? `• *Passenger Name:* ${fleetModalName.trim()}\n` : "") +
       (fleetModalPhone.trim() ? `• *Mobile / WhatsApp:* ${fleetModalPhone.trim()}\n` : "") +
@@ -104,7 +104,7 @@ export default function Fleet() {
                 <span>Call Chauffeur Desk: {business.phones[0]}</span>
               </a>
               <a
-                href={whatsappLink("Hello Mandyal Travels, I would like to inquire about taxi fleet booking.")}
+                href={whatsappLink("Hello Mandyal Tour and Travels, I would like to inquire about taxi fleet booking.")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#00c853] hover:bg-[#00b047] text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-[0.98]"
@@ -241,7 +241,7 @@ export default function Fleet() {
                       <span>Direct Booking</span>
                     </button>
                     <a
-                      href={whatsappLink(`Hello Mandyal Travels, I want to book ${car.name}`)}
+                      href={whatsappLink(`Hello Mandyal Tour and Travels, I want to book ${car.name}`)}
                       target="_blank"
                       rel="noopener noreferrer"
                       title="Chat on WhatsApp"
@@ -264,7 +264,7 @@ export default function Fleet() {
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
           <div className="text-center max-w-2xl mx-auto mb-10">
             <span className="text-xs font-black uppercase tracking-widest text-[#f57c00]">
-              WHY BOOK WITH MANDYAL TRAVELS
+              WHY BOOK WITH MANDYAL TOUR AND TRAVELS
             </span>
             <h2 className="text-2xl sm:text-3xl font-black text-[#1e2638] mt-1">
               Guaranteed Quality, Cleanliness &amp; Mountain Safety
@@ -398,7 +398,7 @@ export default function Fleet() {
                   <p className="text-xs text-gray-600 mt-1">{route.note}</p>
                 </div>
                 <a
-                  href={whatsappLink(`Hello Mandyal Travels, I need fare quote for ${route.title}`)}
+                  href={whatsappLink(`Hello Mandyal Tour and Travels, I need fare quote for ${route.title}`)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-xs font-bold text-blue-700 hover:text-blue-900 flex items-center gap-1 self-start pt-1"

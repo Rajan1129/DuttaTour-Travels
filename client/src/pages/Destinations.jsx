@@ -14,7 +14,7 @@ export default function Destinations() {
     <Layout>
       <SEO
         path={seo.path}
-        title="Popular Taxi Routes & Outstation Destinations from Una | Mandyal Travels"
+        title="Popular Taxi Routes & Outstation Destinations from Una | Mandyal Tour and Travels"
         description="Explore popular outstation taxi routes from Una, Amb Andaura Railway Station, and Himachal Pradesh. Best fares for Shimla, Manali, Dharamshala, Chandigarh, and Katra."
         structuredData={[localBusinessSchema(), breadcrumbSchema(crumbs)]}
       />
@@ -26,7 +26,7 @@ export default function Destinations() {
           <div className="max-w-3xl flex flex-col gap-3.5">
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#f57c00] text-white text-xs font-black shadow-md self-start">
               <span className="material-symbols-outlined text-[15px]">explore</span>
-              <span>VERIFIED OUTSTATION HILL ROUTES &bull; MANDYAL TRAVELS</span>
+              <span>VERIFIED OUTSTATION HILL ROUTES &bull; MANDYAL TOUR AND TRAVELS</span>
             </div>
             <h1 className="text-3xl sm:text-5xl font-black tracking-tight leading-tight">
               Popular Taxi Routes from Una &amp; Amb
