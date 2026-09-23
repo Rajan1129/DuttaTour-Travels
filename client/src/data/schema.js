@@ -12,6 +12,8 @@ export function localBusinessSchema() {
     telephone: business.phonesTel,
     email: business.email,
     url: business.siteUrl,
+    logo: `${business.siteUrl}/favicon-192x192.png`,
+    image: `${business.siteUrl}/favicon-512x512.png`,
     address: {
       "@type": "PostalAddress",
       streetAddress: business.location.addressLine,
