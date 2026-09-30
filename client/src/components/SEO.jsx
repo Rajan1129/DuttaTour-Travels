@@ -35,10 +35,6 @@ export default function SEO({
       <title>{title}</title>
       <meta name="description" content={description} />
       <link rel="canonical" href={canonical} />
-      <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-      <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
-      <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
-      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
       <meta name="robots" content={noindex ? "noindex, nofollow" : "index, follow"} />
 
       {/* Open Graph */}
