@@ -14,18 +14,38 @@ export function localBusinessSchema() {
     url: business.siteUrl,
     logo: `${business.siteUrl}/favicon-192x192.png`,
     image: `${business.siteUrl}/favicon-512x512.png`,
+    priceRange: "₹₹",
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: "31.6845",
+      longitude: "76.1264",
+    },
     address: {
       "@type": "PostalAddress",
       streetAddress: business.location.addressLine,
-      addressLocality: business.location.city,
+      addressLocality: `${business.location.city}, ${business.location.district || "Una"}`,
       addressRegion: business.location.state,
       postalCode: business.location.postalCode,
       addressCountry: "IN",
     },
-    areaServed: {
-      "@type": "City",
-      name: `${business.location.city}, ${business.location.state}`,
-    },
+    areaServed: [
+      {
+        "@type": "AdministrativeArea",
+        name: "Amb, Himachal Pradesh",
+      },
+      {
+        "@type": "Place",
+        name: "Amb Andaura Railway Station (AADR)",
+      },
+      {
+        "@type": "City",
+        name: "Una, Himachal Pradesh",
+      },
+      {
+        "@type": "AdministrativeArea",
+        name: "Himachal Pradesh",
+      },
+    ],
   };
 }
 

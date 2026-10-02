@@ -13,15 +13,49 @@ import {
   recordBookingInquiry,
 } from "../data/business";
 import { seoConfig } from "../data/seoConfig";
-import { localBusinessSchema } from "../data/schema";
+import { localBusinessSchema, faqSchema } from "../data/schema";
 import WhatsAppIcon from "../components/WhatsAppIcon";
+
+const homeFaqs = [
+  {
+    question: "How do I book a taxi in Amb Andaura with Mandyal Tour and Travels?",
+    answer:
+      "Booking a taxi in Amb Andaura is instant and seamless. Simply call our 24/7 dispatch desk at +91 7807481503, message us on WhatsApp, or book online via our booking card. We provide instant driver assignment, guaranteed arrival time, and clear, transparent pricing.",
+  },
+  {
+    question: "Do you provide pickup at Amb Andaura Railway Station (AADR) for Vande Bharat Express?",
+    answer:
+      "Yes, we specialize in meet-and-greet platform pickups at Amb Andaura Railway Station (AADR) for the New Delhi - Amb Andaura Vande Bharat Express (22447 / 22448) and Himachal Express. Our chauffeur waits outside the station with your name board, ready to assist with family luggage.",
+  },
+  {
+    question: "What is the taxi fare from Amb Andaura to Maa Chintpurni Devi Temple?",
+    answer:
+      "Amb Andaura to Maa Chintpurni Devi Ji Dham is approximately 26 km (35 to 40 minutes via NH-503). We offer the most competitive fixed fares for private Sedans (Swift Dzire, Toyota Etios), 6-seater SUVs (Maruti Ertiga, Innova Crysta), and Tempo Travellers for one-way drops as well as round-trip same-day darshan.",
+  },
+  {
+    question: "Which outstation hill routes are available from Amb and Una?",
+    answer:
+      "From Amb and Una, we provide 24/7 outstation cabs to Dharamshala & McLeodganj (92 km), Manali, Shimla, Dalhousie, Jawalaji, Chamunda Devi, Kangra, Baglamukhi Temple, Chandigarh Airport, and Amritsar Golden Temple with verified commercial yellow-plate vehicles.",
+  },
+  {
+    question: "Are taxi services available 24 hours in Amb, Andaura, and Una?",
+    answer:
+      "Yes, our operations run 24 hours a day, 7 days a week. Whether you require an early morning 4:00 AM pickup or a late-night train arrival transfer from Amb Andaura or Una, our drivers and customer support are always ready.",
+  },
+  {
+    question: "What vehicle types can I rent for family tours and group travel?",
+    answer:
+      "Our fleet includes Sedans (Swift Dzire), family MPVs/SUVs (Maruti Ertiga, Toyota Innova Crysta, Fortuner 4x4), and Force Urbania / Tempo Travellers (12 to 26 seaters) equipped with air conditioning, comfortable pushback seats, and ample luggage space.",
+  },
+];
 
 export default function Home() {
   const seo = seoConfig.home;
+  const [openFaq, setOpenFaq] = useState(null);
 
   // Booking Card State
-  const [bookingTab, setBookingTab] = useState("outstation"); // "outstation" | "devi-darshan" | "station-pickup"
-  const [pickupLocation, setPickupLocation] = useState("Una (Prem Nagar / Amb Andaura Stn)");
+  const [bookingTab, setBookingTab] = useState("station-pickup"); // "outstation" | "devi-darshan" | "station-pickup"
+  const [pickupLocation, setPickupLocation] = useState("Amb Andaura Railway Station (AADR)");
   const [destinationCircuit, setDestinationCircuit] = useState("Shimla & Kufri (Himachal)");
   const [travelDate, setTravelDate] = useState(() => new Date().toISOString().split("T")[0]);
   const [vehicleType, setVehicleType] = useState("Innova Crysta");
@@ -143,7 +177,7 @@ export default function Home() {
         path={seo.path}
         title={seo.title}
         description={seo.description}
-        structuredData={localBusinessSchema()}
+        structuredData={[localBusinessSchema(), faqSchema(homeFaqs)]}
       />
 
       {/* ========================================================================= */}
@@ -154,7 +188,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <img
             src="/hero-bg.jpg"
-            alt="Himachal Mountain Highway Mandyal Tour & Travels"
+            alt="Amb Andaura Taxi Service Mandyal Tour & Travels"
             className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#141b2b]/95 via-[#141b2b]/85 to-[#141b2b]/75" />
@@ -170,7 +204,7 @@ export default function Home() {
               {/* Badges */}
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-xs font-semibold text-orange-200">
                 <span className="material-symbols-outlined text-[15px] text-emerald-400">verified</span>
-                <span>VERIFIED HP GOVT. REGD. FLEET &bull; MANDYAL MOTORS</span>
+                <span>AMB ANDAURA &bull; UNA &bull; HP GOVT. REGD. FLEET</span>
               </div>
 
               <div className="flex items-center gap-2 text-xs xl:text-sm text-gray-300">
@@ -180,16 +214,16 @@ export default function Home() {
 
               {/* Main Headline */}
               <h1 className="text-4xl xl:text-5xl font-black text-white tracking-tight leading-[1.12]">
-                Welcome to <br />
-                <span className="text-white">Mandyal Tour &amp; Travels</span>
+                Taxi Service in Amb Andaura &amp; Una <br />
+                <span className="text-[#ffb74d] text-3xl xl:text-4xl font-extrabold">Mandyal Tour &amp; Travels</span>
               </h1>
 
               {/* Paragraph */}
               <p className="text-sm text-gray-300 max-w-xl leading-relaxed">
-                Una&apos;s trusted travel legacy of 15+ years. Experience safe, punctual, and
-                comfortable Himachal mountain journeys with certified hill chauffeurs, dedicated
-                Devi Darshan temple circuits, seamless Amb Andaura Vande Bharat station pickups,
-                and customized North India holiday tours.
+                Himachal&apos;s trusted travel service with 15+ years of excellence. Experience safe, punctual, and
+                affordable taxi booking in Amb Andaura and Una with certified hill chauffeurs, dedicated
+                Maa Chintpurni &amp; Devi Darshan circuits, seamless Amb Andaura Railway Station (AADR) Vande Bharat pickups,
+                and custom North India holiday cabs.
               </p>
 
               {/* Stats Grid - Eye-Catching Social Proof & Trust Badges */}
@@ -537,18 +571,23 @@ export default function Home() {
               {/* Trust Pill Badge */}
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#f57c00] text-white text-xs font-black shadow-md">
                 <span className="material-symbols-outlined text-[15px]">verified</span>
-                <span>TRUSTED MOUNTAIN CAB NETWORK &bull; UNA</span>
+                <span>AMB ANDAURA &bull; UNA &bull; 24/7 CAB NETWORK</span>
               </div>
 
               {/* Heading */}
-              <h1 className="text-2xl sm:text-3xl font-black text-white tracking-tight leading-snug">
-                Mandyal Tour &amp; Travels
-              </h1>
+              <div>
+                <h1 className="text-2xl sm:text-3xl font-black text-white tracking-tight leading-snug">
+                  Taxi Service in Amb Andaura &amp; Una
+                </h1>
+                <span className="text-xs sm:text-sm font-bold text-[#ffb74d] block mt-0.5">
+                  Mandyal Tour &amp; Travels &bull; 24/7 Cab Booking
+                </span>
+              </div>
 
               {/* Description */}
               <p className="text-sm text-gray-200 leading-relaxed font-normal">
-                Una&apos;s trusted travel legacy of 15+ years. Safe mountain journeys with certified hill
-                chauffeurs, Devi Darshan pilgrimage care, and 24/7 Amb Andaura Vande Bharat station dispatch.
+                Himachal&apos;s trusted travel service with 15+ years experience. Safe mountain journeys, 
+                Amb Andaura Railway Station (AADR) Vande Bharat pickups, Maa Chintpurni Devi Darshan, and outstation cabs.
               </p>
 
               {/* Dual Action Buttons (Side by Side) */}
@@ -1281,6 +1320,165 @@ export default function Home() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ========================================================================= */}
+      {/* AMB ANDAURA HUB & POPULAR ROUTES SECTION (Local SEO Optimization) */}
+      {/* ========================================================================= */}
+      <section className="py-16 bg-white border-t border-gray-100">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            {/* Left Content */}
+            <div className="lg:col-span-6 flex flex-col gap-3.5">
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold w-fit">
+                <span className="material-symbols-outlined text-[15px] text-emerald-600">train</span>
+                <span>Amb Andaura Railway Station (AADR) Official Cab Partner</span>
+              </div>
+              <h2 className="text-2xl sm:text-3xl font-black text-[#1e2638] tracking-tight leading-tight">
+                Taxi Service in Amb Andaura &amp; Maa Chintpurni Yatra
+              </h2>
+              <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                Headquartered right in <strong>Andaura, Amb (177203)</strong>, Mandyal Tour &amp; Travels offers instant platform pickups for all arriving trains including the <strong>New Delhi &ndash; Amb Andaura Vande Bharat Express</strong>. Whether you need a direct cab to <strong>Maa Chintpurni Dham (26 km)</strong>, Dharamshala, Kangra, or local taxi booking in Amb and Una, our verified commercial fleet guarantees prompt, transparent, and hassle-free travel.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+                <div className="p-3.5 rounded-xl bg-orange-50/70 border border-orange-100 flex flex-col gap-1">
+                  <span className="text-xs font-black text-[#f57c00] flex items-center gap-1">
+                    <span className="material-symbols-outlined text-[15px]">check_circle</span>
+                    Platform Meet &amp; Greet
+                  </span>
+                  <span className="text-[11px] text-gray-600">Zero waiting outside Amb Andaura station; direct luggage assistance.</span>
+                </div>
+                <div className="p-3.5 rounded-xl bg-blue-50/70 border border-blue-100 flex flex-col gap-1">
+                  <span className="text-xs font-black text-blue-700 flex items-center gap-1">
+                    <span className="material-symbols-outlined text-[15px]">verified</span>
+                    24/7 Fixed Pricing
+                  </span>
+                  <span className="text-[11px] text-gray-600">Transparent hill rates with all tolls &amp; permits clearly communicated.</span>
+                </div>
+              </div>
+              <div className="flex flex-wrap items-center gap-3 pt-2">
+                <Link
+                  to="/taxi-service-amb"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#f57c00] hover:bg-[#e65100] text-white font-bold text-xs sm:text-sm shadow-md transition-all hover:scale-[1.02]"
+                >
+                  <span>Explore Amb Taxi Services</span>
+                  <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </Link>
+                <Link
+                  to="/amb-andaura-railway-station-taxi"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gray-100 hover:bg-gray-200 text-[#1e2638] font-bold text-xs sm:text-sm transition-all"
+                >
+                  <span>Vande Bharat Station Pickup</span>
+                </Link>
+              </div>
+            </div>
+
+            {/* Right Routes Grid */}
+            <div className="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+              {[
+                {
+                  title: "Amb to Maa Chintpurni",
+                  km: "26 KM • ~35 Mins",
+                  desc: "Dedicated Shaktipeeth darshan cab with same-day return option.",
+                  link: "/taxi-service-amb",
+                },
+                {
+                  title: "Amb to Dharamshala",
+                  km: "92 KM • ~2.5 Hrs",
+                  desc: "Scenic Kangra valley hill highway taxi with mountain chauffeur.",
+                  link: "/una-to-dharamshala-taxi",
+                },
+                {
+                  title: "Amb to Jawalaji Temple",
+                  km: "45 KM • ~1.2 Hrs",
+                  desc: "Pilgrimage darshan taxi with direct hotel or temple parking drop.",
+                  link: "/char-dham",
+                },
+                {
+                  title: "Amb to Chandigarh Airport",
+                  km: "140 KM • ~3.5 Hrs",
+                  desc: "Punctual one-way airport cab transfer on 4-lane highway.",
+                  link: "/airport-transfers",
+                },
+              ].map((rt, i) => (
+                <Link
+                  key={i}
+                  to={rt.link}
+                  className="p-4 rounded-2xl bg-white border border-gray-200 shadow-sm hover:shadow-md hover:border-[#f57c00]/50 transition-all flex flex-col justify-between group"
+                >
+                  <div>
+                    <div className="flex items-center justify-between mb-1.5">
+                      <span className="text-xs font-black text-[#1e2638] group-hover:text-[#f57c00] transition-colors">
+                        {rt.title}
+                      </span>
+                      <span className="material-symbols-outlined text-[15px] text-gray-400 group-hover:text-[#f57c00] transition-colors">
+                        arrow_outward
+                      </span>
+                    </div>
+                    <span className="inline-block text-[10.5px] font-bold text-[#f57c00] mb-1">
+                      {rt.km}
+                    </span>
+                    <p className="text-[11px] text-gray-500 leading-relaxed">{rt.desc}</p>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ========================================================================= */}
+      {/* FREQUENTLY ASKED QUESTIONS (FAQ ACCORDION + FAQ SCHEMA) */}
+      {/* ========================================================================= */}
+      <section className="py-16 bg-[#edf2fe]/60 border-t border-blue-100">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
+          <div className="text-center max-w-2xl mx-auto mb-10">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#f57c00]/10 text-[#f57c00] text-xs font-black uppercase tracking-wider mb-2">
+              <span className="material-symbols-outlined text-[15px]">quiz</span>
+              Helpful Answers
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-black text-[#1e2638] tracking-tight">
+              Taxi Service in Amb Andaura &amp; Una FAQs
+            </h2>
+            <p className="text-xs sm:text-sm text-gray-600 mt-2">
+              Everything you need to know about taxi booking in Amb, Amb Andaura Railway Station pickups, Devi Darshan yatras, and Himachal outstation cab fares.
+            </p>
+          </div>
+
+          <div className="max-w-3xl mx-auto flex flex-col gap-3">
+            {homeFaqs.map((faq, idx) => {
+              const isOpen = openFaq === idx;
+              return (
+                <div
+                  key={idx}
+                  className="rounded-2xl bg-white border border-gray-200/80 shadow-sm overflow-hidden transition-all"
+                >
+                  <button
+                    type="button"
+                    onClick={() => setOpenFaq(isOpen ? null : idx)}
+                    className="w-full py-4 px-5 sm:px-6 flex items-center justify-between text-left gap-4 hover:bg-gray-50/70 transition-colors"
+                  >
+                    <span className="font-extrabold text-sm sm:text-base text-[#1e2638]">
+                      {faq.question}
+                    </span>
+                    <span
+                      className={`material-symbols-outlined text-[20px] text-[#f57c00] transition-transform duration-200 shrink-0 ${
+                        isOpen ? "rotate-180" : ""
+                      }`}
+                    >
+                      expand_more
+                    </span>
+                  </button>
+                  {isOpen && (
+                    <div className="px-5 sm:px-6 pb-5 pt-1 text-xs sm:text-sm text-gray-600 leading-relaxed border-t border-gray-100">
+                      {faq.answer}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

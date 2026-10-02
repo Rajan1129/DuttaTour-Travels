@@ -5,19 +5,28 @@
 export const seoConfig = {
   home: {
     path: "/",
-    title: "Taxi Service in Una, Himachal Pradesh | Mandyal Tour & Travels",
+    title: "Taxi Service in Amb Andaura & Una | Cab Booking | Mandyal Tour & Travels",
     description:
-      "Book local and outstation taxis, airport and railway transfers, Himachal tours and travel services from Una with Mandyal Tour & Travels.",
-    primaryKeyword: "taxi and travel services in Una",
-    secondaryKeywords: ["taxi service Una Himachal Pradesh", "taxi booking Una", "Himachal taxi service"],
+      "Book reliable 24/7 taxi service in Amb Andaura & Una, Himachal Pradesh. Verified cabs for Amb Andaura Railway Station (AADR) Vande Bharat Express, Maa Chintpurni yatra, Dharamshala, Kangra & outstation trips with Mandyal Tour and Travels.",
+    primaryKeyword: "taxi service in Amb",
+    secondaryKeywords: [
+      "taxi service in Amb",
+      "taxi booking in Amb",
+      "Amb Andaura taxi booking",
+      "taxi service in Amb Andaura",
+      "Amb Andaura railway station taxi",
+      "Vande Bharat taxi Amb Andaura",
+      "cab booking Amb",
+      "taxi service in Una",
+    ],
   },
   taxiServices: {
     path: "/taxi-services",
-    title: "Taxi Services in Una | Local & Outstation Taxi | Mandyal Tour & Travels",
+    title: "Taxi Services in Amb Andaura & Una | Local & Outstation Taxi | Mandyal Tour & Travels",
     description:
-      "Local and outstation taxi services from Una covering city rides, railway and airport transfers, and Himachal routes with Mandyal Tour & Travels.",
+      "Local and outstation taxi services from Amb Andaura and Una covering city rides, railway and airport transfers, and Himachal routes with Mandyal Tour & Travels.",
     primaryKeyword: "taxi services",
-    secondaryKeywords: ["taxi service in Una", "outstation taxi from Una", "local taxi Una"],
+    secondaryKeywords: ["taxi service in Amb", "taxi service in Una", "outstation taxi from Amb", "local taxi Amb Andaura"],
   },
   taxiServiceUna: {
     path: "/taxi-service-una",
@@ -36,12 +45,14 @@ export const seoConfig = {
   },
   taxiServiceAmb: {
     path: "/taxi-service-amb",
-    title: "Taxi Service in Amb Himachal Pradesh | Amb Andaura Cab Booking | Mandyal Tour and Travels",
+    title: "Taxi Service in Amb Andaura | Cab Booking Amb Himachal | Mandyal Tour and Travels",
     description:
-      "Book 24/7 verified taxi service in Amb, Himachal Pradesh with Mandyal Tour & Travels. Guaranteed platform pickups for Amb Andaura (AADR) Vande Bharat Express, Maa Chintpurni yatra, Dharamshala, Kangra & outstation cabs.",
+      "Book 24/7 verified taxi service in Amb & Amb Andaura, Himachal Pradesh with Mandyal Tour & Travels. Guaranteed platform pickups for Amb Andaura (AADR) Vande Bharat Express, Maa Chintpurni yatra, Dharamshala, Kangra & outstation cabs.",
     primaryKeyword: "Taxi Service in Amb",
     secondaryKeywords: [
       "Taxi Service in Amb",
+      "taxi booking in Amb",
+      "Amb Andaura taxi booking",
       "Amb Andaura railway station taxi",
       "Vande Bharat taxi Amb Andaura",
       "Amb to Chintpurni taxi fare",
@@ -51,12 +62,13 @@ export const seoConfig = {
   },
   ambAndauraRailwayStation: {
     path: "/amb-andaura-railway-station-taxi",
-    title: "Amb Andaura Railway Station Taxi | Vande Bharat Cab Pickup | Mandyal Tour and Travels",
+    title: "Amb Andaura Taxi Booking | Station Cab Service | Mandyal Tour and Travels",
     description:
       "Pre-book 24/7 verified taxi at Amb Andaura Railway Station (AADR). Meet & greet platform pickup for Vande Bharat Express & Himachal Express to Maa Chintpurni Dham, Dharamshala, Kangra, & outstation hill routes.",
     primaryKeyword: "Amb Andaura Railway Station taxi",
     secondaryKeywords: [
       "Amb Andaura Railway Station taxi",
+      "Amb Andaura taxi booking",
       "Vande Bharat taxi Amb Andaura",
       "AADR railway station cab booking",
       "Amb station to Chintpurni taxi fare",

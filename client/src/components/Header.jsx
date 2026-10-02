@@ -13,8 +13,9 @@ const navLinks = [
 
 const serviceLinks = [
   { path: "/fleet", label: "Cab Rental Fleet" },
+  { path: "/taxi-service-amb", label: "Taxi Service in Amb Andaura" },
+  { path: "/amb-andaura-railway-station-taxi", label: "Amb Andaura Station (AADR) Taxi" },
   { path: "/taxi-service-una", label: "Taxi Service in Una" },
-  { path: "/taxi-service-amb", label: "Taxi Service in Amb" },
   { path: "/outstation-taxi", label: "Outstation Hill Cabs" },
   { path: "/airport-transfers", label: "Chandigarh Airport Transfers" },
 ];

@@ -16,7 +16,7 @@ export default function Footer() {
               />
               <div className="flex flex-col">
                 <span className="font-extrabold text-lg text-white">Mandyal Tour and Travels</span>
-                <span className="font-bold text-[10px] text-[#f57c00] uppercase tracking-wider">MANDYAL MOTORS &bull; UNA</span>
+                <span className="font-bold text-[10px] text-[#f57c00] uppercase tracking-wider">AMB ANDAURA &bull; UNA</span>
               </div>
             </div>
             <p className="text-xs text-gray-400 leading-relaxed">{business.description}</p>
@@ -30,9 +30,10 @@ export default function Footer() {
           <div className="flex flex-col gap-3">
             <h3 className="font-bold text-sm text-white uppercase tracking-wider">Services</h3>
             <ul className="flex flex-col gap-2 text-xs text-gray-400">
-              <li><Link to="/fleet" className="hover:text-[#f57c00] transition-colors">Cab Rental Fleet</Link></li>
+              <li><Link to="/taxi-service-amb" className="hover:text-[#f57c00] transition-colors">Taxi Service in Amb Andaura</Link></li>
+              <li><Link to="/amb-andaura-railway-station-taxi" className="hover:text-[#f57c00] transition-colors">Amb Andaura Station Taxi</Link></li>
               <li><Link to="/taxi-service-una" className="hover:text-[#f57c00] transition-colors">Taxi Service in Una</Link></li>
-              <li><Link to="/taxi-service-amb" className="hover:text-[#f57c00] transition-colors">Taxi Service in Amb</Link></li>
+              <li><Link to="/fleet" className="hover:text-[#f57c00] transition-colors">Cab Rental Fleet</Link></li>
               <li><Link to="/outstation-taxi" className="hover:text-[#f57c00] transition-colors">Outstation Hill Cabs</Link></li>
               <li><Link to="/airport-transfers" className="hover:text-[#f57c00] transition-colors">Chandigarh Airport Transfers</Link></li>
             </ul>

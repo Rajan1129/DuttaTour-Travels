@@ -38,13 +38,13 @@ export const defaultBusiness = {
   description:
     "Cab service and tempo traveller rentals based in Una, Himachal Pradesh, offering local taxi, outstation taxi, railway and airport transfers, and Himachal tour packages.",
   location: {
-    city: "Una",
+    city: "Amb",
+    district: "Una",
     state: "Himachal Pradesh",
     country: "India",
-    addressLine: "F796+M34, Adjacent Punjab & Sind Bank, Una-Amb Road, Prem Nagar",
-    postalCode: "174303",
-    fullAddress:
-      "F796+M34, Adjacent Punjab & Sind Bank, Una-Amb Road, Prem Nagar, Una, Himachal Pradesh 174303",
+    addressLine: "Andaura, Amb",
+    postalCode: "177203",
+    fullAddress: "Andaura, Amb, Himachal Pradesh 177203",
   },
   phones: ["+91 7807481503"],
   phonesTel: ["+917807481503"],
