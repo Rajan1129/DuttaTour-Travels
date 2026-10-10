@@ -9,6 +9,16 @@ import { localBusinessSchema, breadcrumbSchema, faqSchema } from "../data/schema
 
 const aadrFaqs = [
   {
+    question: "Is Amb Andaura station taxi service also searched as Amb Indora taxi?",
+    answer:
+      "Yes! Many tourists and pilgrims phonetically search for 'Amb Indora taxi service' or 'Andora railway station cab'. Amb Andaura (Railway Station Code: AADR) is the official broad-gauge terminal in Una district. Mandyal Tour & Travels operates authorized 24/7 commercial taxis right at the station exit for Dharamshala, McLeodganj, Chintpurni, Kangra, and all Himachal destinations.",
+  },
+  {
+    question: "What is the taxi fare from Amb Andaura (Amb Indora) to Dharamshala & McLeodganj?",
+    answer:
+      "The taxi fare from Amb Andaura to Dharamshala starts at approximately ₹2,800 for a private 4-seater Sedan (Swift Dzire/Etios), ₹3,800 for a spacious 6-seater SUV (Maruti Ertiga/Toyota Innova Crysta), and ₹6,000 for a Tempo Traveller (12/17-seater). Rates include fuel, toll taxes, hill driving allowances, and zero hidden surcharges.",
+  },
+  {
     question: "Where will the driver meet me at Amb Andaura Railway Station (AADR)?",
     answer:
       "Our chauffeur will be waiting outside the main platform exit gate holding a personalized name sign. We share the driver's contact number and vehicle registration details on WhatsApp 1 hour before your train arrives.",
@@ -21,17 +31,119 @@ const aadrFaqs = [
   {
     question: "What are the cab charges from Amb Andaura station to Maa Chintpurni temple?",
     answer:
-      "The distance is 26 km (~35 minutes). We offer highly economical, customized quotes for private Sedans (Dzire/Etios), spacious 6-seater SUVs (Ertiga/Innova Crysta), and Tempo Travellers. Both one-way drop and round-trip packages with wait-and-return are available without any hidden fees.",
+      "The distance is 26 km (~35 minutes). Private Sedans start from ₹900, SUVs (Ertiga/Innova) from ₹1,400, and Tempo Travellers from ₹2,500. Both one-way drop and round-trip same-day darshan packages with wait-and-return are available without any hidden fees.",
   },
   {
-    question: "Can I book a taxi from Amb Andaura directly to Dharamshala or McLeodganj?",
+    question: "Can I book a taxi from Amb Andaura directly to Dalhousie, Manali, or Bir Billing?",
     answer:
-      "Yes! Amb Andaura is the nearest broad-gauge railway station to the Kangra Valley. We provide direct hill taxis to Dharamshala (92 km, 2.5 hours), McLeodganj, and Kangra with experienced mountain chauffeurs at the most competitive rates.",
+      "Yes! Amb Andaura is the closest broad-gauge railway station to Himachal Pradesh hill stations. We provide direct hill taxis to Dalhousie/Khajjiar (160 km), Kullu Manali (230 km), and Bir Billing paragliding valley with experienced mountain chauffeurs at competitive all-inclusive rates.",
   },
   {
     question: "Are child seats, roof carriers, and large luggage space available?",
     answer:
       "Yes! Our Innova Crysta and Ertiga vehicles come equipped with overhead carrier racks and spacious boots capable of handling heavy trolley bags, folding prams, and family luggage.",
+  },
+];
+
+export const aadrFareList = [
+  {
+    destination: "Maa Chintpurni Devi Ji Dham",
+    distance: "26 KM",
+    duration: "35 Mins",
+    sedan: "₹900",
+    suv: "₹1,400",
+    tempo: "₹2,500",
+    highlight: "Pilgrimage special (1-way drop or same-day return)",
+  },
+  {
+    destination: "Dharamshala & HPCA Stadium",
+    distance: "92 KM",
+    duration: "2.5 Hours",
+    sedan: "₹2,800",
+    suv: "₹3,800",
+    tempo: "₹6,000",
+    highlight: "#1 Vande Bharat connection to Kangra Valley",
+  },
+  {
+    destination: "McLeodganj (Dalai Lama Temple & Bhagsunag)",
+    distance: "98 KM",
+    duration: "2.8 Hours",
+    sedan: "₹3,000",
+    suv: "₹4,100",
+    tempo: "₹6,500",
+    highlight: "Scenic hill station stay & monastery circuit",
+  },
+  {
+    destination: "Maa Jawala Ji Temple",
+    distance: "45 KM",
+    duration: "1.2 Hours",
+    sedan: "₹1,400",
+    suv: "₹2,000",
+    tempo: "₹3,500",
+    highlight: "Holy eternal flame Shaktipeeth darshan",
+  },
+  {
+    destination: "Kangra Brajeshwari Devi & Kangra Fort",
+    distance: "72 KM",
+    duration: "2.0 Hours",
+    sedan: "₹2,200",
+    suv: "₹3,000",
+    tempo: "₹5,000",
+    highlight: "Shaktipeeth yatra & heritage fort tour",
+  },
+  {
+    destination: "Chamunda Devi & Palampur Tea Gardens",
+    distance: "110 KM",
+    duration: "3.0 Hours",
+    sedan: "₹3,300",
+    suv: "₹4,400",
+    tempo: "₹7,000",
+    highlight: "Pine forests, tea estates & temple visit",
+  },
+  {
+    destination: "Bir Billing (World Paragliding Site) & Baijnath",
+    distance: "125 KM",
+    duration: "3.5 Hours",
+    sedan: "₹3,600",
+    suv: "₹4,800",
+    tempo: "₹7,500",
+    highlight: "Aero sports hub & historic Shiva temple",
+  },
+  {
+    destination: "Dalhousie & Khajjiar (Mini Switzerland)",
+    distance: "160 KM",
+    duration: "4.5 Hours",
+    sedan: "₹4,500",
+    suv: "₹5,800",
+    tempo: "₹9,000",
+    highlight: "Deodar forests, Khajjiar lake & colonial hills",
+  },
+  {
+    destination: "Kullu & Manali (Solang Valley / Atal Tunnel)",
+    distance: "230 KM",
+    duration: "6.5 Hours",
+    sedan: "₹5,800",
+    suv: "₹7,500",
+    tempo: "₹11,500",
+    highlight: "Himalayan holiday corridor & snow passes",
+  },
+  {
+    destination: "Una City HQ & Una Station (UHL)",
+    distance: "32 KM",
+    duration: "40 Mins",
+    sedan: "₹1,000",
+    suv: "₹1,500",
+    tempo: "₹2,800",
+    highlight: "District headquarters intercity transit",
+  },
+  {
+    destination: "Chandigarh City & Airport (IXC)",
+    distance: "150 KM",
+    duration: "3.5 Hours",
+    sedan: "₹3,200",
+    suv: "₹4,200",
+    tempo: "₹6,500",
+    highlight: "Highway express flight transfer",
   },
 ];
 
@@ -190,13 +302,13 @@ export default function AmbAndauraRailwayStation() {
               </div>
 
               <h1 className="text-3xl sm:text-5xl font-black tracking-tight leading-tight">
-                Amb Andaura Railway Station Taxi
+                Amb Andaura &amp; Amb Indora Taxi Service
               </h1>
 
               <p className="text-sm sm:text-base text-gray-200 leading-relaxed font-normal">
-                Pre-book guaranteed, transparent taxi service at <strong>Amb Andaura (Station Code: AADR)</strong>.
-                Dedicated platform pickup for New Delhi Vande Bharat Express (Train 22447/22448) and Himachal
-                Express. Fast transfers to Maa Chintpurni Dham, Dharamshala, Kangra, and all Himachal hill destinations.
+                Pre-book guaranteed, transparent taxi service at <strong>Amb Andaura Railway Station (Station Code: AADR)</strong> — often searched by travelers as <strong>Amb Indora taxi service</strong>.
+                Dedicated platform pickup for New Delhi Vande Bharat Express (Train 22447/22448) and Himachal Express.
+                Fast, reliable hill transfers to Dharamshala, McLeodganj, Maa Chintpurni Dham, Kangra, and all Himachal destinations.
               </p>
 
               {/* 4 Feature Badges */}
@@ -437,6 +549,113 @@ export default function AmbAndauraRailwayStation() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ========================================================================= */}
+      {/* 2.5 TRANSPARENT STATION FARE CHART (SEO & CONVERSION ENGINE) */}
+      {/* ========================================================================= */}
+      <section className="w-full bg-[#f8faff] py-14 sm:py-18 border-t border-gray-200/80">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6">
+          <div className="text-center max-w-3xl mx-auto mb-10">
+            <span className="text-xs font-black uppercase tracking-widest text-[#f57c00]">
+              TRANSPARENT STATION FARES &amp; TARIFFS
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-black text-[#1e2638] tracking-tight mt-1">
+              Amb Andaura (Amb Indora) Taxi Fare Chart
+            </h2>
+            <p className="text-sm text-gray-600 mt-2">
+              Transparent, upfront fares directly from Amb Andaura Railway Station (AADR). No platform surge pricing, no haggling. All fares include fuel, vehicle sanitization, hill toll taxes, and driver allowance.
+            </p>
+          </div>
+
+          {/* Desktop & Tablet Table */}
+          <div className="overflow-x-auto bg-white rounded-2xl border border-gray-200/80 shadow-md">
+            <table className="w-full text-left border-collapse min-w-[700px]">
+              <thead>
+                <tr className="bg-[#182030] text-white text-xs uppercase tracking-wider font-extrabold">
+                  <th className="py-4 px-5">Destination Route</th>
+                  <th className="py-4 px-4 text-center">Distance &amp; Time</th>
+                  <th className="py-4 px-4 text-center bg-[#222c42]">
+                    Sedan <span className="block text-[10px] font-normal text-amber-300">Dzire / Etios</span>
+                  </th>
+                  <th className="py-4 px-4 text-center bg-[#2a3652]">
+                    SUV <span className="block text-[10px] font-normal text-emerald-300">Ertiga / Innova</span>
+                  </th>
+                  <th className="py-4 px-4 text-center bg-[#334263]">
+                    Tempo <span className="block text-[10px] font-normal text-blue-300">12 / 17 Seater</span>
+                  </th>
+                  <th className="py-4 px-5 text-right">Instant Booking</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-100 text-xs sm:text-sm font-medium text-gray-700">
+                {aadrFareList.map((route, i) => (
+                  <tr
+                    key={i}
+                    className={`hover:bg-[#f4f7fe]/70 transition-colors ${i % 2 === 1 ? "bg-gray-50/50" : "bg-white"}`}
+                  >
+                    <td className="py-3.5 px-5">
+                      <span className="font-extrabold text-[#1e2638] block text-sm">
+                        {route.destination}
+                      </span>
+                      <span className="text-[11px] text-gray-500 font-normal">
+                        {route.highlight}
+                      </span>
+                    </td>
+                    <td className="py-3.5 px-4 text-center whitespace-nowrap">
+                      <span className="font-bold text-[#1e2638] block">{route.distance}</span>
+                      <span className="text-[11px] text-gray-500">{route.duration}</span>
+                    </td>
+                    <td className="py-3.5 px-4 text-center font-black text-[#1e2638] bg-amber-50/30 whitespace-nowrap">
+                      {route.sedan}
+                    </td>
+                    <td className="py-3.5 px-4 text-center font-black text-emerald-700 bg-emerald-50/30 whitespace-nowrap">
+                      {route.suv}
+                    </td>
+                    <td className="py-3.5 px-4 text-center font-black text-[#365bb5] bg-blue-50/30 whitespace-nowrap">
+                      {route.tempo}
+                    </td>
+                    <td className="py-3.5 px-5 text-right whitespace-nowrap">
+                      <a
+                        href={whatsappLink(
+                          `Hello Mandyal Tour and Travels, I need a taxi from Amb Andaura Station to ${route.destination}. Please confirm availability.`
+                        )}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-[#f57c00] hover:bg-[#e65100] text-white font-bold text-xs shadow-sm transition-all active:scale-[0.98]"
+                      >
+                        <span>Book &rarr;</span>
+                      </a>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          {/* Fare Inclusions Badges */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-6">
+            <div className="bg-white p-3.5 rounded-xl border border-gray-200 text-center shadow-xs">
+              <span className="material-symbols-outlined text-[#f57c00] text-[22px]">toll</span>
+              <span className="block text-xs font-black text-[#1e2638] mt-1">Toll &amp; Parking Included</span>
+              <span className="text-[10px] text-gray-500">No surprise extras on highway</span>
+            </div>
+            <div className="bg-white p-3.5 rounded-xl border border-gray-200 text-center shadow-xs">
+              <span className="material-symbols-outlined text-emerald-600 text-[22px]">schedule</span>
+              <span className="block text-xs font-black text-[#1e2638] mt-1">Zero Delay Charges</span>
+              <span className="text-[10px] text-gray-500">Free waiting if train arrives late</span>
+            </div>
+            <div className="bg-white p-3.5 rounded-xl border border-gray-200 text-center shadow-xs">
+              <span className="material-symbols-outlined text-blue-600 text-[22px]">badge</span>
+              <span className="block text-xs font-black text-[#1e2638] mt-1">Platform Meet &amp; Greet</span>
+              <span className="text-[10px] text-gray-500">Driver receives you at exit gate</span>
+            </div>
+            <div className="bg-white p-3.5 rounded-xl border border-gray-200 text-center shadow-xs">
+              <span className="material-symbols-outlined text-amber-600 text-[22px]">verified</span>
+              <span className="block text-xs font-black text-[#1e2638] mt-1">Official HP Taxi Permit</span>
+              <span className="text-[10px] text-gray-500">Licensed commercial vehicles</span>
+            </div>
           </div>
         </div>
       </section>

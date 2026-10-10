@@ -17,6 +17,12 @@ if (!fs.existsSync(clientDist)) {
   process.exit(1);
 }
 
+console.log("==> Running SEO HTML Pre-rendering step...");
+execSync("node scripts/prerender-seo.cjs", {
+  cwd: rootDir,
+  stdio: "inherit",
+});
+
 console.log("==> Mirroring client/dist to root dist...");
 fs.cpSync(clientDist, rootDist, { recursive: true, force: true });
 

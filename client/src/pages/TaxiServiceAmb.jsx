@@ -9,6 +9,16 @@ import { localBusinessSchema, breadcrumbSchema, faqSchema } from "../data/schema
 
 const ambFaqs = [
   {
+    question: "Is this cab service available for Amb Indora taxi searches?",
+    answer:
+      "Yes! Many travelers colloquially and phonetically refer to Amb Andaura (Station Code: AADR) as 'Amb Indora taxi service'. Mandyal Tour & Travels provides 24/7 verified taxi pickups from Amb town and the Amb Andaura railway station platform for Dharamshala, Kangra, Chintpurni, and all Himachal outstation journeys.",
+  },
+  {
+    question: "What is the taxi fare from Amb to Dharamshala & McLeodganj?",
+    answer:
+      "The taxi fare from Amb to Dharamshala starts at ₹2,800 for a comfortable Sedan (Swift Dzire/Etios), ₹3,800 for a 6-seater SUV (Maruti Ertiga/Innova Crysta), and ₹6,000 for a Tempo Traveller. Fares include fuel, hill toll taxes, and driver allowance with zero hidden surcharges.",
+  },
+  {
     question: "How do I book a taxi from Amb Andaura Railway Station (AADR) for Vande Bharat Express?",
     answer:
       "You can pre-book your taxi by calling +91 7807481503 or booking via WhatsApp with your train arrival time (e.g. Vande Bharat Express 22447 at 13:00). Our chauffeur will be waiting outside the platform with a meet-and-greet name board and assist with your luggage.",
@@ -16,7 +26,7 @@ const ambFaqs = [
   {
     question: "What is the taxi fare from Amb Andaura to Maa Chintpurni Devi Temple?",
     answer:
-      "Amb Andaura to Chintpurni is approximately 26 km (35 to 40 minutes via NH-503). We offer the most competitive, transparent rates for private Sedans (Dzire/Etios), 6-seater SUVs (Ertiga/Innova), and Tempo Travellers. Both one-way drop and round-trip same-day darshan options are available. Contact our chauffeur desk for an instant quote.",
+      "Amb Andaura to Chintpurni is approximately 26 km (35 to 40 minutes via NH-503). Sedans start from ₹900, SUVs from ₹1,400, and Tempo Travellers from ₹2,500. Both one-way drop and round-trip same-day darshan options are available without any hidden fees.",
   },
   {
     question: "Can I get a cab from Amb to Dharamshala, McLeodganj, or Kangra?",
@@ -44,6 +54,8 @@ const ambPopularRoutes = [
     fleetAvailable: "Dzire, Ertiga, Innova Crysta",
     popularFor: "Pilgrimage / Shaktipeeth Yatra",
     badge: "Most Booked",
+    sedanFare: "₹900",
+    suvFare: "₹1,400",
   },
   {
     destination: "Dharamshala & McLeodganj",
@@ -53,6 +65,8 @@ const ambPopularRoutes = [
     fleetAvailable: "Dzire, Ertiga, Innova, Urbania",
     popularFor: "Hill Station / Dalai Lama Temple",
     badge: "Scenic Hill Route",
+    sedanFare: "₹2,800",
+    suvFare: "₹3,800",
   },
   {
     destination: "Maa Jawala Ji Temple",
@@ -62,6 +76,8 @@ const ambPopularRoutes = [
     fleetAvailable: "Dzire, Etios, Ertiga, Innova",
     popularFor: "Eternal Flame Pilgrimage",
     badge: "Temple Circuit",
+    sedanFare: "₹1,400",
+    suvFare: "₹2,000",
   },
   {
     destination: "Maa Kangra Brajeshwari Devi",
@@ -71,6 +87,8 @@ const ambPopularRoutes = [
     fleetAvailable: "Dzire, Ertiga, Innova Crysta",
     popularFor: "51 Shaktipeeth Circuit",
     badge: "Heritage & Faith",
+    sedanFare: "₹2,200",
+    suvFare: "₹3,000",
   },
   {
     destination: "Una City HQ & Una Station (UHL)",
@@ -80,6 +98,8 @@ const ambPopularRoutes = [
     fleetAvailable: "Dzire, Etios, Ertiga, Innova",
     popularFor: "Intercity Transit & Hospitals",
     badge: "Local Transit",
+    sedanFare: "₹1,000",
+    suvFare: "₹1,500",
   },
   {
     destination: "Chandigarh City & Airport (IXC)",
@@ -89,6 +109,8 @@ const ambPopularRoutes = [
     fleetAvailable: "Dzire, Ertiga, Innova Crysta",
     popularFor: "Airport Flights & Business",
     badge: "Airport Express",
+    sedanFare: "₹3,200",
+    suvFare: "₹4,200",
   },
 ];
 
@@ -198,14 +220,14 @@ export default function TaxiServiceAmb() {
               </div>
 
               <h1 className="text-3xl sm:text-5xl font-black tracking-tight leading-tight">
-                Taxi Service in Amb, Himachal Pradesh
+                Taxi Service in Amb &amp; Amb Indora
               </h1>
 
               <p className="text-sm sm:text-base text-gray-200 leading-relaxed font-normal">
-                Reliable 24/7 cab service in Amb and <strong>Amb Andaura Railway Station (AADR)</strong>.
+                Reliable 24/7 cab service in Amb and <strong>Amb Andaura Railway Station (AADR)</strong> — commonly searched as <strong>Amb Indora taxi service</strong>.
                 Guaranteed meet-and-greet pickups for New Delhi Vande Bharat Express (22447/22448) and
                 Himachal Express, quick 35-minute transfers to Maa Chintpurni Devi Ji Dham, and scenic hill
-                taxis to Dharamshala, Kangra, and Manali.
+                taxis to Dharamshala, McLeodganj, Kangra, and Manali.
               </p>
 
               {/* 4 Feature Badges */}
@@ -571,11 +593,15 @@ export default function TaxiServiceAmb() {
                       {route.fleetAvailable}
                     </span>
                   </div>
-                  <div className="flex items-center justify-between text-xs">
-                    <span className="text-gray-500 font-semibold">Fare Policy:</span>
-                    <span className="font-extrabold text-emerald-700 text-xs bg-emerald-50 px-2 py-0.5 rounded">
-                      Best Rate Guaranteed
-                    </span>
+                  <div className="flex items-center justify-between text-xs bg-[#f8faff] p-2 rounded-lg border border-gray-100">
+                    <div>
+                      <span className="text-[10px] text-gray-500 block">Sedan (Dzire)</span>
+                      <span className="font-extrabold text-[#1e2638]">{route.sedanFare}</span>
+                    </div>
+                    <div className="text-right">
+                      <span className="text-[10px] text-gray-500 block">SUV (Ertiga/Innova)</span>
+                      <span className="font-extrabold text-emerald-700">{route.suvFare}</span>
+                    </div>
                   </div>
 
                   <a
